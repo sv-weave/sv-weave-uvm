@@ -20,6 +20,15 @@ Milestone: U1 | Next action: 2-link override-chain sim case on UVM 2020.3.2; the
 - [ ] `.envrc`: removed from `.gitignore` so it is tracked; the file itself is not written
       yet (the agent tool refuses it as a sensitive file). Copy core's, then `direnv allow`.
 
+## U1 UVM version (Verilator's bundled 2020.3.2 only, per Q1)
+- [x] Survey: `uvm_default_factory::find_override_by_type/name` are virtual and every
+      create path calls them; `uvm_coreservice_t::set_factory` exists.
+- [x] `tests/sim/test_override_chain.py`: tx -> tx1 -> tx2 chains (instance, type, create
+      by name) give the woven last link. The adapter runs on every link; harmless.
+- Pitfall seen: a `uvm_factory f = uvm_factory::get();` initializer in an `initial` block
+  runs before `sv_weave_init_m` installs the woven factory, so overrides set through `f`
+  go to the old factory. Document in the user docs (U3).
+
 ## Decisions (hand-off §9, 2026-11-08)
 - Q1 UVM versions: focus on the UVM bundled with Verilator (2020.3.2). Other versions,
   including 1.1d, are not targeted for now.
