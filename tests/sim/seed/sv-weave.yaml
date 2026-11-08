@@ -1,0 +1,18 @@
+sv-weave:
+  binding: uvm
+  packages: {include: [sd_pkg]}
+  extension-sets:
+    core: {}
+    debug.xcheck: {}
+  weavers:
+  - {name: copy}
+  - {name: compare}
+  - {name: print}
+  - {name: do_print}
+  - {name: pack}
+  - {name: xcheck, set: debug.xcheck}
+  profiles:
+    release: [core]
+    debug: [core, "debug.*"]
+  build-profiles: [release, debug]
+  default-profile: release

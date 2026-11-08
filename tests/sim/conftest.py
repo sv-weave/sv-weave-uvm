@@ -112,3 +112,26 @@ def uvm_weave_sim(dvflow, case_dir: str, top="tb", plusargs: Sequence[str] = (),
     """Weave the case's sources against UVM, then build and run them."""
     woven = uvm_weave_task(dvflow, case_dir, config, sim=sim, **params)
     return run_sim(dvflow, [woven], top=top, plusargs=plusargs, sim=sim)
+
+
+def uvm_weave_sim_runs(dvflow, case_dir: str, runs, top="tb", config: str = "sv-weave.yaml",
+                       sim: str = "vlt", **params):
+    """Weave and build once, then run the image once per entry of ``runs``
+    ({name: plusargs}). Returns {name: SimResult}."""
+    woven = uvm_weave_task(dvflow, case_dir, config, sim=sim, **params)
+    tops = [top] if isinstance(top, str) else list(top)
+    img = dvflow.mkTask("hdlsim.%s.SimImage" % sim, name="img", top=tops, needs=[woven])
+    tasks = [dvflow.mkTask("hdlsim.%s.SimRun" % sim, name="run_" + n, needs=[img],
+                           plusargs=list(p)) for n, p in runs.items()]
+    status, _ = dvflow.runTask(tasks)
+    out = {}
+    for n in runs:
+        rundir = os.path.join(str(dvflow.tmpdir), "run_" + n)
+        log, text = os.path.join(rundir, "sim.log"), ""
+        if os.path.isfile(log):
+            with open(log) as fp:
+                text = fp.read()
+        else:
+            log = None
+        out[n] = SimResult(0 if log and status == 0 else status, rundir, log, text)
+    return out

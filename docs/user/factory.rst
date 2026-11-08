@@ -42,6 +42,30 @@ The profile is chosen at run time with ``+weave_profile=<p>``. Without the plusa
 the config's ``default-profile`` is used. The plusarg is read once, on the first
 lookup.
 
+Switching the profile does not change what a test randomises. Debug sets may not
+randomise, add properties, allocate or fork (core Verify rejects such code), so a debug
+class consumes no random numbers that the release class does not. With the same seed,
+``+weave_profile=release`` and ``+weave_profile=debug`` give the same values from
+``randomize()`` and the same ``$urandom`` stream afterwards: a failure seen in a
+release regression can be rerun with the debug checks on. The sim case
+``tests/sim/seed`` checks this with a debug profile that adds ``xcheck``
+(a ``post_randomize`` X/Z check)::
+
+    sv-weave:
+      binding: uvm
+      extension-sets: {core: {}, debug.xcheck: {}}
+      weavers:
+      - {name: copy}
+      - {name: xcheck, set: debug.xcheck}
+      profiles:
+        release: [core]
+        debug: [core, "debug.*"]
+      build-profiles: [release, debug]
+      default-profile: release
+
+The adapter's ``profile()`` returns the selected profile and ``woven_of(T::get_type())``
+the woven class the factory hands out for ``T`` in it.
+
 Type names
 ----------
 

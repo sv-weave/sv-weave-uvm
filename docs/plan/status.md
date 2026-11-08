@@ -1,5 +1,5 @@
 # sv-weave-uvm status
-Milestone: U2 | Next action: 9 seed stability (release vs debug profile) | Blocked on: none (U4 needs core L1/L2) | Last updated: 2026-11-08
+Milestone: U3 done | Next action: 11 benchmark (U5) | Blocked on: U4 audits need core L1/L2 | Last updated: 2026-11-08
 
 ## U0 Bootstrap
 - [x] Package scaffold: `sv_weave_uvm.binding.UvmBinding`, `share/sv/sv_weave_uvm_pkg.sv`
@@ -48,7 +48,10 @@ Milestone: U2 | Next action: 9 seed stability (release vs debug profile) | Block
       `uvm_component_param_utils` (registered by type only), inherit the user's
       `get_type_name()`; `factory.print()` shows no `Woven_*` (checked in uvm_basic).
       Tests use `CHECK_WOVEN(obj, T, msg)` from tests/sim/sv/check_pkg.sv.
-- [ ] Seed stability release vs debug profile.
+- [x] Seed stability: `tests/sim/test_seed.py` builds once and runs
+      `+weave_profile=release` and `=debug` (debug adds xcheck in post_randomize);
+      the same seed gives the same randomize() values and `$urandom` stream.
+      Documented in docs/user/factory.rst (Profiles).
 
 ## Decisions (hand-off §9, 2026-11-08)
 - Q1 UVM versions: focus on the UVM bundled with Verilator (2020.3.2). Other versions,
