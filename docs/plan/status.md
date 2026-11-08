@@ -1,5 +1,5 @@
 # sv-weave-uvm status
-Milestone: U0 | Next action: owner answers (envrc, file core issues, §9 Q1-Q6); U1 UVM-version survey | Blocked on: none (U4 needs core L1/L2) | Last updated: 2026-11-08
+Milestone: U1 | Next action: 2-link override-chain sim case on UVM 2020.3.2; then U2 | Blocked on: none (U4 needs core L1/L2) | Last updated: 2026-11-08
 
 ## U0 Bootstrap
 - [x] Package scaffold: `sv_weave_uvm.binding.UvmBinding`, `share/sv/sv_weave_uvm_pkg.sv`
@@ -15,4 +15,17 @@ Milestone: U0 | Next action: owner answers (envrc, file core issues, §9 Q1-Q6);
 - [x] Docs skeleton: Sphinx (index, quickstart, user/features with the feature->hook table
       generated from `UvmBinding.features()`, user/factory: adapter + override order);
       `tests/docs` (marker `docs`, `-W`).
-- [ ] Core issues filed (drafts: `core-issues.md`).
+- [-] Core issues not filed (owner): changes in `core-issues.md` are made locally in the
+      core clone `packages/sv-weave` when an item needs them.
+- [ ] `.envrc`: removed from `.gitignore` so it is tracked; the file itself is not written
+      yet (the agent tool refuses it as a sensitive file). Copy core's, then `direnv allow`.
+
+## Decisions (hand-off §9, 2026-11-08)
+- Q1 UVM versions: focus on the UVM bundled with Verilator (2020.3.2). Other versions,
+  including 1.1d, are not targeted for now.
+- Q2 Woven classes report the original type name (`get_type_name()`, `factory.print()`,
+  logs). Weaving is an implementation artifact, not visible to the user.
+- Q3 print (no answer; provisional): `do_print(uvm_printer)` primary, keep `convert2string`.
+- Q4 do_record (no answer; provisional): out of 0.1.
+- Q5 audits (no answer; provisional): same package.
+- Q6 VIP header stubs (no answer; provisional): out of 0.1.

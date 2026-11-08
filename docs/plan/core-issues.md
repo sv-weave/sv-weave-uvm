@@ -1,7 +1,8 @@
 # Changes needed in core sv-weave (drafts, hand-off §7)
 
 Drafted for filing in github.com/sv-weave/sv-weave. Not worked around here.
-State: **not filed yet**.
+State: **not filed** (owner, 2026-11-08): when an item needs one of these, make the
+change locally in the core clone `packages/sv-weave` as part of that item.
 
 ## 1. Auditor plugin kind (launch L1)
 `Auditor` plugin kind, `AuditCtx`, the model additions and a `sv-weave audit`
