@@ -5,7 +5,7 @@ package bm_macros_pkg;
 
   typedef enum bit [1:0] {READ, WRITE, IDLE} kind_e;
 
-  class bm_tx extends uvm_sequence_item;
+  class bm_macros_tx extends uvm_sequence_item;
     rand bit [31:0] addr;
     rand bit [31:0] data;
     rand kind_e kind;
@@ -14,7 +14,7 @@ package bm_macros_pkg;
     rand byte payload[8];
     int id;
     string tag;
-    `uvm_object_utils_begin(bm_tx)
+    `uvm_object_utils_begin(bm_macros_tx)
       `uvm_field_int(addr, UVM_ALL_ON)
       `uvm_field_int(data, UVM_ALL_ON)
       `uvm_field_enum(kind_e, kind, UVM_ALL_ON)
@@ -24,7 +24,7 @@ package bm_macros_pkg;
       `uvm_field_int(id, UVM_ALL_ON)
       `uvm_field_string(tag, UVM_ALL_ON)
     `uvm_object_utils_end
-    function new(string name = "bm_tx");
+    function new(string name = "bm_macros_tx");
       super.new(name);
     endfunction
   endclass

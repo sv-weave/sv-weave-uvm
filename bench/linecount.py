@@ -63,12 +63,12 @@ def count(uvm: str):
         for key, label in VARIANTS:
             path = os.path.join(FIELDS, key + "_pkg.sv")
             with open(path) as fp:
-                src = len(class_lines(fp.read(), "bm_tx"))
-            exp = len(class_lines(expand(path, uvm), "bm_tx"))
+                src = len(class_lines(fp.read(), "bm_%s_tx" % key))
+            exp = len(class_lines(expand(path, uvm), "bm_%s_tx" % key))
             gen = None
             if key == "woven":
                 gen_text = expand(woven_sv, uvm)
-                gen = len(class_lines(gen_text, "Woven_bm_tx__release"))
+                gen = len(class_lines(gen_text, "Woven_bm_woven_tx__release"))
                 exp += gen
             rows.append((label, src, exp, gen))
     return rows

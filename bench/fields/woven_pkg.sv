@@ -6,8 +6,8 @@ package bm_woven_pkg;
 
   typedef enum bit [1:0] {READ, WRITE, IDLE} kind_e;
 
-  class bm_tx extends uvm_sequence_item;
-    `uvm_object_utils(bm_tx)
+  class bm_woven_tx extends uvm_sequence_item;
+    `uvm_object_utils(bm_woven_tx)
     rand bit [31:0] addr;
     rand bit [31:0] data;
     rand kind_e kind;
@@ -16,7 +16,7 @@ package bm_woven_pkg;
     rand byte payload[8];
     int id;
     string tag;
-    function new(string name = "bm_tx");
+    function new(string name = "bm_woven_tx");
       super.new(name);
     endfunction
   endclass
