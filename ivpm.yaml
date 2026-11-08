@@ -36,4 +36,17 @@ package:
       src: ivpm.yaml
       url: https://edapack.github.io/ivpm.yaml
       dep-set: sim.rtl
+  # Third-party UVM testbenches for the gap/code-size assessment (assess/).
+  # Not part of dev or CI: `ivpm update -d assess`. Cached: shared, depth 1.
+  - name: assess
+    uses: dev
+    deps:
+    - name: opentitan
+      url: https://github.com/lowRISC/opentitan.git
+      branch: master
+      cache: true
+    - name: core-v-verif
+      url: https://github.com/openhwgroup/core-v-verif.git
+      branch: master
+      cache: true
 
