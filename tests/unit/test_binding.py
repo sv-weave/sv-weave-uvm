@@ -26,12 +26,19 @@ def test_do_print_weaver_discovered():
     plugin.check_api("weaver", DoPrintWeaver)
 
 
+def test_pack_weaver_discovered():
+    from sv_weave_uvm.weavers import PackWeaver
+    assert plugin.find(plugin.WEAVER_GROUP, "pack") is PackWeaver
+    plugin.check_api("weaver", PackWeaver)
+
+
 def test_features_map_to_uvm_hooks():
     f = UvmBinding().features()
     assert {k: v.method for k, v in f.items()} == {
         "copy": "do_copy", "compare": "do_compare", "print": "convert2string",
-        "do_print": "do_print"}
+        "do_print": "do_print", "do_pack": "do_pack", "do_unpack": "do_unpack"}
     assert f["do_print"].arg_names == ("printer",)
+    assert f["do_pack"].arg_names == f["do_unpack"].arg_names == ("packer",)
     assert f["compare"].ret == "bit"
     assert f["compare"].arg_names == ("rhs", "comparer")
     assert f["copy"].rhs == "rhs"

@@ -1,5 +1,5 @@
 # sv-weave-uvm status
-Milestone: U2 | Next action: 8b do_pack/do_unpack weaver | Blocked on: none (U4 needs core L1/L2) | Last updated: 2026-11-08
+Milestone: U2 | Next action: 9 seed stability (release vs debug profile) | Blocked on: none (U4 needs core L1/L2) | Last updated: 2026-11-08
 
 ## U0 Bootstrap
 - [x] Package scaffold: `sv_weave_uvm.binding.UvmBinding`, `share/sv/sv_weave_uvm_pkg.sv`
@@ -37,7 +37,11 @@ Milestone: U2 | Next action: 8b do_pack/do_unpack weaver | Blocked on: none (U4 
 - [x] 8a `do_print` weaver (`sv_weave_uvm.weavers`, entry point; no core change):
       one `uvm_printer` call per field. `tests/sim/test_print.py` checks table, tree
       and line printers and that `convert2string` (core `print`) still works.
-- [ ] 8b do_pack/do_unpack. 8c do_record out (Q4).
+- [x] 8b `pack` weaver (`sv_weave_uvm.weavers`): `do_pack`/`do_unpack` through
+      `uvm_packer`; `tests/sim/test_pack.py` round-trips pack_ints and pack_bytes.
+      Core issue found: deep `compare` under the UVM binding calls `do_compare(rhs)`
+      without the comparer (does not compile); the test opts the deep field out.
+- [-] 8c do_record out (Q4).
 
 ## U3 Override + debug story
 - [x] Type names (Q2): woven classes use `uvm_object_param_utils` /

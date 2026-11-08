@@ -2,8 +2,9 @@
 
 - **Features are uvm_object's own virtual hooks:** ``copy`` -> ``do_copy``,
   ``compare`` -> ``do_compare``, ``print`` -> ``convert2string``, ``do_print`` ->
-  ``do_print`` (the ``do_print`` weaver, :mod:`sv_weave_uvm.weavers`). UVM's
-  ``copy()``, ``compare()``, ``print()`` and ``sprint()`` reach them as usual.
+  ``do_print`` (the ``do_print`` weaver, :mod:`sv_weave_uvm.weavers`), ``do_pack`` /
+  ``do_unpack`` (the ``pack`` weaver). UVM's ``copy()``, ``compare()``, ``print()``,
+  ``sprint()``, ``pack*()`` and ``unpack*()`` reach them as usual.
 - **The library's factory decides what gets created.** Each woven class carries
   `` `uvm_object_utils `` and is registered with ``sv_weave_uvm_factory``
   (``share/sv/sv_weave_uvm_pkg.sv``), a ``uvm_default_factory`` subclass installed in
@@ -49,6 +50,10 @@ class UvmBinding(Binding):
             "print": FeatureSpec("print", "convert2string", ret="string"),
             "do_print": FeatureSpec("do_print", "do_print", args=("uvm_printer printer",),
                                     arg_names=("printer",)),
+            "do_pack": FeatureSpec("do_pack", "do_pack", args=("uvm_packer packer",),
+                                   arg_names=("packer",)),
+            "do_unpack": FeatureSpec("do_unpack", "do_unpack", args=("uvm_packer packer",),
+                                     arg_names=("packer",)),
         }
 
     def sv_runtime_files(self):

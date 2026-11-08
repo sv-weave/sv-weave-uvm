@@ -4,6 +4,9 @@
 feature, so ``print()`` and ``sprint()`` show the fields with the table, tree and line
 printers. The core ``print`` weaver (``convert2string``) is independent of it; a config
 lists either or both.
+
+``pack``: ``do_pack`` and ``do_unpack`` through ``uvm_packer``, so ``pack()``,
+``pack_bytes()``, ``pack_ints()`` and the ``unpack*()`` calls round-trip the fields.
 """
 from sv_weave.frontend.types import ArrayKind, TypeCat
 from sv_weave.match import extends_root, has_attr
@@ -75,3 +78,105 @@ class DoPrintWeaver(Weaver):
             text = print_stmt(w, f, printer)
             if text:
                 slot.body.add(text)
+
+
+def _scalar(t) -> bool:
+    return t.cat in (TypeCat.INTEGRAL, TypeCat.STRING, TypeCat.REAL) or \
+        (t.cat == TypeCat.ENUM and t.nameable) or \
+        (t.cat in (TypeCat.STRUCT, TypeCat.UNION) and t.packed)
+
+
+def _pack_one(t, a: str, packer: str) -> str:
+    if t.cat == TypeCat.STRING:
+        return "%s.pack_string(%s);" % (packer, a)
+    if t.cat == TypeCat.REAL:
+        return "%s.pack_real(%s);" % (packer, a)
+    fn = "pack_field_int" if 0 < t.width <= 64 else "pack_field"
+    return "%s.%s(%s, $bits(%s));" % (packer, fn, a, a)
+
+
+def _unpack_one(t, a: str, packer: str) -> str:
+    if t.cat == TypeCat.STRING:
+        return "%s = %s.unpack_string();" % (a, packer)
+    if t.cat == TypeCat.REAL:
+        return "%s = %s.unpack_real();" % (a, packer)
+    fn = "unpack_field_int" if 0 < t.width <= 64 else "unpack_field"
+    rhs = "%s.%s($bits(%s))" % (packer, fn, a)
+    if t.cat == TypeCat.ENUM:
+        rhs = "%s'(%s)" % (t.spelling, rhs)
+    return "%s = %s;" % (a, rhs)
+
+
+def pack_stmts(w, f, packer: str):
+    """The (pack, unpack) statements for field ``f``; None when it is not packed,
+    a str when it cannot be packed (the reason)."""
+    t = f.type
+    a = "this.%s" % f.name
+    if _scalar(t):
+        return _pack_one(t, a, packer), _unpack_one(t, a, packer)
+    if t.cat == TypeCat.CLASS:
+        cls = w.model.find_class(t.class_qname) if t.class_qname else None
+        if "weave_deep" not in f.attrs:
+            return None  # a reference: not packed, as UVM_REFERENCE fields
+        if cls is None or not cls.is_a("uvm_pkg::uvm_object"):
+            return "a weave_deep handle that is not a uvm_object"
+        # unpack_object_with_meta creates the object from the packed type name; for a
+        # woven class it does not (it shares the user's name) and a null handle stays
+        # null. Create it through the factory first, as a deep copy does.
+        made = w.binding.create_expr(cls, _q(f.name))
+        create = "  if (%s == null) %s = %s;\n" % (a, a, made) if made else ""
+        unpack = ("begin\n"
+                  "  uvm_pkg::uvm_object ref__;\n%(c)s"
+                  "  ref__ = %(a)s;\n"
+                  "  %(p)s.unpack_object_with_meta(ref__);\n"
+                  "  if (ref__ != %(a)s && !$cast(%(a)s, ref__))\n"
+                  "    uvm_pkg::uvm_report_error(\"sv-weave\", {\"do_unpack: cannot cast \",\n"
+                  "      ref__.get_type_name(), \" to %(f)s\"});\n"
+                  "end" % {"a": a, "p": packer, "f": f.name, "c": create})
+        return "%s.pack_object_with_meta(%s);" % (packer, a), unpack
+    if t.cat in (TypeCat.EVENT, TypeCat.CHANDLE, TypeCat.VIRTUAL_IF):
+        return None
+    if t.cat == TypeCat.ARRAY and t.elem is not None and _scalar(t.elem) and \
+            t.array_kind != ArrayKind.ASSOC:
+        e = "%s[i__]" % a
+        pe, ue = _pack_one(t.elem, e, packer), _unpack_one(t.elem, e, packer)
+        if t.array_kind == ArrayKind.FIXED:
+            return ("foreach (%s[i__]) %s" % (a, pe), "foreach (%s[i__]) %s" % (a, ue))
+        pack = ("begin\n  %s.pack_field_int(%s.size(), 32);\n"
+                "  foreach (%s[i__]) %s\nend" % (packer, a, a, pe))
+        if t.array_kind == ArrayKind.DYNAMIC:
+            resize = "  %s = new[sz__];\n" % a
+        else:
+            resize = "  while (%s.size() > sz__) void'(%s.pop_back());\n" % (a, a)
+        unpack = ("begin\n  int sz__;\n  sz__ = %s.unpack_field_int(32);\n%s"
+                  "  for (int i__ = 0; i__ < sz__; i__++) %s\nend"
+                  % (packer, resize, ue))
+        return pack, unpack
+    return "type %s" % _type_name(t)
+
+
+class PackWeaver(Weaver):
+    """``do_pack`` and ``do_unpack`` through ``uvm_packer``, field by field in
+    declaration order; arrays other than fixed-size ones carry their size (32 bits)
+    first, as `` `uvm_pack_array``. Opt out with ``weave_nopack``."""
+    name = "pack"
+    version = __version__
+
+    def subscribe(self, bus):
+        bus.on(extends_root() & ~has_attr("weave_nopack"), self.weave)
+
+    def weave(self, w):
+        ps, us = w.feature("do_pack"), w.feature("do_unpack")
+        pp = ps.sig.arg_names[0] if ps.sig.arg_names else "packer"
+        up = us.sig.arg_names[0] if us.sig.arg_names else "packer"
+        for f in w.fields():
+            if not copyable(w, f, "weave_nopack"):
+                continue
+            r = pack_stmts(w, f, pp)
+            if r is None:
+                continue
+            if isinstance(r, str):
+                w.warning("pack: field '%s' (%s) is not packed" % (f.name, r))
+                continue
+            ps.body.add(r[0])
+            us.body.add(pack_stmts(w, f, up)[1])

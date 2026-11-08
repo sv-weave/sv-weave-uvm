@@ -4,7 +4,8 @@ Features and UVM hooks
 Each feature in the ``weavers:`` list maps to a virtual hook of ``uvm_object``. sv-weave
 generates an override of that hook in the woven class; UVM's own entry points reach it
 as usual (``copy()`` calls ``do_copy``, ``compare()`` calls ``do_compare``,
-``print()`` and ``sprint()`` call ``do_print``).
+``print()`` and ``sprint()`` call ``do_print``, ``pack*()`` and ``unpack*()`` call
+``do_pack`` and ``do_unpack``).
 
 .. include:: ../_generated/features.rst
 
@@ -32,6 +33,25 @@ Notes
     weavers:
     - {name: print}
     - {name: do_print}
+
+- ``pack`` (also part of this package) writes ``do_pack`` and ``do_unpack`` with one
+  ``uvm_packer`` call per field, in declaration order, so ``pack_ints()`` /
+  ``unpack_ints()`` (and the bit and byte forms) round-trip an object:
+
+  - integral fields, enums and packed structs with ``pack_field_int``
+    (``pack_field`` above 64 bits), strings with ``pack_string``, reals with
+    ``pack_real``;
+  - fixed-size arrays element by element; dynamic arrays and queues of those types
+    with their size first (32 bits), as `` `uvm_pack_array`` does;
+  - a ``(* weave_deep *)`` handle to a ``uvm_object`` with ``pack_object_with_meta``;
+    on unpack a null handle is first created through the factory;
+  - other class handles, events and chandles are not packed; associative arrays,
+    unpacked structs and nested arrays are not packed either, with a warning;
+  - ``(* weave_nopack *)`` leaves a field out.
+
+  ``compare`` cannot follow a ``(* weave_deep *)`` handle with the UVM binding yet (the
+  generated ``do_compare`` call lacks the comparer argument): mark such a field
+  ``(* weave_nocompare *)``.
 
 - The binding adds `` `uvm_object_param_utils `` (or `` `uvm_component_param_utils ``
   for a component) to each woven class, so it keeps the user's type name, and registers the woven class with the factory
