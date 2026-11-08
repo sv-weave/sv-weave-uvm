@@ -1,5 +1,5 @@
 # sv-weave-uvm status
-Milestone: U5 done | Next action: 12 quickstart + release (U6) | Blocked on: U4 audits need core L1/L2 | Last updated: 2026-11-08
+Milestone: U6 ready for release (owner tags) | Next action: owner: tag v0.1.0 | Blocked on: U4 audits need core L1/L2 | Last updated: 2026-11-08
 
 ## U0 Bootstrap
 - [x] Package scaffold: `sv_weave_uvm.binding.UvmBinding`, `share/sv/sv_weave_uvm_pkg.sv`
@@ -58,6 +58,12 @@ Milestone: U5 done | Next action: 12 quickstart + release (U6) | Blocked on: U4 
       macros, hand-written `do_*` and woven. `bench/linecount.py`: source 23/66/14 lines,
       expanded 1447/92/154. `bench/test_runtime.py` on Verilator: 29.5/27.2/20.2 us per
       iteration. Erickson's exact class is not reproduced. docs/user/benchmark.rst.
+
+## U6 Quickstart + release
+- [x] `examples/quickstart/` (one transaction, sv-weave.yaml, tb.sv, run.sh: `sv-weave gen`
+      then `verilator --binary`); docs/quickstart.rst includes the files;
+      `tests/sim/test_quickstart.py` runs run.sh. About 20 s on Verilator 5.054.
+- [ ] 0.1.0 tag and PyPI: the owner's; checklist in `release-0.1.0.md`. No audit yet (U4).
 
 ## Decisions (hand-off §9, 2026-11-08)
 - Q1 UVM versions: focus on the UVM bundled with Verilator (2020.3.2). Other versions,
