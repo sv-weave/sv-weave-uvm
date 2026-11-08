@@ -15,8 +15,8 @@ minutes." The owner tags and publishes; nothing here is done by an agent.
 - [x] Unit, docs, sim suites pass locally (sim 7 cases).
 
 ## Not ready / not checked
-- [ ] "an audit": the UVM audits (U4, item 10) wait for core L1/L2. 0.1.0 ships
-      without audits unless the owner holds the release for them.
+- [-] "an audit": 0.1.0 ships without audits (owner decision, 2026-11-08). The UVM
+      audits (U4, item 10) wait for core L1/L2 and move past 0.1.
 - [ ] `pip install sv-weave-uvm` from PyPI on a clean machine: not possible before
       publishing. Check after: a fresh venv, `pip install sv-weave-uvm`, Verilator on
       PATH, `./examples/quickstart/run.sh` from a checkout of the tag.

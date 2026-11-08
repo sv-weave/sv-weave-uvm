@@ -63,7 +63,8 @@ Milestone: U6 ready for release (owner tags) | Next action: owner: tag v0.1.0 | 
 - [x] `examples/quickstart/` (one transaction, sv-weave.yaml, tb.sv, run.sh: `sv-weave gen`
       then `verilator --binary`); docs/quickstart.rst includes the files;
       `tests/sim/test_quickstart.py` runs run.sh. About 20 s on Verilator 5.054.
-- [ ] 0.1.0 tag and PyPI: the owner's; checklist in `release-0.1.0.md`. No audit yet (U4).
+- [ ] 0.1.0 tag and PyPI: the owner's; checklist in `release-0.1.0.md`. Ships without audits
+      (owner decision, 2026-11-08); U4 moves past 0.1.
 
 ## Decisions (hand-off §9, 2026-11-08)
 - Q1 UVM versions: focus on the UVM bundled with Verilator (2020.3.2). Other versions,
