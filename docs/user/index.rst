@@ -7,3 +7,4 @@ User guide
    features
    factory
    benchmark
+   assessment

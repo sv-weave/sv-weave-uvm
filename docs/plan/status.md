@@ -66,6 +66,14 @@ Milestone: U6 ready for release (owner tags) | Next action: owner: tag v0.1.0 | 
 - [ ] 0.1.0 tag and PyPI: the owner's; checklist in `release-0.1.0.md`. Ships without audits
       (owner decision, 2026-11-08); U4 moves past 0.1.
 
+## Assessment: OpenTitan + core-v-verif (batch 2)
+- [x] ivpm dep-set `assess` (OT 7d46c64, core-v-verif b137fd2); `assess/scan.py`,
+      `gaps.py` (G1-G6), `size.py` + 19 unit tests; results in `assess/results/README.md`.
+- [x] Item gaps mostly real (OT: 14 checked, 10 TP, 2 low, 2 FP); cfg/cntxt findings mostly
+      intended. Savings: OT ~1460 src / ~74k expanded vs ~20k woven; cv ~1190 / ~144k vs ~13k.
+- [x] `assess/ports/memory_txn`: original vs port on Verilator (`tests/sim/test_assess_ports.py`).
+- [x] docs/user/assessment.rst. No upstream bug reports (owner's call).
+
 ## Decisions (hand-off §9, 2026-11-08)
 - Q1 UVM versions: focus on the UVM bundled with Verilator (2020.3.2). Other versions,
   including 1.1d, are not targeted for now.

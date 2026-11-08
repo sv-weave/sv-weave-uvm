@@ -23,3 +23,4 @@ def test_docs_build(tmp_path):
         bad = [l for l in lines if "WARNING" in l or "ERROR" in l]
         pytest.fail("sphinx-build failed (log: %s)\n%s" % (log, "\n".join(bad[:30] or lines[-30:])))
     assert (tmp_path / "html" / "user" / "features.html").read_text().count("do_compare") > 0
+    assert "memory_txn" in (tmp_path / "html" / "user" / "assessment.html").read_text()
