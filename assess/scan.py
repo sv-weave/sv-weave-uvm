@@ -255,12 +255,14 @@ def scan_tree(roots):
                 continue
             classes.extend(cs)
             methods.extend(ms)
-    # Attach out-of-class (extern) method bodies to their class by name.
-    by_name = {}
+    # Attach out-of-class (extern) method bodies to their class by name,
+    # preferring a class of that name in the same file (names repeat across IPs).
+    by_name, by_file = {}, {}
     for c in classes:
         by_name.setdefault(c["name"], c)
+        by_file.setdefault((c["file"], c["name"]), c)
     for m in methods:
-        c = by_name.get(m["scope"])
+        c = by_file.get((m["file"], m["scope"]), by_name.get(m["scope"]))
         if c is None:
             continue
         c["methods"] = [x for x in c["methods"]

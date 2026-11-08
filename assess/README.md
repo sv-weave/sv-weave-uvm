@@ -21,6 +21,16 @@ estimate the code it would remove. The trees come from the ivpm dep-set
   unless its `UVM_NO*` flag is set). Static/const members and handles that are
   not data (`virtual` interfaces, events, mailboxes, TLM ports) are skipped;
   typedef'd interface handles are not recognised.
+- `size.py <root>... | --scan out.json [-o size.json] [--depth N] [--text]`:
+  per class with field macros or hand do_* methods, the source lines spent on
+  them (`macro_src`, `hand_src`), the sv-weave equivalent (`weave_src`: the
+  utils line plus one attribute per field with a UVM_NO*/radix/REFERENCE flag),
+  `saved`, the lines the macros expand to (`macro_exp`, per-macro constants
+  measured with `verilator -E -P` on UVM 2020.3.2) and an estimate of the woven
+  code generated instead (`woven_gen`). Totals per root and per directory
+  group under it (`--depth`, default 1), split into data classes and others.
+  Hand line counts include blank/comment lines inside the methods; `saved` is
+  an upper bound where a hand method does more than field-by-field work.
 
 Parsing is syntax-only (pyslang, no include/macro preprocessing); UVM macros are
 found lexically in the class text. Tests: `pytest -q tests/unit/assess`.
