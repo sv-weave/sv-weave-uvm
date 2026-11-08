@@ -2,7 +2,8 @@
 testbench, with charts.
 
 Reads the scan/size/gaps JSON of assess/results (see README there) and the source trees
-(to count lines), and writes <out>/report.md, <out>/numbers.json and PNG charts.
+(to count lines), and writes <out>/table.md, <out>/numbers.json and PNG charts
+(report.md beside them is written by hand from these).
 
 Denominators (code lines = non-blank, non-comment):
   dv_lines     every .sv/.svh under the roots that is testbench code: for OpenTitan,
@@ -52,12 +53,25 @@ def tree_numbers(tree, scan, size, gaps):
             with open(p, errors="replace") as fp:
                 code[p] = code_lines(fp.read())
 
+    def mask_of(path):
+        if path not in code:
+            with open(path, errors="replace") as fp:
+                code[path] = code_lines(fp.read())
+        return code[path]
+
+    def body(c, m):
+        ln = m["line"]
+        return sum(mask_of(m.get("file", c["file"]))[ln - 1:ln - 1 + m["lines"]])
+
     def span(c):
-        mask = code.get(c["file"])
-        if mask is None:
-            with open(c["file"], errors="replace") as fp:
-                mask = code[c["file"]] = code_lines(fp.read())
-        return sum(mask[c["line"] - 1:c.get("end_line", c["line"])])
+        """Code lines of the class body, plus extern method bodies defined outside it."""
+        end = c.get("end_line", c["line"])
+        n = sum(mask_of(c["file"])[c["line"] - 1:end])
+        for m in c["methods"]:
+            if "lines" in m and (m.get("file", c["file"]) != c["file"]
+                                 or not c["line"] <= m["line"] <= end):
+                n += body(c, m)
+        return n
 
     scan_by = {(c["file"], c["line"]): c for c in scan["classes"]}
     class_lines = sum(span(c) for c in scan["classes"])
@@ -65,6 +79,10 @@ def tree_numbers(tree, scan, size, gaps):
     for r in size["classes"]:
         c = scan_by.get((r["file"], r["line"]))
         r = dict(r, lines=span(c) if c else 0)
+        if c:
+            # size.py counts hand methods in raw lines; count code lines like the denominators.
+            hand = sum(body(c, m) for m in c["methods"] if "lines" in m)
+            r.update(hand_src=hand, saved=r["macro_src"] + hand - r["weave_src"])
         rows.append(r)
     data = [r for r in rows if r["category"] == "data"]
     tot = {k: sum(r[k] for r in data) for k in
@@ -181,9 +199,11 @@ def charts(nums, out):
         bars = ax.barh([k for k, _ in g], [v["saved"] for _, v in g], color=c)
         ax.bar_label(bars, labels=["%d%%" % (100.0 * v["saved"] / v["lines"]) if v["lines"]
                                    else "" for _, v in g], fontsize=8, padding=2)
-        ax.set_title("%s: lines removed (%% of the group's data-class lines)" % label,
-                     fontsize=9)
+        ax.set_title(label, fontsize=10)
+        ax.set_xlabel("lines removed (bar label: % of the group's data-class lines)",
+                      fontsize=8)
         ax.tick_params(axis="y", labelsize=7)
+        ax.margins(x=0.1)
     fig.tight_layout()
     fig.savefig(os.path.join(out, "top_groups.png"), dpi=120)
     plt.close(fig)
@@ -199,6 +219,7 @@ def charts(nums, out):
     ax.set_xticks(range(len(TREES)), names)
     ax.set_ylabel("k lines the compiler sees")
     ax.set_title("Testbench code after macro expansion / weaving")
+    ax.set_ylim(0, ax.get_ylim()[1] * 1.15)
     ax.legend()
     fig.tight_layout()
     fig.savefig(os.path.join(out, "compiled.png"), dpi=120)
@@ -217,7 +238,7 @@ def charts(nums, out):
     ax.set_yticks(range(len(TREES)), names)
     ax.set_xlabel("sequence-item classes")
     ax.set_xlim(0, max(nums[t]["items"] for t, _ in TREES) * 1.2)
-    ax.legend(fontsize=8, loc="lower right")
+    ax.legend(fontsize=8, loc="upper center", bbox_to_anchor=(0.5, -0.35), ncol=2)
     fig.tight_layout()
     fig.savefig(os.path.join(out, "item_gaps.png"), dpi=120)
     plt.close(fig)
