@@ -44,5 +44,5 @@ def test_groups(tmp_path):
     assert (a["classes"], a["saved"]) == (4, 24)
     assert res["totals"][root]["all"]["saved"] == 48
     text = size.text_report(res)
-    assert "test_groups0/b_agent " in text and "TOTAL test_groups0 " in text
+    assert "test_groups0/b_agent " in text and "/test_groups0 " in text  # last two dirs
     assert size.macro_exp("queue_enum") == size.MACRO_EXP["queue_int"]

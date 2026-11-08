@@ -1,0 +1,103 @@
+core-v-verif/lib/uvm_agents/uvma_axi/src/obj/uvma_axi_cfg.sv:18: G1 object uvma_axi_cfg_c.trn_log_enabled: not copied
+core-v-verif/lib/uvm_agents/uvma_axi/src/obj/uvma_axi_cntxt.sv:24: G1 object uvma_axi_cntxt_c.mem: not copied
+core-v-verif/lib/uvm_agents/uvma_axi/src/seq/uvma_axi_base_seq_item.sv:48: G1 item uvma_axi_base_seq_item_c.cfg: not copied
+core-v-verif/lib/uvm_agents/uvma_axi5/src/obj/pure_agent_cfg.sv:57: G1 object uvma_axi_cfg_c.m_part_st: not copied
+core-v-verif/lib/uvm_agents/uvma_axi5/src/obj/uvma_axi_cfg.sv:54: G1 object uvma_axi_cfg_c.axi_lite: not copied
+core-v-verif/lib/uvm_agents/uvma_axi5/src/obj/uvma_axi_cfg.sv:55: G1 object uvma_axi_cfg_c.interface_name: not copied
+core-v-verif/lib/uvm_agents/uvma_axi5/src/obj/uvma_axi_cfg.sv:56: G1 object uvma_axi_cfg_c.is_reactive: not copied
+core-v-verif/lib/uvm_agents/uvma_axi5/src/obj/uvma_axi_cfg.sv:57: G1 object uvma_axi_cfg_c.id_management_enable: not copied
+core-v-verif/lib/uvm_agents/uvma_axi5/src/obj/uvma_axi_cfg.sv:58: G1 object uvma_axi_cfg_c.covergroup_enable: not copied
+core-v-verif/lib/uvm_agents/uvma_axi5/src/obj/uvma_axi_cfg.sv:68: G1 object uvma_axi_cfg_c.m_part_st: not copied
+core-v-verif/lib/uvm_agents/uvma_axi5/src/seq/uvma_axi_transaction.sv:138: G1 item uvma_axi_transaction_c.name: not copied
+core-v-verif/lib/uvm_agents/uvma_axi5/src/seq/uvma_axi_transaction.sv:147: G1 item uvma_axi_transaction_c.m_err: not copied
+core-v-verif/lib/uvm_agents/uvma_axi5/src/seq/uvma_axi_transaction.sv:203: G1 item uvma_axi_transaction_c.m_atop_type: not copied
+core-v-verif/lib/uvm_agents/uvma_axi5/src/seq/uvma_axi_transaction.sv:204: G1 item uvma_axi_transaction_c.m_atop_endianness: not copied
+core-v-verif/lib/uvm_agents/uvma_axi5/src/seq/uvma_axi_transaction.sv:205: G1 item uvma_axi_transaction_c.m_atop_op: not copied
+core-v-verif/lib/uvm_agents/uvma_axi5/src/seq/uvma_axi_transaction_cfg.sv:42: G1 object uvma_axi_transaction_cfg_c.name: not copied
+core-v-verif/lib/uvm_agents/uvma_clknrst/uvma_clknrst_cfg.sv:38: G1 object uvma_clknrst_cfg_c.mon_clk_lock_edge_count: not copied
+core-v-verif/lib/uvm_agents/uvma_clknrst/uvma_clknrst_cfg.sv:39: G1 object uvma_clknrst_cfg_c.mon_clk_lock_loss_period_percent: not copied
+core-v-verif/lib/uvm_agents/uvma_core_cntrl/uvma_core_cntrl_cfg.sv:30: G1 object uvma_core_cntrl_cfg_c.core_name: not copied
+core-v-verif/lib/uvm_agents/uvma_core_cntrl/uvma_core_cntrl_cfg.sv:41: G1 object uvma_core_cntrl_cfg_c.use_iss: not copied
+core-v-verif/lib/uvm_agents/uvma_core_cntrl/uvma_core_cntrl_cfg.sv:42: G1 object uvma_core_cntrl_cfg_c.iss_control_file: not copied
+core-v-verif/lib/uvm_agents/uvma_core_cntrl/uvma_core_cntrl_cfg.sv:94: G1 object uvma_core_cntrl_cfg_c.unsupported_csr_mask: not copied
+core-v-verif/lib/uvm_agents/uvma_core_cntrl/uvma_core_cntrl_cfg.sv:115: G1 object uvma_core_cntrl_cfg_c.mhartid_plusarg_valid: not copied
+core-v-verif/lib/uvm_agents/uvma_core_cntrl/uvma_core_cntrl_cfg.sv:118: G1 object uvma_core_cntrl_cfg_c.marchid_plusarg_valid: not copied
+core-v-verif/lib/uvm_agents/uvma_core_cntrl/uvma_core_cntrl_cfg.sv:121: G1 object uvma_core_cntrl_cfg_c.mvendorid_plusarg_valid: not copied
+core-v-verif/lib/uvm_agents/uvma_core_cntrl/uvma_core_cntrl_cfg.sv:124: G1 object uvma_core_cntrl_cfg_c.mimpid_plusarg_valid: not copied
+core-v-verif/lib/uvm_agents/uvma_cvxif/src/obj/uvma_cvxif_cfg.sv:21: G1 object uvma_cvxif_cfg_c.cvxif_plusarg_valid: not copied
+core-v-verif/lib/uvm_agents/uvma_cvxif/src/seq/uvma_cvxif_req_item.sv:18: G5 item uvma_cvxif_req_item_c: 9 data members, no field macros or do_* methods
+core-v-verif/lib/uvm_agents/uvma_cvxif/src/seq/uvma_cvxif_resp_item.sv:19: G5 item uvma_cvxif_resp_item_c: 10 data members, no field macros or do_* methods
+core-v-verif/lib/uvm_agents/uvma_fencei/seq/uvma_fencei_seq_item.sv:60: G4 item uvma_fencei_seq_item_c: convert2string does not call super.convert2string (base uvml_trn_seq_item_c)
+core-v-verif/lib/uvm_agents/uvma_interrupt/uvma_interrupt_cfg.sv:38: G1 object uvma_interrupt_cfg_c.valid_irq_mask: not copied
+core-v-verif/lib/uvm_agents/uvma_isacov/uvma_isacov_cfg.sv:37: G1 object uvma_isacov_cfg_c.core_cfg: not copied
+core-v-verif/lib/uvm_agents/uvma_isacov/uvma_isacov_instr.sv:75: G1 object uvma_isacov_instr_c.rvfi: not copied
+core-v-verif/lib/uvm_agents/uvma_isacov/uvma_isacov_mon_trn.sv:24: G1 item uvma_isacov_mon_trn_c.instr: not copied
+core-v-verif/lib/uvm_agents/uvma_isacov/uvma_isacov_mon_trn.sv:38: G4 item uvma_isacov_mon_trn_c: convert2string does not call super.convert2string (base uvml_trn_mon_trn_c)
+core-v-verif/lib/uvm_agents/uvma_obi_memory/src/obj/uvma_obi_memory_cfg.sv:40: G1 object uvma_obi_memory_cfg_c.mon_logger_name: not copied
+core-v-verif/lib/uvm_agents/uvma_obi_memory/src/obj/uvma_obi_memory_cfg.sv:44: G1 object uvma_obi_memory_cfg_c.ignore_rready: not copied
+core-v-verif/lib/uvm_agents/uvma_obi_memory/src/obj/uvma_obi_memory_cntxt.sv:38: G1 object uvma_obi_memory_cntxt_c.mem: not copied
+core-v-verif/lib/uvm_agents/uvma_obi_memory/src/obj/uvma_obi_memory_cntxt.sv:43: G1 object uvma_obi_memory_cntxt_c.mon_gnt_latency: not copied
+core-v-verif/lib/uvm_agents/uvma_obi_memory/src/obj/uvma_obi_memory_cntxt.sv:44: G1 object uvma_obi_memory_cntxt_c.mon_rvalid_latency: not copied
+core-v-verif/lib/uvm_agents/uvma_obi_memory/src/obj/uvma_obi_memory_cntxt.sv:45: G1 object uvma_obi_memory_cntxt_c.mon_rready_latency: not copied
+core-v-verif/lib/uvm_agents/uvma_obi_memory/src/obj/uvma_obi_memory_cntxt.sv:46: G1 object uvma_obi_memory_cntxt_c.mon_rp_hold: not copied
+core-v-verif/lib/uvm_agents/uvma_obi_memory/src/obj/uvma_obi_memory_mon_trn.sv:41: G1 item uvma_obi_memory_mon_trn_c.exokay: not copied
+core-v-verif/lib/uvm_agents/uvma_obi_memory/src/obj/uvma_obi_memory_mon_trn.sv:49: G1 item uvma_obi_memory_mon_trn_c.cfg: not copied
+core-v-verif/lib/uvm_agents/uvma_obi_memory/src/seq/uvma_obi_memory_base_seq_item.sv:33: G1 item uvma_obi_memory_base_seq_item_c.cfg: not copied
+core-v-verif/lib/uvm_agents/uvma_pma/src/obj/uvma_pma_mon_trn.sv:23: G1 item uvma_pma_mon_trn_c.cfg: not copied
+core-v-verif/lib/uvm_agents/uvma_rvfi/seq/uvma_rvfi_csr_seq_item.sv:28: G1 item uvma_rvfi_csr_seq_item_c.csr: not copied
+core-v-verif/lib/uvm_agents/uvma_rvfi/seq/uvma_rvfi_csr_seq_item.sv:29: G1 item uvma_rvfi_csr_seq_item_c.addr: not copied
+core-v-verif/lib/uvm_agents/uvma_rvfi/seq/uvma_rvfi_csr_seq_item.sv:80: G4 item uvma_rvfi_csr_seq_item_c: convert2string does not call super.convert2string (base uvml_trn_seq_item_c)
+core-v-verif/lib/uvm_agents/uvma_rvfi/seq/uvma_rvfi_instr_seq_item.sv:27: G1 item uvma_rvfi_instr_seq_item_c.nret_id: not copied
+core-v-verif/lib/uvm_agents/uvma_rvfi/seq/uvma_rvfi_instr_seq_item.sv:179: G4 item uvma_rvfi_instr_seq_item_c: convert2string does not call super.convert2string (base uvml_trn_seq_item_c)
+core-v-verif/lib/uvm_agents/uvma_rvfi/seq/uvma_rvfi_instr_table_seq_item.sv:69: G4 item uvma_rvfi_instr_table_seq_item_c: convert2string does not call super.convert2string (base uvml_trn_seq_item_c)
+core-v-verif/lib/uvm_agents/uvma_rvfi/uvma_rvfi_cfg.sv:32: G1 object uvma_rvfi_cfg_c.core_cfg: not copied
+core-v-verif/lib/uvm_agents/uvma_rvfi/uvma_rvfi_cfg.sv:58: G1 object uvma_rvfi_cfg_c.instr_name: not copied
+core-v-verif/lib/uvm_agents/uvma_rvvi/seq/uvma_rvvi_control_seq_item.sv:58: G4 item uvma_rvvi_control_seq_item_c: convert2string does not call super.convert2string (base uvml_trn_seq_item_c)
+core-v-verif/lib/uvm_agents/uvma_rvvi/seq/uvma_rvvi_state_seq_item.sv:28: G1 item uvma_rvvi_state_seq_item_c.valid: not copied
+core-v-verif/lib/uvm_agents/uvma_rvvi/seq/uvma_rvvi_state_seq_item.sv:86: G4 item uvma_rvvi_state_seq_item_c: convert2string does not call super.convert2string (base uvml_trn_seq_item_c)
+core-v-verif/lib/uvm_agents/uvma_rvvi/uvma_rvvi_cfg.sv:37: G1 object uvma_rvvi_cfg_c.core_cfg: not copied
+core-v-verif/lib/uvm_agents/uvma_rvvi/uvma_rvvi_cfg.sv:46: G1 object uvma_rvvi_cfg_c.volatile_mem_range_q: not copied
+core-v-verif/lib/uvm_agents/uvma_rvvi_ovpsim/seq/uvma_rvvi_ovpsim_control_seq_item.sv:105: G4 item uvma_rvvi_ovpsim_control_seq_item_c: convert2string does not call super.convert2string (base uvma_rvvi_control_seq_item_c)
+core-v-verif/lib/uvm_libs/uvml_mem/uvml_mem.sv:34: G1 object uvml_mem_c._mem: not copied
+core-v-verif/lib/uvm_libs/uvml_sb/uvml_sb_cntxt.sv:31: G1 object uvml_sb_cntxt_c.act_q: not copied
+core-v-verif/lib/uvm_libs/uvml_sb/uvml_sb_cntxt.sv:32: G1 object uvml_sb_cntxt_c.exp_q: not copied
+core-v-verif/lib/uvm_libs/uvml_sb/uvml_sb_cntxt.sv:33: G1 object uvml_sb_cntxt_c.exp_time_q: not copied
+core-v-verif/lib/uvm_libs/uvml_trn/uvml_trn_mon_trn.sv:28: G1 item uvml_trn_mon_trn_c.__uid: not copied
+core-v-verif/lib/uvm_libs/uvml_trn/uvml_trn_seq_item.sv:28: G1 item uvml_trn_seq_item_c.__uid: not copied
+core-v-verif/lib/cv_dv_utils/uvm/axi_superset_agent/axi_superset_config_c.svh:35: G1 object axi_superset_config_c.name: not copied
+core-v-verif/lib/cv_dv_utils/uvm/axi_superset_agent/axi_superset_txn_c.svh:133: G1 item axi_superset_txn_c.name: not copied
+core-v-verif/lib/cv_dv_utils/uvm/axi_superset_agent/axi_superset_txn_c.svh:142: G1 item axi_superset_txn_c.m_err: not copied
+core-v-verif/lib/cv_dv_utils/uvm/axi_superset_agent/axi_superset_txn_c.svh:188: G1 item axi_superset_txn_c.m_atop_type: not copied
+core-v-verif/lib/cv_dv_utils/uvm/axi_superset_agent/axi_superset_txn_c.svh:189: G1 item axi_superset_txn_c.m_atop_endianness: not copied
+core-v-verif/lib/cv_dv_utils/uvm/axi_superset_agent/axi_superset_txn_c.svh:190: G1 item axi_superset_txn_c.m_atop_op: not copied
+core-v-verif/lib/cv_dv_utils/uvm/axi_superset_agent/axi_superset_txn_cfg_c.svh:39: G1 object axi_superset_txn_cfg_c.name: not copied
+core-v-verif/lib/cv_dv_utils/uvm/generic_agent/generic_txn.svh:30: G1 item generic_txn.m_req: not copied
+core-v-verif/lib/cv_dv_utils/uvm/generic_agent/generic_txn.svh:31: G1 item generic_txn.m_rsp: not copied
+core-v-verif/lib/cv_dv_utils/uvm/generic_agent/generic_txn.svh:33: G1 item generic_txn.m_txn_idle_cycles: not copied
+core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model.svh:32: G1 object memory_txn.id: not copied
+core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model.svh:33: G1 object memory_txn.addr: not copied
+core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model.svh:34: G1 object memory_txn.data: not copied
+core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model.svh:35: G1 object memory_txn.strb: not copied
+core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model.svh:36: G1 object memory_txn.err: not copied
+core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model.svh:37: G1 object memory_txn.ex_fail: not copied
+core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model.svh:39: G1 object memory_txn.cmd: not copied
+core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model.svh:40: G1 object memory_txn.atop: not copied
+core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model.svh:48: G1 object memory_txn.req_ts: not copied
+core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model.svh:48: G1 object memory_txn.resp_ts: not copied
+core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model.svh:85: G5 object memory_c: 3 data members, no field macros or do_* methods
+core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model.svh:127: G1 object mem_txn_rsp_delay.m_rsp_cfg: not copied
+core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model_cfg.svh:68: G1 object memory_rsp_cfg.unsolicited_rsp: not copied
+core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model_cfg.svh:77: G1 object memory_rsp_cfg.num_amo_wr_errors: not copied
+core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model_cfg.svh:78: G1 object memory_rsp_cfg.num_rd_exclusive_fails: not copied
+core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model_cfg.svh:79: G1 object memory_rsp_cfg.num_wr_exclusive_fails: not copied
+core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model_cfg.svh:88: G1 object memory_rsp_cfg.m_bp: not copied
+core-v-verif/lib/cv_dv_utils/uvm/memory_shadow/memory_shadow_c.svh:62: G5 object memory_shadow_object: 5 data members, no field macros or do_* methods
+core-v-verif/lib/cv_dv_utils/uvm/perf_mon/perf_record_c.svh:31: G1 object perf_record_c.m_num_trans: not copied
+core-v-verif/cv32e40p/env/uvme/uvme_cv32e40p_cfg.sv:38: G1 object uvme_cv32e40p_cfg_c.zero_stall_sim: not copied
+core-v-verif/cv32e40p/env/uvme/uvme_cv32e40p_cfg.sv:39: G1 object uvme_cv32e40p_cfg_c.max_data_zero_instr_stall: not copied
+core-v-verif/cv32e40p/env/uvme/uvme_rv32isa_covg_trn.sv:29: G2 item uvme_rv32isa_covg_trn_c.ins: copied (do_copy) but not compared
+core-v-verif/cv32e40s/env/corev-dv/cv32e40s_pma_cfg.sv:19: G5 object cv32e40s_pma_cfg: 2 data members, no field macros or do_* methods
+core-v-verif/cv32e40s/env/uvme/uvme_cv32e40s_cntxt.sv:43: G1 object uvme_cv32e40s_cntxt_c.fencei_cntxt: not copied
+core-v-verif/cv32e40x/env/corev-dv/cv32e40x_pma_cfg.sv:19: G5 object cv32e40x_pma_cfg: 2 data members, no field macros or do_* methods
+core-v-verif/cv32e40x/env/uvme/uvme_cv32e40x_cntxt.sv:43: G1 object uvme_cv32e40x_cntxt_c.fencei_cntxt: not copied
+classes checked {'item': 40, 'object': 63}; findings {'item': {'G1': 25, 'G2': 1, 'G4': 8, 'G5': 2}, 'object': {'G1': 62, 'G5': 4}}

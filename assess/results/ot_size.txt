@@ -1,0 +1,56 @@
+group (data classes)                                 cls fields  macro   hand  weave  saved     exp    gen
+dv/sv/alert_agent                                      2     15     19      0      2     17    2484    465
+dv/sv/cip_lib                                          2      5      9      0      2      7    1008    435
+dv/sv/csrng_agent                                      2      0      4     34      2     36     104    360
+dv/sv/dv_base_agent                                    2      9     13      0      2     11    1522    135
+dv/sv/dv_lib                                           1     10     12      0      1     11    1713    225
+dv/sv/entropy_src_xht_agent                            1      1      3      0      1      2     204     30
+dv/sv/esc_agent                                        2     10     14      0      2     12    1724    315
+dv/sv/flash_phy_prim_agent                             2      0      4      0      2      2     104     75
+dv/sv/i2c_agent                                        4     51     59     33     26     66    8826    870
+dv/sv/jtag_agent                                       1      9     11      0      3      8    1470    240
+dv/sv/jtag_dmi_agent                                   2     16     20      0      2     18    3252    240
+dv/sv/jtag_riscv_agent                                 2      9     13      0      2     11    1472    270
+dv/sv/key_sideload_agent                               2      4      8      0      2      6     712     90
+dv/sv/kmac_app_agent                                   5      0      0    166      0    166       0    375
+dv/sv/mem_bkdr_util                                    1      0      0     17      0     17       0    360
+dv/sv/pattgen_agent                                    2      4      8      0      2      6    1267    120
+dv/sv/push_pull_agent                                  2     21     25      8      2     31    3862    360
+dv/sv/pwm_monitor                                      2      7     11     12      2     21    1168    180
+dv/sv/reset_agent                                      1      0      0     24      0     24       0     15
+dv/sv/rng_agent                                        2      0      4      0      2      2     104     45
+dv/sv/spi_agent                                        3     46     52     16      5     63    9246    930
+dv/sv/tl_agent                                         3     36     42     59     11     90    5848    870
+dv/sv/uart_agent                                       2     13     17      0      6     11    2130    255
+dv/sv/usb20_agent                                      6     11     23     26      6     43    2423    480
+hw/ip/adc_ctrl                                         3     14     20     24      7     37    2334    315
+hw/ip/aes                                              3      0      2    173      1    174      52   2160
+hw/ip/aon_timer                                        1      0      2      0      1      1      52     15
+hw/ip/cheriot_mem_sys                                  1      0      2      0      1      1      52      0
+hw/ip/csrng                                            1      0      2     49      1     50      52   1110
+hw/ip/dma                                              2     30     34     39      2     71    5886    795
+hw/ip/edn                                              1      2      4     35      1     38     526    570
+hw/ip/entropy_src                                      2      0      0    115      0    115       0   1890
+hw/ip/i2c                                              1      1      3      0      1      2     289    375
+hw/ip/i3c                                              1      1      3      0      1      2     204     45
+hw/ip/keymgr_dpe                                       1      0      2      0      1      1      52     45
+hw/ip/kmac                                             1      0      2      0      1      1      52    195
+hw/ip/lc_ctrl                                          2      7     11      0      2      9    1168    435
+hw/ip/mbx                                              2      9     13      0      2     11    1607    165
+hw/ip/otbn                                             4     28     36      0      5     31    4879    690
+hw/ip/pattgen                                          2      1      3     17      1     19     289    195
+hw/ip/racl_ctrl                                        2      0      0     23      0     23       0    105
+hw/ip/rom_ctrl                                         2      0      0     59      0     59       0     75
+hw/ip/rv_dm                                            2      5      7     51      1     57    1237    435
+hw/ip/spi_device                                       1      2      4      0      1      3     526    210
+hw/ip/spi_host                                         3      1      3     50      1     52     289    660
+hw/ip/sram_ctrl                                        1      0      2      0      1      1      52    120
+hw/ip/sysrst_ctrl                                      1      0      2      0      1      1      52      0
+hw/ip/tlul                                             1      4      6      0      1      5    1174    315
+hw/ip/uart                                             1      1      3      0      1      2     289     45
+hw/ip/usbdev                                           1      3      5      0      1      4     593    180
+hw/top_earlgrey/dv                                     1      4      6      0      1      5    1000    585
+hw/top_earlgrey/ip_autogen                             5      2     12      0      5      7    1078    330
+TOTAL dv/sv                                           54    277    371    395     85    681   50643   7740
+TOTAL hw/ip                                           43    109    171    635     36    770   21706  11145
+TOTAL hw/top_earlgrey                                  6      6     18      0      6     12    2078    915

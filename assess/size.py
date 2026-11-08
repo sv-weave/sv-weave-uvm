@@ -122,11 +122,13 @@ def text_report(res):
         "group (data classes)", "cls", "fields", "macro", "hand", "weave", "saved",
         "exp", "gen")
     lines = [hdr]
-    def short(key):  # "<root>:<group>" -> "<root basename>/<group>"
+    def label(root):  # last two dirs: cv32e40p/env and cv32e40s/env stay apart
+        return "/".join(root.rstrip("/").split("/")[-2:])
+    def short(key):  # "<root>:<group>" -> "<label>/<group>"
         root, _, grp = key.rpartition(":")
-        return os.path.basename(root.rstrip("/")) + "/" + grp
+        return label(root) + "/" + grp
     for name, tot in [(short(k), t) for k, t in res["groups"].items()] + [
-            ("TOTAL " + os.path.basename(r.rstrip("/")), t)
+            ("TOTAL " + label(r), t)
             for r, t in res["totals"].items()]:
         t = tot.get("data")
         if t:

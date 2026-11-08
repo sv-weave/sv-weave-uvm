@@ -1,0 +1,915 @@
+opentitan/hw/dv/sv/alert_agent/alert_agent_cfg.sv:8: G1 object alert_agent_cfg.is_async: not copied
+opentitan/hw/dv/sv/alert_agent/alert_agent_cfg.sv:9: G1 object alert_agent_cfg.en_ping_cov: not copied
+opentitan/hw/dv/sv/alert_agent/alert_agent_cfg.sv:10: G1 object alert_agent_cfg.en_lpg_cov: not copied
+opentitan/hw/dv/sv/alert_agent/alert_agent_cfg.sv:11: G1 object alert_agent_cfg.alert_init_done: not copied
+opentitan/hw/dv/sv/alert_agent/alert_agent_cfg.sv:12: G1 object alert_agent_cfg.en_alert_lpg: not copied
+opentitan/hw/dv/sv/alert_agent/alert_agent_cfg.sv:17: G1 object alert_agent_cfg.bypass_alert_ready_to_end_check: not copied
+opentitan/hw/dv/sv/alert_agent/alert_agent_cfg.sv:21: G1 object alert_agent_cfg.start_default_rsp_seq: not copied
+opentitan/hw/dv/sv/alert_agent/alert_agent_cfg.sv:24: G1 object alert_agent_cfg.ping_timeout: not copied
+opentitan/hw/dv/sv/alert_agent/alert_agent_cfg.sv:27: G1 object alert_agent_cfg.under_ping_handshake: not copied
+opentitan/hw/dv/sv/alert_agent/alert_agent_cfg.sv:30: G1 object alert_agent_cfg.under_ping_handshake_ph_2: not copied
+opentitan/hw/dv/sv/alert_agent/alert_agent_cfg.sv:33: G1 object alert_agent_cfg.clk_freq_mhz: not copied
+opentitan/hw/dv/sv/alert_agent/alert_agent_cfg.sv:50: G1 object alert_agent_cfg.ping_delay_min: not copied
+opentitan/hw/dv/sv/alert_agent/alert_agent_cfg.sv:55: G1 object alert_agent_cfg.fast_rcvr: not copied
+opentitan/hw/dv/sv/alert_agent/alert_agent_cfg.sv:57: G1 object alert_agent_cfg.ping_timeout_cycle: not copied
+opentitan/hw/dv/sv/alert_agent/alert_agent_cfg.sv:60: G1 object alert_agent_cfg.ping_count: not copied
+opentitan/hw/dv/sv/alert_agent/alert_agent_cfg.sv:63: G1 object alert_agent_cfg.active_ping: not copied
+opentitan/hw/dv/sv/cip_lib/cip_base_env_cfg.sv:8: G1 object cip_base_env_cfg.en_tl_err_cov: not copied
+opentitan/hw/dv/sv/cip_lib/cip_base_env_cfg.sv:9: G1 object cip_base_env_cfg.en_tl_intg_err_cov: not copied
+opentitan/hw/dv/sv/cip_lib/cip_base_env_cfg.sv:13: G1 object cip_base_env_cfg.en_scb_tl_err_chk: not copied
+opentitan/hw/dv/sv/cip_lib/cip_base_env_cfg.sv:16: G1 object cip_base_env_cfg.en_scb_ping_chk: not copied
+opentitan/hw/dv/sv/cip_lib/cip_base_env_cfg.sv:24: G1 object cip_base_env_cfg.will_reset: not copied
+opentitan/hw/dv/sv/cip_lib/cip_base_env_cfg.sv:33: G1 object cip_base_env_cfg.can_reset_with_csr_accesses: not copied
+opentitan/hw/dv/sv/cip_lib/cip_base_env_cfg.sv:40: G1 object cip_base_env_cfg.m_tl_agent_cfg: not copied
+opentitan/hw/dv/sv/cip_lib/cip_base_env_cfg.sv:44: G1 object cip_base_env_cfg.tl_intg_alert_name: not copied
+opentitan/hw/dv/sv/cip_lib/cip_base_env_cfg.sv:45: G1 object cip_base_env_cfg.sec_cm_alert_name: not copied
+opentitan/hw/dv/sv/cip_lib/cip_base_env_cfg.sv:51: G1 object cip_base_env_cfg.tl_intg_alert_fields: not copied
+opentitan/hw/dv/sv/cip_lib/cip_base_env_cfg.sv:54: G1 object cip_base_env_cfg.tl_mem_access_gated: not copied
+opentitan/hw/dv/sv/cip_lib/cip_base_env_cfg.sv:57: G1 object cip_base_env_cfg.is_chip: not copied
+opentitan/hw/dv/sv/cip_lib/cip_base_env_cfg.sv:61: G1 object cip_base_env_cfg.shadow_update_err_status_fields: not copied
+opentitan/hw/dv/sv/cip_lib/cip_base_env_cfg.sv:62: G1 object cip_base_env_cfg.shadow_storage_err_status_fields: not copied
+opentitan/hw/dv/sv/cip_lib/cip_base_env_cfg.sv:65: G1 object cip_base_env_cfg.m_edn_pull_agent_cfgs: not copied
+opentitan/hw/dv/sv/cip_lib/cip_base_env_cfg.sv:68: G1 object cip_base_env_cfg.edn_clk_freq_mhz: not copied
+opentitan/hw/dv/sv/cip_lib/cip_base_env_cfg.sv:69: G1 object cip_base_env_cfg.tlul_and_edn_clk_freq_diff: not copied
+opentitan/hw/dv/sv/cip_lib/cip_base_env_cfg.sv:72: G1 object cip_base_env_cfg.intr_vif: not copied
+opentitan/hw/dv/sv/cip_lib/cip_base_env_cfg.sv:73: G1 object cip_base_env_cfg.rst_shadowed_vif: not copied
+opentitan/hw/dv/sv/cip_lib/cip_base_env_cfg.sv:77: G1 object cip_base_env_cfg.tl_access_timeout_ns: not copied
+opentitan/hw/dv/sv/cip_lib/cip_base_env_cfg.sv:82: G1 object cip_base_env_cfg.disable_d_user_data_intg_check_for_passthru_mem: not copied
+opentitan/hw/dv/sv/cip_lib/cip_base_env_cfg.sv:90: G1 object cip_base_env_cfg.num_edn: not copied
+opentitan/hw/dv/sv/cip_lib/cip_base_env_cfg.sv:100: G1 object cip_base_env_cfg.disabled_prim_cdc_rand_delays: not copied
+opentitan/hw/dv/sv/cip_lib/cip_base_env_cfg.sv:104: G1 object cip_base_env_cfg.list_of_alerts: not copied
+opentitan/hw/dv/sv/csrng_agent/csrng_agent_cfg.sv:5: G5 object csrng_agent_cfg: 16 data members, no field macros or do_* methods
+opentitan/hw/dv/sv/csrng_agent/csrng_item.sv:12: G2 item csrng_item.acmd: copied (do_copy) but not compared
+opentitan/hw/dv/sv/csrng_agent/csrng_item.sv:13: G2 item csrng_item.flags: copied (do_copy) but not compared
+opentitan/hw/dv/sv/csrng_agent/csrng_item.sv:14: G2 item csrng_item.clen: copied (do_copy) but not compared
+opentitan/hw/dv/sv/csrng_agent/csrng_item.sv:15: G2 item csrng_item.glen: copied (do_copy) but not compared
+opentitan/hw/dv/sv/csrng_agent/csrng_item.sv:16: G2 item csrng_item.cmd_data_q: copied (do_copy) but not compared
+opentitan/hw/dv/sv/csrng_agent/csrng_item.sv:18: G2 item csrng_item.status: copied (do_copy) but not compared
+opentitan/hw/dv/sv/csrng_agent/csrng_item.sv:19: G2 item csrng_item.fips_q: copied (do_copy) but not compared
+opentitan/hw/dv/sv/csrng_agent/csrng_item.sv:20: G2 item csrng_item.genbits_q: copied (do_copy) but not compared
+opentitan/hw/dv/sv/dv_base_reg/csr_excl_item.sv:8: G5 object csr_excl_item: 1 data members, no field macros or do_* methods
+opentitan/hw/dv/sv/dv_base_reg/dv_base_lockable_field_cov.sv:6: G5 object dv_base_lockable_field_cov: 3 data members, no field macros or do_* methods
+opentitan/hw/dv/sv/dv_base_reg/dv_base_mubi_cov.sv:86: G5 object dv_base_mubi_cov: 9 data members, no field macros or do_* methods
+opentitan/hw/dv/sv/dv_lib/dv_base_env_cfg.sv:31: G1 object dv_base_env_cfg.under_reset: not copied
+opentitan/hw/dv/sv/dv_lib/dv_base_env_cfg.sv:36: G1 object dv_base_env_cfg.is_initialized: not copied
+opentitan/hw/dv/sv/dv_lib/dv_base_env_cfg.sv:53: G1 object dv_base_env_cfg.ral_type_name: not copied
+opentitan/hw/dv/sv/dv_lib/dv_base_env_cfg.sv:90: G1 object dv_base_env_cfg.ral: not copied
+opentitan/hw/dv/sv/dv_lib/dv_base_env_cfg.sv:96: G1 object dv_base_env_cfg.clk_freq_mhz: not copied
+opentitan/hw/dv/sv/entropy_src_xht_agent/entropy_src_xht_agent_cfg.sv:10: G1 object entropy_src_xht_agent_cfg.unfiltered_monitor_traffic: not copied
+opentitan/hw/dv/sv/entropy_src_xht_agent/entropy_src_xht_item.sv:5: G5 item entropy_src_xht_item: 6 data members, no field macros or do_* methods
+opentitan/hw/dv/sv/esc_agent/esc_agent_cfg.sv:10: G1 object esc_agent_cfg.is_async: not copied
+opentitan/hw/dv/sv/esc_agent/esc_agent_cfg.sv:11: G1 object esc_agent_cfg.en_ping_cov: not copied
+opentitan/hw/dv/sv/esc_agent/esc_agent_cfg.sv:12: G1 object esc_agent_cfg.en_lpg_cov: not copied
+opentitan/hw/dv/sv/esc_agent/esc_agent_cfg.sv:16: G1 object esc_agent_cfg.bypass_esc_ready_to_end_check: not copied
+opentitan/hw/dv/sv/esc_agent/esc_agent_cfg.sv:19: G1 object esc_agent_cfg.ping_timeout: not copied
+opentitan/hw/dv/sv/esc_agent/esc_agent_cfg.sv:22: G1 object esc_agent_cfg.under_ping_handshake: not copied
+opentitan/hw/dv/sv/esc_agent/esc_agent_cfg.sv:25: G1 object esc_agent_cfg.under_ping_handshake_ph_2: not copied
+opentitan/hw/dv/sv/esc_agent/esc_agent_cfg.sv:28: G1 object esc_agent_cfg.clk_freq_mhz: not copied
+opentitan/hw/dv/sv/esc_agent/esc_agent_cfg.sv:39: G1 object esc_agent_cfg.handshake_timeout_cycle: not copied
+opentitan/hw/dv/sv/esc_agent/esc_agent_cfg.sv:40: G1 object esc_agent_cfg.ping_timeout_cycle: not copied
+opentitan/hw/dv/sv/esc_agent/esc_agent_cfg.sv:43: G1 object esc_agent_cfg.ping_count: not copied
+opentitan/hw/dv/sv/flash_phy_prim_agent/flash_phy_prim_agent_cfg.sv:5: G5 object flash_phy_prim_agent_cfg: 2 data members, no field macros or do_* methods
+opentitan/hw/dv/sv/flash_phy_prim_agent/flash_phy_prim_item.sv:5: G5 item flash_phy_prim_item: 3 data members, no field macros or do_* methods
+opentitan/hw/dv/sv/i2c_agent/i2c_agent_cfg.sv:7: G1 object i2c_agent_cfg.host_latency_cycles: not copied
+opentitan/hw/dv/sv/i2c_agent/i2c_agent_cfg.sv:8: G1 object i2c_agent_cfg.device_latency_cycles: not copied
+opentitan/hw/dv/sv/i2c_agent/i2c_agent_cfg.sv:12: G1 object i2c_agent_cfg.timing_cfg: not copied
+opentitan/hw/dv/sv/i2c_agent/i2c_agent_cfg.sv:13: G1 object i2c_agent_cfg.host_stretch_test_mode: not copied
+opentitan/hw/dv/sv/i2c_agent/i2c_agent_cfg.sv:21: G1 object i2c_agent_cfg.period_q: not copied
+opentitan/hw/dv/sv/i2c_agent/i2c_agent_cfg.sv:23: G1 object i2c_agent_cfg.host_scl_start: not copied
+opentitan/hw/dv/sv/i2c_agent/i2c_agent_cfg.sv:24: G1 object i2c_agent_cfg.host_scl_stop: not copied
+opentitan/hw/dv/sv/i2c_agent/i2c_agent_cfg.sv:25: G1 object i2c_agent_cfg.host_scl_force_high: not copied
+opentitan/hw/dv/sv/i2c_agent/i2c_agent_cfg.sv:26: G1 object i2c_agent_cfg.host_scl_force_low: not copied
+opentitan/hw/dv/sv/i2c_agent/i2c_agent_cfg.sv:34: G1 object i2c_agent_cfg.got_stop: not copied
+opentitan/hw/dv/sv/i2c_agent/i2c_agent_cfg.sv:36: G1 object i2c_agent_cfg.rcvd_rd_byte: not copied
+opentitan/hw/dv/sv/i2c_agent/i2c_agent_cfg.sv:43: G1 object i2c_agent_cfg.host_scl_pause_en: not copied
+opentitan/hw/dv/sv/i2c_agent/i2c_agent_cfg.sv:44: G1 object i2c_agent_cfg.host_scl_pause_req: not copied
+opentitan/hw/dv/sv/i2c_agent/i2c_agent_cfg.sv:45: G1 object i2c_agent_cfg.host_scl_pause_ack: not copied
+opentitan/hw/dv/sv/i2c_agent/i2c_agent_cfg.sv:46: G1 object i2c_agent_cfg.host_scl_pause: not copied
+opentitan/hw/dv/sv/i2c_agent/i2c_agent_cfg.sv:47: G1 object i2c_agent_cfg.host_scl_pause_cyc: not copied
+opentitan/hw/dv/sv/i2c_agent/i2c_agent_cfg.sv:51: G1 object i2c_agent_cfg.allow_ack_stop: not copied
+opentitan/hw/dv/sv/i2c_agent/i2c_agent_cfg.sv:52: G1 object i2c_agent_cfg.ack_stop_det: not copied
+opentitan/hw/dv/sv/i2c_agent/i2c_agent_cfg.sv:59: G1 object i2c_agent_cfg.target_addr0: not copied
+opentitan/hw/dv/sv/i2c_agent/i2c_agent_cfg.sv:60: G1 object i2c_agent_cfg.target_addr1: not copied
+opentitan/hw/dv/sv/i2c_agent/i2c_agent_cfg.sv:71: G1 object i2c_agent_cfg.read_addr_q: not copied
+opentitan/hw/dv/sv/i2c_agent/i2c_agent_cfg.sv:79: G1 object i2c_agent_cfg.driver_rst: not copied
+opentitan/hw/dv/sv/i2c_agent/i2c_agent_cfg.sv:81: G1 object i2c_agent_cfg.monitor_rst: not copied
+opentitan/hw/dv/sv/i2c_agent/i2c_item.sv:55: G1 item i2c_item.pname: not copied
+opentitan/hw/dv/sv/jtag_agent/jtag_agent_cfg.sv:5: G5 object jtag_agent_cfg: 3 data members, no field macros or do_* methods
+opentitan/hw/dv/sv/jtag_agent/jtag_item.sv:38: G1 item jtag_item.dr_pause_cycle: not copied
+opentitan/hw/dv/sv/jtag_agent/jtag_item.sv:41: G1 item jtag_item.ir_pause_cycle: not copied
+opentitan/hw/dv/sv/jtag_agent/jtag_item.sv:43: G1 item jtag_item.dummy_ir: not copied
+opentitan/hw/dv/sv/jtag_agent/jtag_item.sv:45: G1 item jtag_item.dummy_dr: not copied
+opentitan/hw/dv/sv/jtag_agent/jtag_item.sv:47: G1 item jtag_item.exit_via_pause_ir: not copied
+opentitan/hw/dv/sv/jtag_agent/jtag_item.sv:49: G1 item jtag_item.exit_via_pause_dr: not copied
+opentitan/hw/dv/sv/jtag_agent/jtag_item.sv:51: G1 item jtag_item.reset_tap_fsm: not copied
+opentitan/hw/dv/sv/jtag_dmi_agent/jtag_rv_debugger.sv:11: G5 object jtag_rv_debugger: 12 data members, no field macros or do_* methods
+opentitan/hw/dv/sv/jtag_riscv_agent/jtag_riscv_agent_cfg.sv:5: G5 object jtag_riscv_agent_cfg: 9 data members, no field macros or do_* methods
+opentitan/hw/dv/sv/key_sideload_agent/key_sideload_agent_cfg.sv:5: G5 object key_sideload_agent_cfg: 1 data members, no field macros or do_* methods
+opentitan/hw/dv/sv/key_sideload_agent/key_sideload_item.sv:18: G1 item key_sideload_item.m_stop_requested: not copied
+opentitan/hw/dv/sv/kmac_app_agent/kmac_app_agent_cfg.sv:13: G1 object kmac_app_agent_cfg.max_idle_time_not_ready: not copied
+opentitan/hw/dv/sv/kmac_app_agent/kmac_app_agent_cfg.sv:18: G1 object kmac_app_agent_cfg.idle_ready_pct: not copied
+opentitan/hw/dv/sv/kmac_app_agent/kmac_app_agent_cfg.sv:22: G1 object kmac_app_agent_cfg.req_delay_min: not copied
+opentitan/hw/dv/sv/kmac_app_agent/kmac_app_agent_cfg.sv:23: G1 object kmac_app_agent_cfg.req_delay_max: not copied
+opentitan/hw/dv/sv/kmac_app_agent/kmac_app_agent_cfg.sv:27: G1 object kmac_app_agent_cfg.rsp_delay_min: not copied
+opentitan/hw/dv/sv/kmac_app_agent/kmac_app_agent_cfg.sv:28: G1 object kmac_app_agent_cfg.rsp_delay_max: not copied
+opentitan/hw/dv/sv/kmac_app_agent/kmac_app_agent_cfg.sv:31: G1 object kmac_app_agent_cfg.zero_delays: not copied
+opentitan/hw/dv/sv/kmac_app_agent/kmac_app_agent_cfg.sv:34: G1 object kmac_app_agent_cfg.error_rsp_pct: not copied
+opentitan/hw/dv/sv/kmac_app_agent/kmac_app_agent_cfg.sv:37: G1 object kmac_app_agent_cfg.constant_share_means_error: not copied
+opentitan/hw/dv/sv/kmac_app_agent/kmac_app_agent_cfg.sv:40: G1 object kmac_app_agent_cfg.inject_zero_in_host_strb: not copied
+opentitan/hw/dv/sv/kmac_app_agent/kmac_app_agent_cfg.sv:43: G1 object kmac_app_agent_cfg.has_masking: not copied
+opentitan/hw/dv/sv/kmac_app_agent/kmac_app_agent_cfg.sv:48: G1 object kmac_app_agent_cfg.rsp_digest_hs: not copied
+opentitan/hw/dv/sv/kmac_app_agent/kmac_app_mon_item.sv:10: G2 item kmac_app_mon_item.m_req: copied (do_copy) but not compared
+opentitan/hw/dv/sv/kmac_app_agent/kmac_app_mon_item.sv:11: G2 item kmac_app_mon_item.m_rsp: copied (do_copy) but not compared
+opentitan/hw/dv/sv/kmac_app_agent/kmac_app_req_item.sv:27: G2 item kmac_app_req_item.m_delay: copied (do_copy) but not compared
+opentitan/hw/dv/sv/kmac_app_agent/kmac_app_rsp_item.sv:20: G2 item kmac_app_rsp_item.m_delay: copied (do_copy) but not compared
+opentitan/hw/dv/sv/mem_bkdr_scb/mem_bkdr_scb.sv:5: G5 object mem_bkdr_scb: 3 data members, no field macros or do_* methods
+opentitan/hw/dv/sv/mem_bkdr_util/mem_bkdr_util.sv:17: G1 object mem_bkdr_util.path: not copied
+opentitan/hw/dv/sv/mem_bkdr_util/mem_bkdr_util.sv:21: G1 object mem_bkdr_util.tiling_path: not copied
+opentitan/hw/dv/sv/mem_bkdr_util/mem_bkdr_util.sv:25: G1 object mem_bkdr_util.tiling_suffix_fmt_str: not copied
+opentitan/hw/dv/sv/mem_bkdr_util/mem_bkdr_util.sv:28: G1 object mem_bkdr_util.depth: not copied
+opentitan/hw/dv/sv/mem_bkdr_util/mem_bkdr_util.sv:31: G1 object mem_bkdr_util.tile_depth: not copied
+opentitan/hw/dv/sv/mem_bkdr_util/mem_bkdr_util.sv:35: G1 object mem_bkdr_util.words_per_row: not copied
+opentitan/hw/dv/sv/mem_bkdr_util/mem_bkdr_util.sv:40: G1 object mem_bkdr_util.num_bit_slices: not copied
+opentitan/hw/dv/sv/mem_bkdr_util/mem_bkdr_util.sv:44: G1 object mem_bkdr_util.bit_slice_tiling_path: not copied
+opentitan/hw/dv/sv/mem_bkdr_util/mem_bkdr_util.sv:45: G1 object mem_bkdr_util.bit_slice_tiling_suffix_fmt_str: not copied
+opentitan/hw/dv/sv/mem_bkdr_util/mem_bkdr_util.sv:48: G1 object mem_bkdr_util.width: not copied
+opentitan/hw/dv/sv/mem_bkdr_util/mem_bkdr_util.sv:51: G1 object mem_bkdr_util.num_entries: not copied
+opentitan/hw/dv/sv/mem_bkdr_util/mem_bkdr_util.sv:54: G1 object mem_bkdr_util.err_detection_scheme: not copied
+opentitan/hw/dv/sv/mem_bkdr_util/mem_bkdr_util.sv:58: G1 object mem_bkdr_util.row_adapter: not copied
+opentitan/hw/dv/sv/mem_bkdr_util/mem_bkdr_util.sv:65: G1 object mem_bkdr_util.data_width: not copied
+opentitan/hw/dv/sv/mem_bkdr_util/mem_bkdr_util.sv:66: G1 object mem_bkdr_util.byte_width: not copied
+opentitan/hw/dv/sv/mem_bkdr_util/mem_bkdr_util.sv:67: G1 object mem_bkdr_util.bytes_per_word: not copied
+opentitan/hw/dv/sv/mem_bkdr_util/mem_bkdr_util.sv:68: G1 object mem_bkdr_util.size_bytes: not copied
+opentitan/hw/dv/sv/mem_bkdr_util/mem_bkdr_util.sv:69: G1 object mem_bkdr_util.addr_lsb: not copied
+opentitan/hw/dv/sv/mem_bkdr_util/mem_bkdr_util.sv:70: G1 object mem_bkdr_util.addr_width: not copied
+opentitan/hw/dv/sv/mem_bkdr_util/mem_bkdr_util.sv:71: G1 object mem_bkdr_util.byte_addr_width: not copied
+opentitan/hw/dv/sv/mem_bkdr_util/mem_bkdr_util.sv:74: G1 object mem_bkdr_util.addr_range: not copied
+opentitan/hw/dv/sv/mem_bkdr_util/mem_bkdr_util.sv:80: G1 object mem_bkdr_util.max_errors: not copied
+opentitan/hw/dv/sv/mem_bkdr_util/mem_bkdr_util.sv:88: G1 object mem_bkdr_util.file: not copied
+opentitan/hw/dv/sv/mem_bkdr_util/mem_bkdr_util.sv:93: G1 object mem_bkdr_util.num_prince_rounds_half: not copied
+opentitan/hw/dv/sv/mem_model/mem_model.sv:5: G5 object mem_model: 1 data members, no field macros or do_* methods
+opentitan/hw/dv/sv/pattgen_agent/pattgen_agent_cfg.sv:6: G1 object pattgen_agent_cfg.en_monitor: not copied
+opentitan/hw/dv/sv/pattgen_agent/pattgen_agent_cfg.sv:12: G1 object pattgen_agent_cfg.channel_done: not copied
+opentitan/hw/dv/sv/pattgen_agent/pattgen_agent_cfg.sv:18: G1 object pattgen_agent_cfg.chk_prediv: not copied
+opentitan/hw/dv/sv/pattgen_agent/pattgen_agent_cfg.sv:22: G1 object pattgen_agent_cfg.div: not copied
+opentitan/hw/dv/sv/push_pull_agent/push_pull_agent_cfg.sv:25: G1 object push_pull_agent_cfg.hold_h_data_until_next_req: not copied
+opentitan/hw/dv/sv/push_pull_agent/push_pull_agent_cfg.sv:26: G1 object push_pull_agent_cfg.hold_d_data_until_next_req: not copied
+opentitan/hw/dv/sv/push_pull_agent/push_pull_agent_cfg.sv:49: G1 object push_pull_agent_cfg.ignore_push_host_backpressure: not copied
+opentitan/hw/dv/sv/push_pull_agent/push_pull_driver_lib.sv:78: G5 object push_pull_sub_driver: 1 data members, no field macros or do_* methods
+opentitan/hw/dv/sv/pwm_monitor/pwm_monitor_cfg.sv:5: G5 object pwm_monitor_cfg: 5 data members, no field macros or do_* methods
+opentitan/hw/dv/sv/rng_agent/rng_agent_cfg.sv:5: G5 object rng_agent_cfg: 3 data members, no field macros or do_* methods
+opentitan/hw/dv/sv/scoreboard/scoreboard_queue.sv:5: G5 object scoreboard_queue: 9 data members, no field macros or do_* methods
+opentitan/hw/dv/sv/sec_cm/sec_cm_base_if_proxy.sv:6: G5 object sec_cm_base_if_proxy: 3 data members, no field macros or do_* methods
+opentitan/hw/dv/sv/spi_agent/spi_agent_cfg.sv:8: G1 object spi_agent_cfg.en_monitor: not copied
+opentitan/hw/dv/sv/spi_agent/spi_agent_cfg.sv:9: G1 object spi_agent_cfg.en_monitor_checks: not copied
+opentitan/hw/dv/sv/spi_agent/spi_agent_cfg.sv:12: G1 object spi_agent_cfg.byte_order: not copied
+opentitan/hw/dv/sv/spi_agent/spi_agent_cfg.sv:18: G1 object spi_agent_cfg.sck_on: not copied
+opentitan/hw/dv/sv/spi_agent/spi_agent_cfg.sv:24: G1 object spi_agent_cfg.enable_plain_sampling: not copied
+opentitan/hw/dv/sv/spi_agent/spi_agent_cfg.sv:31: G1 object spi_agent_cfg.csid: not copied
+opentitan/hw/dv/sv/spi_agent/spi_agent_cfg.sv:33: G1 object spi_agent_cfg.csb_sel_in_cfg: not copied
+opentitan/hw/dv/sv/spi_agent/spi_agent_cfg.sv:44: G1 object spi_agent_cfg.cmd_infos: not copied
+opentitan/hw/dv/sv/spi_agent/spi_agent_cfg.sv:46: G1 object spi_agent_cfg.flash_addr_4b_en: not copied
+opentitan/hw/dv/sv/spi_agent/spi_agent_cfg.sv:49: G1 object spi_agent_cfg.ongoing_flash_cmd: not copied
+opentitan/hw/dv/sv/spi_agent/spi_agent_cfg.sv:55: G1 object spi_agent_cfg.spi_cmd_width: not copied
+opentitan/hw/dv/sv/spi_agent/spi_agent_cfg.sv:58: G1 object spi_agent_cfg.num_bytes_per_trans_in_mon: not copied
+opentitan/hw/dv/sv/spi_agent/spi_agent_cfg.sv:62: G1 object spi_agent_cfg.min_extra_dly_ns_btw_sck: not copied
+opentitan/hw/dv/sv/spi_agent/spi_agent_cfg.sv:68: G1 object spi_agent_cfg.min_extra_dly_ns_btw_word: not copied
+opentitan/hw/dv/sv/spi_agent/spi_item.sv:41: G1 item spi_item.mon_item_complete: not copied
+opentitan/hw/dv/sv/spi_agent/spi_item.sv:44: G1 item spi_item.past_dummies: not copied
+opentitan/hw/dv/sv/tl_agent/tl_agent_cfg.sv:40: G1 object tl_agent_cfg.allow_a_valid_drop_wo_a_ready: not copied
+opentitan/hw/dv/sv/tl_agent/tl_agent_cfg.sv:41: G1 object tl_agent_cfg.use_seq_item_a_valid_len: not copied
+opentitan/hw/dv/sv/tl_agent/tl_agent_cfg.sv:42: G1 object tl_agent_cfg.a_valid_len_min: not copied
+opentitan/hw/dv/sv/tl_agent/tl_agent_cfg.sv:43: G1 object tl_agent_cfg.a_valid_len_max: not copied
+opentitan/hw/dv/sv/tl_agent/tl_agent_cfg.sv:47: G1 object tl_agent_cfg.use_seq_item_d_valid_len: not copied
+opentitan/hw/dv/sv/tl_agent/tl_agent_cfg.sv:48: G1 object tl_agent_cfg.allow_d_valid_drop_wo_d_ready: not copied
+opentitan/hw/dv/sv/tl_agent/tl_agent_cfg.sv:49: G1 object tl_agent_cfg.d_valid_len_min: not copied
+opentitan/hw/dv/sv/tl_agent/tl_agent_cfg.sv:50: G1 object tl_agent_cfg.d_valid_len_max: not copied
+opentitan/hw/dv/sv/tl_agent/tl_agent_cfg.sv:53: G1 object tl_agent_cfg.use_seq_item_a_valid_delay: not copied
+opentitan/hw/dv/sv/tl_agent/tl_agent_cfg.sv:54: G1 object tl_agent_cfg.a_valid_delay_min: not copied
+opentitan/hw/dv/sv/tl_agent/tl_agent_cfg.sv:55: G1 object tl_agent_cfg.a_valid_delay_max: not copied
+opentitan/hw/dv/sv/tl_agent/tl_agent_cfg.sv:66: G1 object tl_agent_cfg.use_seq_item_d_valid_delay: not copied
+opentitan/hw/dv/sv/tl_agent/tl_agent_cfg.sv:67: G1 object tl_agent_cfg.d_valid_delay_min: not copied
+opentitan/hw/dv/sv/tl_agent/tl_agent_cfg.sv:68: G1 object tl_agent_cfg.d_valid_delay_max: not copied
+opentitan/hw/dv/sv/tl_agent/tl_agent_cfg.sv:80: G1 object tl_agent_cfg.synchronise_ports: not copied
+opentitan/hw/dv/sv/tl_agent/tl_agent_cfg.sv:88: G1 object tl_agent_cfg.valid_a_source_width: not copied
+opentitan/hw/dv/sv/tl_agent/tl_agent_cfg.sv:102: G1 object tl_agent_cfg.a_source_pend_q: not copied
+opentitan/hw/dv/sv/tl_agent/tl_agent_cfg.sv:107: G1 object tl_agent_cfg.last_a_source_released: not copied
+opentitan/hw/dv/sv/tl_agent/tl_agent_cfg.sv:112: G1 object tl_agent_cfg.use_last_a_source_released_pct: not copied
+opentitan/hw/dv/sv/tl_agent/tl_agent_cfg.sv:132: G1 object tl_agent_cfg.check_tl_errs: not copied
+opentitan/hw/dv/sv/tl_agent/tl_agent_cfg.sv:137: G1 object tl_agent_cfg.invalidate_a_x: not copied
+opentitan/hw/dv/sv/tl_agent/tl_agent_cfg.sv:138: G1 object tl_agent_cfg.invalidate_d_x: not copied
+opentitan/hw/dv/sv/uart_agent/uart_agent_cfg.sv:24: G1 object uart_agent_cfg.en_logger: not copied
+opentitan/hw/dv/sv/uart_agent/uart_agent_cfg.sv:25: G1 object uart_agent_cfg.use_rx_for_logger: not copied
+opentitan/hw/dv/sv/uart_agent/uart_agent_cfg.sv:26: G1 object uart_agent_cfg.write_logs_to_file: not copied
+opentitan/hw/dv/sv/uart_agent/uart_agent_cfg.sv:36: G1 object uart_agent_cfg.max_drift_cycle_pct: not copied
+opentitan/hw/dv/sv/usb20_agent/usb20_agent_cfg.sv:5: G5 object usb20_agent_cfg: 10 data members, no field macros or do_* methods
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:7: G2 item usb20_item.m_ev_type: copied (do_copy) but not compared
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:7: G3 item usb20_item.m_ev_type: copied (do_copy) but not printed
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:9: G2 item usb20_item.m_ev_duration_usecs: copied (do_copy) but not compared
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:9: G3 item usb20_item.m_ev_duration_usecs: copied (do_copy) but not printed
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:12: G2 item usb20_item.m_ev_completed: copied (do_copy) but not compared
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:12: G3 item usb20_item.m_ev_completed: copied (do_copy) but not printed
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:14: G2 item usb20_item.m_pid_type: copied (do_copy) but not compared
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:14: G3 item usb20_item.m_pid_type: copied (do_copy) but not printed
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:15: G2 item usb20_item.m_pkt_type: copied (do_copy) but not compared
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:15: G3 item usb20_item.m_pkt_type: copied (do_copy) but not printed
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:16: G2 item usb20_item.m_usb_transfer: copied (do_copy) but not compared
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:16: G3 item usb20_item.m_usb_transfer: copied (do_copy) but not printed
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:19: G2 item usb20_item.timed_out: copied (do_copy) but not compared
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:19: G3 item usb20_item.timed_out: copied (do_copy) but not printed
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:23: G2 item usb20_item.low_speed: copied (do_copy) but not compared
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:23: G3 item usb20_item.low_speed: copied (do_copy) but not printed
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:27: G2 item usb20_item.await_response: copied (do_copy) but not compared
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:27: G3 item usb20_item.await_response: copied (do_copy) but not printed
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:32: G2 item usb20_item.bits_to_transmit: copied (do_copy) but not compared
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:32: G3 item usb20_item.bits_to_transmit: copied (do_copy) but not printed
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:35: G2 item usb20_item.bits_to_receive: copied (do_copy) but not compared
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:35: G3 item usb20_item.bits_to_receive: copied (do_copy) but not printed
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:39: G2 item usb20_item.valid_sync: copied (do_copy) but not compared
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:39: G3 item usb20_item.valid_sync: copied (do_copy) but not printed
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:40: G2 item usb20_item.valid_length: copied (do_copy) but not compared
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:40: G3 item usb20_item.valid_length: copied (do_copy) but not printed
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:41: G2 item usb20_item.valid_stuffing: copied (do_copy) but not compared
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:41: G3 item usb20_item.valid_stuffing: copied (do_copy) but not printed
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:42: G2 item usb20_item.valid_eop: copied (do_copy) but not compared
+opentitan/hw/dv/sv/usb20_agent/usb20_item.sv:42: G3 item usb20_item.valid_eop: copied (do_copy) but not printed
+opentitan/hw/ip/adc_ctrl/dv/env/adc_ctrl_env_cfg.sv:9: G1 object adc_ctrl_env_cfg.wakeup_vif: not copied
+opentitan/hw/ip/adc_ctrl/dv/env/adc_ctrl_env_cfg.sv:12: G1 object adc_ctrl_env_cfg.m_adc_push_pull_cfg: not copied
+opentitan/hw/ip/adc_ctrl/dv/env/adc_ctrl_env_cfg.sv:24: G1 object adc_ctrl_env_cfg.lp_mode: not copied
+opentitan/hw/ip/adc_ctrl/dv/env/adc_ctrl_env_cfg.sv:27: G1 object adc_ctrl_env_cfg.adc_intr_ctl: not copied
+opentitan/hw/ip/adc_ctrl/dv/env/adc_ctrl_env_cfg.sv:30: G1 object adc_ctrl_env_cfg.adc_wakeup_ctl: not copied
+opentitan/hw/ip/adc_ctrl/dv/env/adc_ctrl_env_cfg.sv:33: G1 object adc_ctrl_env_cfg.fast_mode: not copied
+opentitan/hw/ip/adc_ctrl/dv/env/adc_ctrl_env_cfg.sv:40: G2 object adc_ctrl_env_cfg.filter_cfg: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:31: G1 object aes_env_cfg.keymgr_sideload_agent_cfg: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:35: G1 object aes_env_cfg.num_messages_min: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:36: G1 object aes_env_cfg.num_messages_max: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:37: G1 object aes_env_cfg.message_len_min: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:38: G1 object aes_env_cfg.message_len_max: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:39: G1 object aes_env_cfg.aad_len_min: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:40: G1 object aes_env_cfg.aad_len_max: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:41: G1 object aes_env_cfg.use_key_mask: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:42: G1 object aes_env_cfg.use_c_model_pct: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:45: G1 object aes_env_cfg.clear_reg_w_rand: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:47: G1 object aes_env_cfg.random_data_key_iv_order: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:52: G1 object aes_env_cfg.ecb_weight: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:53: G1 object aes_env_cfg.cbc_weight: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:54: G1 object aes_env_cfg.ofb_weight: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:55: G1 object aes_env_cfg.cfb_weight: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:56: G1 object aes_env_cfg.ctr_weight: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:57: G1 object aes_env_cfg.gcm_weight: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:62: G1 object aes_env_cfg.key_128b_weight: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:63: G1 object aes_env_cfg.key_192b_weight: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:64: G1 object aes_env_cfg.key_256b_weight: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:67: G1 object aes_env_cfg.per1_weight: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:68: G1 object aes_env_cfg.per64_weight: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:69: G1 object aes_env_cfg.per8k_weight: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:72: G1 object aes_env_cfg.manual_operation_pct: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:74: G1 object aes_env_cfg.reseed_en: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:78: G1 object aes_env_cfg.fixed_key_en: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:80: G1 object aes_env_cfg.fixed_data_en: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:82: G1 object aes_env_cfg.fixed_operation_en: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:83: G1 object aes_env_cfg.fixed_operation: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:85: G1 object aes_env_cfg.fixed_iv_en: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:87: G1 object aes_env_cfg.fixed_aad_en: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:89: G1 object aes_env_cfg.fixed_keylen_en: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:90: G1 object aes_env_cfg.fixed_keylen: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:97: G1 object aes_env_cfg.error_types: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:104: G1 object aes_env_cfg.config_error_type_en: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:109: G1 object aes_env_cfg.config_error_pct: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:113: G1 object aes_env_cfg.inj_min_delay: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:114: G1 object aes_env_cfg.inj_max_delay: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:115: G1 object aes_env_cfg.inj_delay: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:117: G1 object aes_env_cfg.alert_reset_trigger: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:122: G1 object aes_env_cfg.clear_reg_pct: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:125: G1 object aes_env_cfg.unbalanced: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:127: G1 object aes_env_cfg.read_prob: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:129: G1 object aes_env_cfg.write_prob: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:132: G1 object aes_env_cfg.sideload_pct: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:140: G1 object aes_env_cfg.num_messages_tot: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:144: G1 object aes_env_cfg.num_corrupt_messages: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:146: G1 object aes_env_cfg.good_cnt: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:148: G1 object aes_env_cfg.corrupt_cnt: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:150: G1 object aes_env_cfg.skipped_cnt: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:152: G1 object aes_env_cfg.split_cnt: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:155: G1 object aes_env_cfg.finish_message: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:159: G1 object aes_env_cfg.ref_model: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:161: G1 object aes_env_cfg.key_mask: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:163: G1 object aes_env_cfg.num_messages: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:166: G1 object aes_env_cfg.host_resp_speed: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:168: G1 object aes_env_cfg.do_reseed: not copied
+opentitan/hw/ip/aes/dv/env/aes_env_cfg.sv:170: G1 object aes_env_cfg.reseed_rate: not copied
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:15: G1 item aes_message_item.message_len_max: not copied
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:17: G1 item aes_message_item.message_len_min: not copied
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:19: G1 item aes_message_item.aad_len_max: not copied
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:21: G1 item aes_message_item.aad_len_min: not copied
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:23: G1 item aes_message_item.config_error_pct: not copied
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:24: G1 item aes_message_item.config_error_type_en: not copied
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:26: G2 item aes_message_item.error_types: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:26: G3 item aes_message_item.error_types: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:29: G1 item aes_message_item.manual_operation_pct: not copied
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:31: G2 item aes_message_item.keymask: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:33: G2 item aes_message_item.fixed_key_en: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:33: G3 item aes_message_item.fixed_key_en: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:35: G1 item aes_message_item.fixed_keylen_en: not copied
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:37: G2 item aes_message_item.fixed_data_en: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:37: G3 item aes_message_item.fixed_data_en: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:39: G1 item aes_message_item.fixed_operation_en: not copied
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:41: G2 item aes_message_item.fixed_iv_en: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:41: G3 item aes_message_item.fixed_iv_en: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:43: G2 item aes_message_item.fixed_aad_en: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:43: G3 item aes_message_item.fixed_aad_en: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:45: G1 item aes_message_item.sideload_pct: not copied
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:46: G2 item aes_message_item.sideload_en: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:51: G1 item aes_message_item.clear_reg_pct: not copied
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:55: G2 item aes_message_item.fixed_data: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:55: G3 item aes_message_item.fixed_data: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:56: G1 item aes_message_item.fixed_key: not copied
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:57: G1 item aes_message_item.fixed_keylen: not copied
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:58: G1 item aes_message_item.fixed_operation: not copied
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:59: G1 item aes_message_item.fixed_iv: not copied
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:60: G2 item aes_message_item.fixed_aad: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:60: G3 item aes_message_item.fixed_aad: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:66: G2 item aes_message_item.ecb_weight: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:66: G3 item aes_message_item.ecb_weight: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:67: G2 item aes_message_item.cbc_weight: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:67: G3 item aes_message_item.cbc_weight: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:68: G2 item aes_message_item.cfb_weight: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:68: G3 item aes_message_item.cfb_weight: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:69: G2 item aes_message_item.ofb_weight: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:69: G3 item aes_message_item.ofb_weight: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:70: G2 item aes_message_item.ctr_weight: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:70: G3 item aes_message_item.ctr_weight: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:71: G2 item aes_message_item.gcm_weight: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:71: G3 item aes_message_item.gcm_weight: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:74: G2 item aes_message_item.key_128b_weight: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:74: G3 item aes_message_item.key_128b_weight: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:75: G2 item aes_message_item.key_192b_weight: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:75: G3 item aes_message_item.key_192b_weight: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:76: G2 item aes_message_item.key_256b_weight: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:76: G3 item aes_message_item.key_256b_weight: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:79: G1 item aes_message_item.per1_weight: not copied
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:80: G1 item aes_message_item.per64_weight: not copied
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:81: G1 item aes_message_item.per8k_weight: not copied
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:87: G2 item aes_message_item.skip_msg: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:87: G3 item aes_message_item.skip_msg: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:94: G2 item aes_message_item.message_length: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:96: G2 item aes_message_item.aad_length: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:98: G2 item aes_message_item.aes_mode: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:100: G2 item aes_message_item.aes_operation: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:102: G2 item aes_message_item.aes_keylen: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:104: G2 item aes_message_item.aes_key: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:106: G2 item aes_message_item.aes_iv: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:108: G2 item aes_message_item.has_config_error: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:108: G3 item aes_message_item.has_config_error: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:114: G2 item aes_message_item.cfg_error_type: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:114: G3 item aes_message_item.cfg_error_type: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:116: G2 item aes_message_item.manual_operation: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:118: G2 item aes_message_item.reseed_rate: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:118: G3 item aes_message_item.reseed_rate: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:125: G2 item aes_message_item.input_msg: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:125: G3 item aes_message_item.input_msg: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:126: G2 item aes_message_item.output_msg: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:126: G3 item aes_message_item.output_msg: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:127: G2 item aes_message_item.input_aad: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:127: G3 item aes_message_item.input_aad: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:128: G2 item aes_message_item.predicted_msg: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:128: G3 item aes_message_item.predicted_msg: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:129: G2 item aes_message_item.output_cleared: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:129: G3 item aes_message_item.output_cleared: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:131: G2 item aes_message_item.output_tag: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:131: G3 item aes_message_item.output_tag: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:132: G2 item aes_message_item.output_tag_vld: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_message_item.sv:132: G3 item aes_message_item.output_tag_vld: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:9: G2 item aes_seq_item.item_type: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:17: G1 item aes_seq_item.valid: not copied
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:19: G2 item aes_seq_item.manual_op: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:19: G3 item aes_seq_item.manual_op: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:24: G2 item aes_seq_item.data_len: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:26: G2 item aes_seq_item.key_len: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:30: G2 item aes_seq_item.key_vld: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:30: G3 item aes_seq_item.key_vld: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:32: G2 item aes_seq_item.iv: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:34: G2 item aes_seq_item.iv_vld: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:34: G3 item aes_seq_item.iv_vld: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:36: G2 item aes_seq_item.reseed_rate: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:36: G3 item aes_seq_item.reseed_rate: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:38: G1 item aes_seq_item.en_b2b_transactions: not copied
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:39: G1 item aes_seq_item.b2b_pct: not copied
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:42: G1 item aes_seq_item.clear_reg_pct: not copied
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:45: G2 item aes_seq_item.clear_reg_w_rand: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:45: G3 item aes_seq_item.clear_reg_w_rand: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:52: G2 item aes_seq_item.data_in_vld: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:52: G3 item aes_seq_item.data_in_vld: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:54: G1 item aes_seq_item.data_out_vld: not copied
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:56: G2 item aes_seq_item.data_was_cleared: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:56: G3 item aes_seq_item.data_was_cleared: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:62: G1 item aes_seq_item.fixed_data: not copied
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:64: G2 item aes_seq_item.key_mask: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:67: G2 item aes_seq_item.start_item: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:67: G3 item aes_seq_item.start_item: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:69: G2 item aes_seq_item.split_item: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:69: G3 item aes_seq_item.split_item: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:71: G2 item aes_seq_item.sideload_en: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:71: G3 item aes_seq_item.sideload_en: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:82: G2 item aes_seq_item.do_b2b: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:82: G3 item aes_seq_item.do_b2b: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:85: G1 item aes_seq_item.clr_reg_dist_select: not copied
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:89: G2 item aes_seq_item.aes_mode: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:89: G3 item aes_seq_item.aes_mode: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:90: G1 item aes_seq_item.aes_illegal_mode_gcm: not copied
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:97: G2 item aes_seq_item.clear_reg: copied (do_copy) but not compared
+opentitan/hw/ip/aes/dv/env/aes_seq_item.sv:97: G3 item aes_seq_item.clear_reg: copied (do_copy) but not printed
+opentitan/hw/ip/aes/dv/test_vectors/nist_vectors_gcm_pkg.sv:69: G5 object aes_nist_vectors_gcm: 2 data members, no field macros or do_* methods
+opentitan/hw/ip/aes/dv/test_vectors/nist_vectors_pkg.sv:55: G5 object aes_nist_vectors: 2 data members, no field macros or do_* methods
+opentitan/hw/ip/aon_timer/dv/env/aon_timer_env_cfg.sv:5: G5 object aon_timer_env_cfg: 1 data members, no field macros or do_* methods
+opentitan/hw/ip/aon_timer/dv/env/aon_timer_intr_timed_regs.sv:7: G5 object aon_timer_intr_timed_regs: 3 data members, no field macros or do_* methods
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:16: G1 object csrng_env_cfg.m_num_hw_apps: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:22: G1 object csrng_env_cfg.m_num_apps: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:28: G1 object csrng_env_cfg.m_sw_app_idx: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:30: G1 object csrng_env_cfg.m_entropy_src_agent_cfg: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:34: G1 object csrng_env_cfg.m_edn_agent_cfg: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:45: G1 object csrng_env_cfg.lc_hw_debug_en_pct: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:45: G1 object csrng_env_cfg.regwen_pct: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:45: G1 object csrng_env_cfg.int_state_read_enable_pct: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:45: G1 object csrng_env_cfg.int_state_read_enable_regwen_pct: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:45: G1 object csrng_env_cfg.enable_pct: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:45: G1 object csrng_env_cfg.sw_app_enable_pct: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:45: G1 object csrng_env_cfg.read_int_state_pct: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:45: G1 object csrng_env_cfg.fips_force_enable_pct: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:45: G1 object csrng_env_cfg.force_state_pct: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:45: G1 object csrng_env_cfg.check_int_state_pct: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:45: G1 object csrng_env_cfg.num_cmds_min: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:45: G1 object csrng_env_cfg.num_cmds_max: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:45: G1 object csrng_env_cfg.min_num_disable_enable: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:45: G1 object csrng_env_cfg.max_num_disable_enable: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:45: G1 object csrng_env_cfg.min_enable_clks: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:45: G1 object csrng_env_cfg.max_enable_clks: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:45: G1 object csrng_env_cfg.min_disable_edn_before_csrng_clks: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:45: G1 object csrng_env_cfg.max_disable_edn_before_csrng_clks: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:45: G1 object csrng_env_cfg.min_disable_csrng_before_entropy_src_clks: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:45: G1 object csrng_env_cfg.max_disable_csrng_before_entropy_src_clks: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:45: G1 object csrng_env_cfg.min_disable_clks: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:45: G1 object csrng_env_cfg.max_disable_clks: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:45: G1 object csrng_env_cfg.min_enable_entropy_src_before_csrng_clks: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:45: G1 object csrng_env_cfg.max_enable_entropy_src_before_csrng_clks: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:45: G1 object csrng_env_cfg.min_enable_csrng_before_edn_clks: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:45: G1 object csrng_env_cfg.max_enable_csrng_before_edn_clks: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:57: G1 object csrng_env_cfg.use_invalid_mubi: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:59: G1 object csrng_env_cfg.check_int_state: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:59: G1 object csrng_env_cfg.regwen: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:60: G1 object csrng_env_cfg.hw_app: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:61: G1 object csrng_env_cfg.sw_app: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:63: G1 object csrng_env_cfg.enable: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:63: G1 object csrng_env_cfg.sw_app_enable: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:63: G1 object csrng_env_cfg.read_int_state: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:63: G1 object csrng_env_cfg.fips_force_enable: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:64: G1 object csrng_env_cfg.lc_hw_debug_en: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:66: G1 object csrng_env_cfg.int_state_read_enable_regwen: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:70: G1 object csrng_env_cfg.fips_force: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:71: G1 object csrng_env_cfg.int_state_read_enable: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:73: G1 object csrng_env_cfg.which_fatal_err: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:74: G1 object csrng_env_cfg.which_err_code: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:75: G1 object csrng_env_cfg.which_fifo: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:76: G1 object csrng_env_cfg.which_fifo_err: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:77: G1 object csrng_env_cfg.which_invalid_mubi: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:78: G1 object csrng_env_cfg.which_aes_cm: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:79: G1 object csrng_env_cfg.which_cnt: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:80: G1 object csrng_env_cfg.drop_sw_cmd_word: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:82: G1 object csrng_env_cfg.compliance: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:82: G1 object csrng_env_cfg.status: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:83: G1 object csrng_env_cfg.key: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:84: G1 object csrng_env_cfg.v: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:85: G1 object csrng_env_cfg.reseed_counter: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:87: G1 object csrng_env_cfg.Sp2VWidth: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:89: G1 object csrng_env_cfg.which_cmd_inv_seq: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:92: G1 object csrng_env_cfg.which_invalid_acmd: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:95: G1 object csrng_env_cfg.reseed_interval: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:98: G1 object csrng_env_cfg.which_app_err_alert: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:101: G1 object csrng_env_cfg.which_cmd_alert: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:104: G1 object csrng_env_cfg.max_reseed_count: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:107: G1 object csrng_env_cfg.which_hw_inst_exc: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:110: G1 object csrng_env_cfg.which_sp2v: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:159: G1 object csrng_env_cfg.num_bins_aes_cipher_sm_err: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:177: G1 object csrng_env_cfg.num_disable_enable: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:184: G1 object csrng_env_cfg.enable_clks: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:192: G1 object csrng_env_cfg.disable_edn_before_csrng_clks: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:200: G1 object csrng_env_cfg.disable_csrng_before_entropy_src_clks: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:207: G1 object csrng_env_cfg.disable_clks: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:215: G1 object csrng_env_cfg.enable_entropy_src_before_csrng_clks: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:222: G1 object csrng_env_cfg.enable_csrng_before_edn_clks: not copied
+opentitan/hw/ip/csrng/dv/env/csrng_env_cfg.sv:371: G4 object csrng_env_cfg: convert2string does not call super.convert2string (base cip_base_env_cfg)
+opentitan/hw/ip/dma/dv/env/dma_env_cfg.sv:12: G1 object dma_env_cfg.dma_vif: not copied
+opentitan/hw/ip/dma/dv/env/dma_env_cfg.sv:13: G1 object dma_env_cfg.dma_sys_tl_vif: not copied
+opentitan/hw/ip/dma/dv/env/dma_env_cfg.sv:17: G1 object dma_env_cfg.scoreboard_h: not copied
+opentitan/hw/ip/dma/dv/env/dma_env_cfg.sv:21: G1 object dma_env_cfg.soc_system_src_base_addr: not copied
+opentitan/hw/ip/dma/dv/env/dma_env_cfg.sv:22: G1 object dma_env_cfg.soc_system_dst_base_addr: not copied
+opentitan/hw/ip/dma/dv/env/dma_env_cfg.sv:27: G1 object dma_env_cfg.fifo_names: not copied
+opentitan/hw/ip/dma/dv/env/dma_env_cfg.sv:29: G1 object dma_env_cfg.dma_a_fifo: not copied
+opentitan/hw/ip/dma/dv/env/dma_env_cfg.sv:31: G1 object dma_env_cfg.dma_d_fifo: not copied
+opentitan/hw/ip/dma/dv/env/dma_env_cfg.sv:33: G1 object dma_env_cfg.dma_dir_fifo: not copied
+opentitan/hw/ip/dma/dv/env/dma_env_cfg.sv:38: G1 object dma_env_cfg.src_data: not copied
+opentitan/hw/ip/dma/dv/env/dma_env_cfg.sv:45: G1 object dma_env_cfg.fifo_dst_host: not copied
+opentitan/hw/ip/dma/dv/env/dma_env_cfg.sv:46: G1 object dma_env_cfg.fifo_dst_ctn: not copied
+opentitan/hw/ip/dma/dv/env/dma_env_cfg.sv:47: G1 object dma_env_cfg.fifo_dst_sys: not copied
+opentitan/hw/ip/dma/dv/env/dma_env_cfg.sv:51: G1 object dma_env_cfg.fifo_src_host: not copied
+opentitan/hw/ip/dma/dv/env/dma_env_cfg.sv:52: G1 object dma_env_cfg.fifo_src_ctn: not copied
+opentitan/hw/ip/dma/dv/env/dma_env_cfg.sv:53: G1 object dma_env_cfg.fifo_src_sys: not copied
+opentitan/hw/ip/dma/dv/env/dma_env_cfg.sv:55: G1 object dma_env_cfg.mem_host: not copied
+opentitan/hw/ip/dma/dv/env/dma_env_cfg.sv:56: G1 object dma_env_cfg.mem_ctn: not copied
+opentitan/hw/ip/dma/dv/env/dma_env_cfg.sv:57: G1 object dma_env_cfg.mem_sys: not copied
+opentitan/hw/ip/dma/dv/env/dma_env_cfg.sv:60: G1 object dma_env_cfg.asid_names: not copied
+opentitan/hw/ip/dma/dv/env/dma_handshake_mode_fifo.sv:7: G5 object dma_handshake_mode_fifo: 9 data members, no field macros or do_* methods
+opentitan/hw/ip/dma/dv/env/dma_seq_item.sv:71: G1 item dma_seq_item.valid_dma_config: not copied
+opentitan/hw/ip/dma/dv/env/dma_seq_item.sv:74: G1 item dma_seq_item.src_addr_in_range: not copied
+opentitan/hw/ip/dma/dv/env/dma_seq_item.sv:77: G1 item dma_seq_item.dst_addr_in_range: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:26: G1 object edn_env_cfg.reseed_cnt: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:26: G1 object edn_env_cfg.generate_cnt: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:26: G1 object edn_env_cfg.generate_between_reseeds_cnt: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:28: G1 object edn_env_cfg.abort_sw_cmd: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:29: G1 object edn_env_cfg.backdoor_disable: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:30: G1 object edn_env_cfg.base_vseq_edn_enabled: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:32: G1 object edn_env_cfg.min_auto_reseeds: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:35: G1 object edn_env_cfg.enable_pct: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:35: G1 object edn_env_cfg.boot_req_mode_pct: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:35: G1 object edn_env_cfg.auto_req_mode_pct: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:35: G1 object edn_env_cfg.cmd_fifo_rst_pct: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:35: G1 object edn_env_cfg.force_disable_pct: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:35: G1 object edn_env_cfg.min_num_boot_reqs: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:35: G1 object edn_env_cfg.max_num_boot_reqs: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:35: G1 object edn_env_cfg.min_num_ep_reqs: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:35: G1 object edn_env_cfg.max_num_ep_reqs: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:35: G1 object edn_env_cfg.invalid_mubi4_pct: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:35: G1 object edn_env_cfg.disable_regwen_pct: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:41: G1 object edn_env_cfg.use_invalid_mubi: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:43: G1 object edn_env_cfg.glen_auto_mode: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:44: G1 object edn_env_cfg.enable: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:44: G1 object edn_env_cfg.boot_req_mode: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:44: G1 object edn_env_cfg.auto_req_mode: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:44: G1 object edn_env_cfg.cmd_fifo_rst: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:45: G1 object edn_env_cfg.num_endpoints: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:45: G1 object edn_env_cfg.num_boot_reqs: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:46: G1 object edn_env_cfg.force_disable: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:47: G1 object edn_env_cfg.boot_ins_cmd: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:47: G1 object edn_env_cfg.boot_gen_cmd: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:49: G1 object edn_env_cfg.which_fatal_err: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:50: G1 object edn_env_cfg.which_err_code: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:51: G1 object edn_env_cfg.which_fifo: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:52: G1 object edn_env_cfg.which_fifo_err: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:53: G1 object edn_env_cfg.which_invalid_mubi: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:54: G1 object edn_env_cfg.which_cmd_sts_err: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:55: G1 object edn_env_cfg.disable_regwen: not copied
+opentitan/hw/ip/edn/dv/env/edn_env_cfg.sv:141: G4 object edn_env_cfg: convert2string does not call super.convert2string (base cip_base_env_cfg)
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:24: G1 object entropy_src_dut_cfg.en_intr_pct: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:27: G1 object entropy_src_dut_cfg.module_enable_pct: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:32: G1 object entropy_src_dut_cfg.preconfig_disable_pct: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:35: G1 object entropy_src_dut_cfg.sw_regupd_pct: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:39: G1 object entropy_src_dut_cfg.fips_enable_pct: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:39: G1 object entropy_src_dut_cfg.entropy_data_reg_enable_pct: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:39: G1 object entropy_src_dut_cfg.fips_flag_pct: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:39: G1 object entropy_src_dut_cfg.rng_fips_pct: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:39: G1 object entropy_src_dut_cfg.ht_threshold_scope_pct: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:39: G1 object entropy_src_dut_cfg.rng_bit_enable_pct: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:43: G1 object entropy_src_dut_cfg.route_software_pct: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:43: G1 object entropy_src_dut_cfg.type_bypass_pct: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:43: G1 object entropy_src_dut_cfg.esfinal_clr_while_dsbld_pct: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:46: G1 object entropy_src_dut_cfg.fw_read_pct: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:46: G1 object entropy_src_dut_cfg.fw_over_pct: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:46: G1 object entropy_src_dut_cfg.fw_ov_insert_start_pct: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:51: G1 object entropy_src_dut_cfg.ht_threshold_oneway_pct: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:54: G1 object entropy_src_dut_cfg.tight_thresholds_pct: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:58: G1 object entropy_src_dut_cfg.adaptp_sigma_max_typ: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:58: G1 object entropy_src_dut_cfg.adaptp_sigma_max_tight: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:58: G1 object entropy_src_dut_cfg.adaptp_sigma_min_typ: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:58: G1 object entropy_src_dut_cfg.adaptp_sigma_min_tight: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:59: G1 object entropy_src_dut_cfg.adaptps_sigma_max_typ: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:59: G1 object entropy_src_dut_cfg.adaptps_sigma_max_tight: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:60: G1 object entropy_src_dut_cfg.adaptps_sigma_min_typ: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:60: G1 object entropy_src_dut_cfg.adaptps_sigma_min_tight: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:61: G1 object entropy_src_dut_cfg.markov_sigma_max_typ: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:61: G1 object entropy_src_dut_cfg.markov_sigma_max_tight: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:61: G1 object entropy_src_dut_cfg.markov_sigma_min_typ: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:61: G1 object entropy_src_dut_cfg.markov_sigma_min_tight: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:62: G1 object entropy_src_dut_cfg.bucket_sigma_max_typ: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:62: G1 object entropy_src_dut_cfg.bucket_sigma_max_tight: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:62: G1 object entropy_src_dut_cfg.bucket_sigma_min_typ: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:62: G1 object entropy_src_dut_cfg.bucket_sigma_min_tight: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:65: G1 object entropy_src_dut_cfg.default_ht_thresholds_pct: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:71: G1 object entropy_src_dut_cfg.bad_mubi_cfg_pct: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:75: G1 object entropy_src_dut_cfg.max_observe_fifo_threshold: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:81: G1 object entropy_src_dut_cfg.en_intr: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:83: G1 object entropy_src_dut_cfg.sw_regupd: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:84: G1 object entropy_src_dut_cfg.preconfig_disable: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:85: G1 object entropy_src_dut_cfg.rng_bit_sel: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:87: G1 object entropy_src_dut_cfg.module_enable: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:87: G1 object entropy_src_dut_cfg.fips_enable: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:87: G1 object entropy_src_dut_cfg.fips_flag: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:87: G1 object entropy_src_dut_cfg.route_software: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:87: G1 object entropy_src_dut_cfg.type_bypass: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:87: G1 object entropy_src_dut_cfg.rng_fips: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:87: G1 object entropy_src_dut_cfg.entropy_data_reg_enable: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:87: G1 object entropy_src_dut_cfg.rng_bit_enable: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:87: G1 object entropy_src_dut_cfg.ht_threshold_oneway: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:87: G1 object entropy_src_dut_cfg.ht_threshold_scope: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:87: G1 object entropy_src_dut_cfg.esfinal_clr_while_dsbld: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:92: G1 object entropy_src_dut_cfg.observe_fifo_thresh: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:94: G1 object entropy_src_dut_cfg.fips_window_size: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:94: G1 object entropy_src_dut_cfg.bypass_window_size: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:96: G1 object entropy_src_dut_cfg.alert_threshold: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:97: G1 object entropy_src_dut_cfg.alert_threshold_inv: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:99: G1 object entropy_src_dut_cfg.fw_read_enable: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:99: G1 object entropy_src_dut_cfg.fw_over_enable: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:99: G1 object entropy_src_dut_cfg.fw_ov_insert_start: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:102: G1 object entropy_src_dut_cfg.default_ht_thresholds: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:105: G1 object entropy_src_dut_cfg.tight_thresholds: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:111: G1 object entropy_src_dut_cfg.which_tight_ht: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:114: G1 object entropy_src_dut_cfg.adaptp_sigma_i: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:114: G1 object entropy_src_dut_cfg.adaptps_sigma_i: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:114: G1 object entropy_src_dut_cfg.markov_sigma_i: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:114: G1 object entropy_src_dut_cfg.bucket_sigma_i: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:117: G1 object entropy_src_dut_cfg.adaptp_sigma_min: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:117: G1 object entropy_src_dut_cfg.adaptps_sigma_min: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:117: G1 object entropy_src_dut_cfg.markov_sigma_min: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:117: G1 object entropy_src_dut_cfg.bucket_sigma_min: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:118: G1 object entropy_src_dut_cfg.adaptp_sigma_max: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:118: G1 object entropy_src_dut_cfg.adaptps_sigma_max: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:118: G1 object entropy_src_dut_cfg.markov_sigma_max: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:118: G1 object entropy_src_dut_cfg.bucket_sigma_max: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:122: G1 object entropy_src_dut_cfg.adaptp_sigma: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:122: G1 object entropy_src_dut_cfg.adaptps_sigma: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:122: G1 object entropy_src_dut_cfg.markov_sigma: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:122: G1 object entropy_src_dut_cfg.bucket_sigma: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:125: G1 object entropy_src_dut_cfg.repcnt_thresh_bypass: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:125: G1 object entropy_src_dut_cfg.repcnt_thresh_fips: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:125: G1 object entropy_src_dut_cfg.repcnts_thresh_bypass: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:125: G1 object entropy_src_dut_cfg.repcnts_thresh_fips: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:128: G1 object entropy_src_dut_cfg.ht_watermark_num: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:130: G1 object entropy_src_dut_cfg.use_invalid_mubi: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_dut_cfg.sv:131: G1 object entropy_src_dut_cfg.which_invalid_mubi: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:11: G1 object entropy_src_env_cfg.m_rng_agent_cfg: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:13: G1 object entropy_src_env_cfg.m_csrng_agent_cfg: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:15: G1 object entropy_src_env_cfg.m_xht_agent_cfg: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:21: G1 object entropy_src_env_cfg.dut_cfg: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:27: G1 object entropy_src_env_cfg.interrupt_vif: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:45: G1 object entropy_src_env_cfg.sim_duration: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:46: G1 object entropy_src_env_cfg.sim_duration_ms: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:50: G1 object entropy_src_env_cfg.hard_mtbf: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:53: G1 object entropy_src_env_cfg.soft_mtbf: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:57: G1 object entropy_src_env_cfg.mean_rand_reconfig_time: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:61: G1 object entropy_src_env_cfg.mean_rand_csr_alert_time: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:64: G1 object entropy_src_env_cfg.max_silent_reconfig_time: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:67: G1 object entropy_src_env_cfg.configuration_pause_time: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:69: G1 object entropy_src_env_cfg.seed_cnt: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:74: G1 object entropy_src_env_cfg.rng_ignores_backpressure: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:78: G1 object entropy_src_env_cfg.total_seeds_consumed: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:85: G1 object entropy_src_env_cfg.spurious_inject_entropy_pct: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:91: G1 object entropy_src_env_cfg.do_check_ht_diag_pct: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:94: G1 object entropy_src_env_cfg.induce_targeted_transition_pct: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:104: G1 object entropy_src_env_cfg.tlul_to_rng_disable_delay: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:105: G1 object entropy_src_env_cfg.tlul_to_fifo_clr_delay: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:109: G1 object entropy_src_env_cfg.alert_max_delay: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:112: G1 object entropy_src_env_cfg.rng_max_delay: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:115: G1 object entropy_src_env_cfg.xht_only_default_rsp: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:121: G1 object entropy_src_env_cfg.spurious_inject_entropy: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:124: G1 object entropy_src_env_cfg.which_fatal_err: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:125: G1 object entropy_src_env_cfg.which_err_code: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:126: G1 object entropy_src_env_cfg.which_fifo: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:127: G1 object entropy_src_env_cfg.which_fifo_err: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:128: G1 object entropy_src_env_cfg.which_ht_fail: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:129: G1 object entropy_src_env_cfg.which_cntr: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:130: G1 object entropy_src_env_cfg.which_ht: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:131: G1 object entropy_src_env_cfg.which_ht_state: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:133: G1 object entropy_src_env_cfg.which_cntr_replicate: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:135: G1 object entropy_src_env_cfg.which_bin: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:136: G1 object entropy_src_env_cfg.which_ht_inst: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:138: G1 object entropy_src_env_cfg.induce_targeted_transition: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:140: G1 object entropy_src_env_cfg.es_route_sw: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:143: G1 object entropy_src_env_cfg.fw_ov_rd_cnt: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:182: G1 object entropy_src_env_cfg.num_bins: not copied
+opentitan/hw/ip/entropy_src/dv/env/entropy_src_env_cfg.sv:255: G4 object entropy_src_env_cfg: convert2string does not call super.convert2string (base cip_base_env_cfg)
+opentitan/hw/ip/hmac/dv/env/hmac_env_cfg.sv:5: G5 object hmac_env_cfg: 7 data members, no field macros or do_* methods
+opentitan/hw/ip/i2c/dv/env/i2c_env_cfg.sv:8: G1 object i2c_env_cfg.scoreboard: not copied
+opentitan/hw/ip/i2c/dv/env/i2c_env_cfg.sv:15: G1 object i2c_env_cfg.seq_cfg: not copied
+opentitan/hw/ip/i2c/dv/env/i2c_env_cfg.sv:17: G1 object i2c_env_cfg.target_addr_mode: not copied
+opentitan/hw/ip/i2c/dv/env/i2c_env_cfg.sv:19: G1 object i2c_env_cfg.spinwait_timeout_ns: not copied
+opentitan/hw/ip/i2c/dv/env/i2c_env_cfg.sv:20: G1 object i2c_env_cfg.long_spinwait_timeout_ns: not copied
+opentitan/hw/ip/i2c/dv/env/i2c_env_cfg.sv:25: G1 object i2c_env_cfg.wr_pct: not copied
+opentitan/hw/ip/i2c/dv/env/i2c_env_cfg.sv:26: G1 object i2c_env_cfg.rd_pct: not copied
+opentitan/hw/ip/i2c/dv/env/i2c_env_cfg.sv:29: G1 object i2c_env_cfg.bad_addr_pct: not copied
+opentitan/hw/ip/i2c/dv/env/i2c_env_cfg.sv:34: G1 object i2c_env_cfg.min_data: not copied
+opentitan/hw/ip/i2c/dv/env/i2c_env_cfg.sv:35: G1 object i2c_env_cfg.max_data: not copied
+opentitan/hw/ip/i2c/dv/env/i2c_env_cfg.sv:37: G1 object i2c_env_cfg.rs_pct: not copied
+opentitan/hw/ip/i2c/dv/env/i2c_env_cfg.sv:42: G1 object i2c_env_cfg.min_num_transfers: not copied
+opentitan/hw/ip/i2c/dv/env/i2c_env_cfg.sv:43: G1 object i2c_env_cfg.max_num_transfers: not copied
+opentitan/hw/ip/i2c/dv/env/i2c_env_cfg.sv:49: G1 object i2c_env_cfg.min_xfer_len: not copied
+opentitan/hw/ip/i2c/dv/env/i2c_env_cfg.sv:54: G1 object i2c_env_cfg.use_intr_handler: not copied
+opentitan/hw/ip/i2c/dv/env/i2c_env_cfg.sv:57: G1 object i2c_env_cfg.ack_ctrl_en: not copied
+opentitan/hw/ip/i2c/dv/env/i2c_env_cfg.sv:62: G1 object i2c_env_cfg.slow_acq: not copied
+opentitan/hw/ip/i2c/dv/env/i2c_env_cfg.sv:63: G1 object i2c_env_cfg.slow_txq: not copied
+opentitan/hw/ip/i2c/dv/env/i2c_env_cfg.sv:73: G1 object i2c_env_cfg.exp_num_acqfifo_reads: not copied
+opentitan/hw/ip/i2c/dv/env/i2c_env_cfg.sv:74: G1 object i2c_env_cfg.obs_num_acqfifo_reads: not copied
+opentitan/hw/ip/i2c/dv/env/i2c_env_cfg.sv:77: G1 object i2c_env_cfg.lastbyte: not copied
+opentitan/hw/ip/i2c/dv/env/i2c_env_cfg.sv:80: G1 object i2c_env_cfg.stop_intr_handler: not copied
+opentitan/hw/ip/i2c/dv/env/i2c_env_cfg.sv:81: G1 object i2c_env_cfg.read_all_acq_entries: not copied
+opentitan/hw/ip/i2c/dv/env/i2c_env_cfg.sv:83: G1 object i2c_env_cfg.scl_frequency: not copied
+opentitan/hw/ip/i2c/dv/env/i2c_seq_cfg.sv:6: G5 object i2c_seq_cfg: 27 data members, no field macros or do_* methods
+opentitan/hw/ip/i3c/dv/env/i3c_env_cfg.sv:11: G1 object i3c_env_cfg.board_pullup_vif: not copied
+opentitan/hw/ip/i3c/dv/env/i3c_env_cfg.sv:14: G1 object i3c_env_cfg.bus_ctrl_vif: not copied
+opentitan/hw/ip/keymgr_dpe/dv/env/keymgr_dpe_env_cfg.sv:5: G5 object keymgr_dpe_env_cfg: 3 data members, no field macros or do_* methods
+opentitan/hw/ip/kmac/dv/env/kmac_env_cfg.sv:5: G5 object kmac_env_cfg: 13 data members, no field macros or do_* methods
+opentitan/hw/ip/lc_ctrl/dv/env/lc_ctrl_env_cfg.sv:5: G5 object lc_ctrl_env_cfg: 22 data members, no field macros or do_* methods
+opentitan/hw/ip/mbx/dv/env/mbx_env_cfg.sv:13: G1 object mbx_env_cfg.mbx_mem_ral_name: not copied
+opentitan/hw/ip/mbx/dv/env/mbx_env_cfg.sv:15: G1 object mbx_env_cfg.mbx_soc_ral_name: not copied
+opentitan/hw/ip/otbn/dv/uvm/env/otbn_env_cfg.sv:5: G5 object otbn_env_cfg: 17 data members, no field macros or do_* methods
+opentitan/hw/ip/otbn/dv/uvm/env/otbn_trace_item.sv:42: G1 item otbn_trace_item.has_sideload_key: not copied
+opentitan/hw/ip/pattgen/dv/env/pattgen_channel_cfg.sv:9: G1 object pattgen_channel_cfg.start: not copied
+opentitan/hw/ip/pattgen/dv/env/pattgen_channel_cfg.sv:10: G1 object pattgen_channel_cfg.stop: not copied
+opentitan/hw/ip/pattgen/dv/env/pattgen_channel_cfg.sv:11: G1 object pattgen_channel_cfg.enable: not copied
+opentitan/hw/ip/pattgen/dv/env/pattgen_channel_cfg.sv:13: G1 object pattgen_channel_cfg.polarity: not copied
+opentitan/hw/ip/pattgen/dv/env/pattgen_channel_cfg.sv:14: G1 object pattgen_channel_cfg.inactive_level_pcl: not copied
+opentitan/hw/ip/pattgen/dv/env/pattgen_channel_cfg.sv:15: G1 object pattgen_channel_cfg.inactive_level_pda: not copied
+opentitan/hw/ip/pattgen/dv/env/pattgen_channel_cfg.sv:16: G1 object pattgen_channel_cfg.prediv: not copied
+opentitan/hw/ip/pattgen/dv/env/pattgen_channel_cfg.sv:17: G1 object pattgen_channel_cfg.data: not copied
+opentitan/hw/ip/pattgen/dv/env/pattgen_channel_cfg.sv:18: G1 object pattgen_channel_cfg.len: not copied
+opentitan/hw/ip/pattgen/dv/env/pattgen_channel_cfg.sv:19: G1 object pattgen_channel_cfg.reps: not copied
+opentitan/hw/ip/pattgen/dv/env/pattgen_env_cfg.sv:7: G1 object pattgen_env_cfg.ok_to_end_delay_ns: not copied
+opentitan/hw/ip/pattgen/dv/env/pattgen_env_cfg.sv:13: G1 object pattgen_env_cfg.seq_cfg: not copied
+opentitan/hw/ip/pattgen/dv/env/pattgen_seq_cfg.sv:6: G5 object pattgen_seq_cfg: 15 data members, no field macros or do_* methods
+opentitan/hw/ip/racl_ctrl/dv/env/racl_ctrl_base_env_cfg.sv:7: G5 object racl_ctrl_base_env_cfg: 3 data members, no field macros or do_* methods
+opentitan/hw/ip/racl_ctrl/dv/env/racl_ctrl_reg_window.sv:6: G5 object racl_ctrl_reg_window: 4 data members, no field macros or do_* methods
+opentitan/hw/ip/racl_ctrl/dv/env/racl_error_log_agent/racl_error_log_agent_cfg.sv:5: G5 object racl_error_log_agent_cfg: 1 data members, no field macros or do_* methods
+opentitan/hw/ip/racl_ctrl/dv/env/racl_error_log_agent/racl_error_log_item.sv:16: G2 item racl_error_log_item.overflow: copied (do_copy) but not compared
+opentitan/hw/ip/racl_ctrl/dv/env/racl_error_log_agent/racl_error_log_item.sv:19: G2 item racl_error_log_item.role: copied (do_copy) but not compared
+opentitan/hw/ip/racl_ctrl/dv/env/racl_error_log_agent/racl_error_log_item.sv:22: G2 item racl_error_log_item.ctn_uid: copied (do_copy) but not compared
+opentitan/hw/ip/racl_ctrl/dv/env/racl_error_log_agent/racl_error_log_item.sv:25: G2 item racl_error_log_item.read_not_write: copied (do_copy) but not compared
+opentitan/hw/ip/racl_ctrl/dv/env/racl_error_log_agent/racl_error_log_item.sv:28: G2 item racl_error_log_item.request_address: copied (do_copy) but not compared
+opentitan/hw/ip/racl_ctrl/dv/env/racl_error_log_agent/racl_error_log_vec_driver_item.sv:8: G5 item racl_error_log_vec_driver_item: 1 data members, no field macros or do_* methods
+opentitan/hw/ip/racl_ctrl/dv/env/racl_error_log_agent/racl_error_log_vec_item.sv:17: G1 item racl_error_log_vec_item.errors: not copied
+opentitan/hw/ip/racl_ctrl/dv/env/racl_error_log_agent/racl_error_log_vec_item.sv:23: G1 item racl_error_log_vec_item.subscribers_with_errors: not copied
+opentitan/hw/ip/rom_ctrl/dv/env/rom_ctrl_bkdr_util.sv:11: G5 object rom_ctrl_bkdr_util: 2 data members, no field macros or do_* methods
+opentitan/hw/ip/rom_ctrl/dv/env/rom_ctrl_env_cfg.sv:5: G5 object rom_ctrl_env_cfg: 9 data members, no field macros or do_* methods
+opentitan/hw/ip/rram_ctrl/dv/bkdr/rram_ctrl_otp_bkdr_util.sv:15: G5 object rram_ctrl_otp_bkdr_util: 1 data members, no field macros or do_* methods
+opentitan/hw/ip/rram_ctrl/dv/env/rram_ctrl_env_cfg.sv:5: G5 object rram_ctrl_env_cfg: 4 data members, no field macros or do_* methods
+opentitan/hw/ip/rv_dm/dv/env/rv_dm_env_cfg.sv:12: G1 object rv_dm_env_cfg.m_mode_agent_cfg: not copied
+opentitan/hw/ip/rv_dm/dv/env/rv_dm_env_cfg.sv:17: G1 object rv_dm_env_cfg.tl_err_prediction: not copied
+opentitan/hw/ip/rv_dm/dv/env/rv_dm_env_cfg.sv:22: G1 object rv_dm_env_cfg.sba_tl_tx_requires_debug: not copied
+opentitan/hw/ip/rv_dm/dv/env/rv_dm_env_cfg.sv:38: G1 object rv_dm_env_cfg.mem_ral_name: not copied
+opentitan/hw/ip/rv_dm/dv/rv_dm_mode_agent/rv_dm_mode_seq_item.svh:13: G1 item rv_dm_mode_seq_item.m_has_next_dm_addr: not copied
+opentitan/hw/ip/rv_dm/dv/rv_dm_mode_agent/rv_dm_mode_seq_item.svh:14: G1 item rv_dm_mode_seq_item.m_next_dm_addr: not copied
+opentitan/hw/ip/rv_dm/dv/rv_dm_mode_agent/rv_dm_mode_seq_item.svh:18: G1 item rv_dm_mode_seq_item.m_has_lc_ctrl_signals: not copied
+opentitan/hw/ip/rv_dm/dv/rv_dm_mode_agent/rv_dm_mode_seq_item.svh:19: G1 item rv_dm_mode_seq_item.m_lc_hw_debug_clr: not copied
+opentitan/hw/ip/rv_dm/dv/rv_dm_mode_agent/rv_dm_mode_seq_item.svh:20: G1 item rv_dm_mode_seq_item.m_lc_hw_debug_en: not copied
+opentitan/hw/ip/rv_dm/dv/rv_dm_mode_agent/rv_dm_mode_seq_item.svh:21: G1 item rv_dm_mode_seq_item.m_lc_dft_en: not copied
+opentitan/hw/ip/rv_dm/dv/rv_dm_mode_agent/rv_dm_mode_seq_item.svh:22: G1 item rv_dm_mode_seq_item.m_lc_check_byp_en: not copied
+opentitan/hw/ip/rv_dm/dv/rv_dm_mode_agent/rv_dm_mode_seq_item.svh:23: G1 item rv_dm_mode_seq_item.m_lc_escalate_en: not copied
+opentitan/hw/ip/rv_dm/dv/rv_dm_mode_agent/rv_dm_mode_seq_item.svh:24: G1 item rv_dm_mode_seq_item.m_lc_init_done: not copied
+opentitan/hw/ip/rv_dm/dv/rv_dm_mode_agent/rv_dm_mode_seq_item.svh:25: G1 item rv_dm_mode_seq_item.m_strap_en_override: not copied
+opentitan/hw/ip/rv_dm/dv/rv_dm_mode_agent/rv_dm_mode_seq_item.svh:29: G1 item rv_dm_mode_seq_item.m_has_pinmux_signals: not copied
+opentitan/hw/ip/rv_dm/dv/rv_dm_mode_agent/rv_dm_mode_seq_item.svh:30: G1 item rv_dm_mode_seq_item.m_pinmux_hw_debug_en: not copied
+opentitan/hw/ip/rv_dm/dv/rv_dm_mode_agent/rv_dm_mode_seq_item.svh:32: G1 item rv_dm_mode_seq_item.m_has_pwrmgr_signals: not copied
+opentitan/hw/ip/rv_dm/dv/rv_dm_mode_agent/rv_dm_mode_seq_item.svh:33: G1 item rv_dm_mode_seq_item.m_strap_en: not copied
+opentitan/hw/ip/rv_dm/dv/rv_dm_mode_agent/rv_dm_mode_seq_item.svh:37: G1 item rv_dm_mode_seq_item.m_has_otp_ctrl_signals: not copied
+opentitan/hw/ip/rv_dm/dv/rv_dm_mode_agent/rv_dm_mode_seq_item.svh:38: G1 item rv_dm_mode_seq_item.m_otp_dis_rv_dm_late_debug: not copied
+opentitan/hw/ip/rv_dm/dv/rv_dm_mode_agent/rv_dm_mode_seq_item.svh:42: G1 item rv_dm_mode_seq_item.m_has_scanmode: not copied
+opentitan/hw/ip/rv_dm/dv/rv_dm_mode_agent/rv_dm_mode_seq_item.svh:43: G1 item rv_dm_mode_seq_item.m_scanmode: not copied
+opentitan/hw/ip/rv_dm/dv/rv_dm_mode_agent/rv_dm_mode_seq_item.svh:47: G1 item rv_dm_mode_seq_item.m_has_cheriot_ena: not copied
+opentitan/hw/ip/rv_dm/dv/rv_dm_mode_agent/rv_dm_mode_seq_item.svh:48: G1 item rv_dm_mode_seq_item.m_cheriot_ena: not copied
+opentitan/hw/ip/soc_dbg_ctrl/dv/env/soc_dbg_ctrl_env_cfg.sv:5: G5 object soc_dbg_ctrl_env_cfg: 2 data members, no field macros or do_* methods
+opentitan/hw/ip/spi_device/dv/env/spi_device_env_cfg.sv:8: G1 object spi_device_env_cfg.sram_egress_start_addr: not copied
+opentitan/hw/ip/spi_device/dv/env/spi_device_env_cfg.sv:9: G1 object spi_device_env_cfg.sram_egress_end_addr: not copied
+opentitan/hw/ip/spi_device/dv/env/spi_device_env_cfg.sv:10: G1 object spi_device_env_cfg.sram_ingress_start_addr: not copied
+opentitan/hw/ip/spi_device/dv/env/spi_device_env_cfg.sv:11: G1 object spi_device_env_cfg.sram_ingress_end_addr: not copied
+opentitan/hw/ip/spi_device/dv/env/spi_device_env_cfg.sv:15: G1 object spi_device_env_cfg.next_read_buffer_addr: not copied
+opentitan/hw/ip/spi_device/dv/env/spi_device_env_cfg.sv:19: G1 object spi_device_env_cfg.read_buffer_ptr: not copied
+opentitan/hw/ip/spi_device/dv/env/spi_device_env_cfg.sv:23: G1 object spi_device_env_cfg.do_spi_clk_configure: not copied
+opentitan/hw/ip/spi_device/dv/env/spi_device_env_cfg.sv:30: G1 object spi_device_env_cfg.do_addr_4b_cfg: not copied
+opentitan/hw/ip/spi_device/dv/env/spi_device_env_cfg.sv:33: G1 object spi_device_env_cfg.scb_clear_mems: not copied
+opentitan/hw/ip/spi_device/dv/env/spi_device_env_cfg.sv:38: G1 object spi_device_env_cfg.en_check_tpm_not_empty_intr: not copied
+opentitan/hw/ip/spi_device/dv/env/spi_device_env_cfg.sv:42: G1 object spi_device_env_cfg.last_flash_cmd_set_busy: not copied
+opentitan/hw/ip/spi_device/dv/env/spi_device_env_cfg.sv:46: G1 object spi_device_env_cfg.vseq_txn_finished: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_host_env_cfg.sv:10: G1 object spi_host_env_cfg.reset_kinds: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_host_env_cfg.sv:12: G1 object spi_host_env_cfg.seq_cfg: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_host_env_cfg.sv:19: G1 object spi_host_env_cfg.num_dummy: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_host_env_cfg.sv:20: G1 object spi_host_env_cfg.max_dummy_cycles: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_host_env_cfg.sv:21: G1 object spi_host_env_cfg.min_dummy_cycles: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_host_env_cfg.sv:25: G1 object spi_host_env_cfg.tx_stall_check: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_host_env_cfg.sv:28: G1 object spi_host_env_cfg.num_cmd_bytes: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_host_env_cfg.sv:32: G1 object spi_host_env_cfg.csr_spinwait_timeout_ns: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_host_env_pkg.sv:168: G5 object csr_spinwait_ctrl_object: 1 data members, no field macros or do_* methods
+opentitan/hw/ip/spi_host/dv/env/spi_host_seq_cfg.sv:6: G5 object spi_host_seq_cfg: 31 data members, no field macros or do_* methods
+opentitan/hw/ip/spi_host/dv/env/spi_segment_item.sv:21: G2 item spi_segment_item.rx_only_weight: copied (do_copy) but not compared
+opentitan/hw/ip/spi_host/dv/env/spi_segment_item.sv:21: G3 item spi_segment_item.rx_only_weight: copied (do_copy) but not printed
+opentitan/hw/ip/spi_host/dv/env/spi_segment_item.sv:22: G2 item spi_segment_item.tx_only_weight: copied (do_copy) but not compared
+opentitan/hw/ip/spi_host/dv/env/spi_segment_item.sv:22: G3 item spi_segment_item.tx_only_weight: copied (do_copy) but not printed
+opentitan/hw/ip/spi_host/dv/env/spi_segment_item.sv:23: G1 item spi_segment_item.dummy_weight: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_segment_item.sv:26: G2 item spi_segment_item.num_dummy: copied (do_copy) but not compared
+opentitan/hw/ip/spi_host/dv/env/spi_segment_item.sv:26: G3 item spi_segment_item.num_dummy: copied (do_copy) but not printed
+opentitan/hw/ip/spi_host/dv/env/spi_segment_item.sv:28: G2 item spi_segment_item.num_cmd_bytes: copied (do_copy) but not compared
+opentitan/hw/ip/spi_host/dv/env/spi_segment_item.sv:28: G3 item spi_segment_item.num_cmd_bytes: copied (do_copy) but not printed
+opentitan/hw/ip/spi_host/dv/env/spi_segment_item.sv:31: G1 item spi_segment_item.spi_len_min: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_segment_item.sv:32: G1 item spi_segment_item.spi_len_max: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_segment_item.sv:34: G2 item spi_segment_item.cmd: copied (do_copy) but not compared
+opentitan/hw/ip/spi_host/dv/env/spi_segment_item.sv:35: G2 item spi_segment_item.seg_type: copied (do_copy) but not compared
+opentitan/hw/ip/spi_host/dv/env/spi_segment_item.sv:36: G2 item spi_segment_item.command_reg: copied (do_copy) but not compared
+opentitan/hw/ip/spi_host/dv/env/spi_segment_item.sv:37: G2 item spi_segment_item.spi_data: copied (do_copy) but not compared
+opentitan/hw/ip/spi_host/dv/env/spi_segment_item.sv:39: G2 item spi_segment_item.csid: copied (do_copy) but not compared
+opentitan/hw/ip/spi_host/dv/env/spi_transaction_item.sv:20: G1 item spi_transaction_item.read_weight: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_transaction_item.sv:21: G1 item spi_transaction_item.write_weight: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_transaction_item.sv:22: G1 item spi_transaction_item.alt_weight: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_transaction_item.sv:23: G1 item spi_transaction_item.std_en: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_transaction_item.sv:24: G1 item spi_transaction_item.dual_en: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_transaction_item.sv:25: G1 item spi_transaction_item.quad_en: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_transaction_item.sv:27: G1 item spi_transaction_item.rx_only_weight: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_transaction_item.sv:28: G1 item spi_transaction_item.tx_only_weight: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_transaction_item.sv:31: G1 item spi_transaction_item.spi_len_min: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_transaction_item.sv:32: G1 item spi_transaction_item.spi_len_max: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_transaction_item.sv:35: G1 item spi_transaction_item.spi_num_seg_min: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_transaction_item.sv:36: G1 item spi_transaction_item.spi_num_seg_max: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_transaction_item.sv:39: G1 item spi_transaction_item.num_dummy: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_transaction_item.sv:41: G1 item spi_transaction_item.num_cmd_bytes: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_transaction_item.sv:43: G1 item spi_transaction_item.max_spi_device: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_transaction_item.sv:45: G1 item spi_transaction_item.max_spi_devices: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_transaction_item.sv:46: G1 item spi_transaction_item.csid: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_transaction_item.sv:48: G1 item spi_transaction_item.num_segments: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_transaction_item.sv:50: G1 item spi_transaction_item.cmd: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_transaction_item.sv:52: G1 item spi_transaction_item.segment: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_transaction_item.sv:52: G1 item spi_transaction_item.segment_clone: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_transaction_item.sv:53: G1 item spi_transaction_item.seg_type: not copied
+opentitan/hw/ip/spi_host/dv/env/spi_transaction_item.sv:54: G1 item spi_transaction_item.segments: not copied
+opentitan/hw/ip/sram_ctrl/dv/env/sram_ctrl_env_cfg.sv:5: G5 object sram_ctrl_env_cfg: 8 data members, no field macros or do_* methods
+opentitan/hw/ip/sram_ctrl/dv/env/sram_ctrl_mem_bkdr_scb.sv:5: G5 object sram_ctrl_mem_bkdr_scb: 3 data members, no field macros or do_* methods
+opentitan/hw/ip/tlul/generic_dv/env/xbar_env_cfg.sv:14: G1 object xbar_env_cfg.num_enabled_hosts: not copied
+opentitan/hw/ip/tlul/generic_dv/env/xbar_env_cfg.sv:16: G1 object xbar_env_cfg.valid_a_source_width: not copied
+opentitan/hw/ip/tlul/generic_dv/env/xbar_env_cfg.sv:18: G1 object xbar_env_cfg.allow_host_drop_valid_wo_ready: not copied
+opentitan/hw/ip/tlul/generic_dv/env/xbar_env_cfg.sv:19: G1 object xbar_env_cfg.allow_device_drop_valid_wo_ready: not copied
+opentitan/hw/ip/tlul/generic_dv/env/xbar_env_cfg.sv:20: G1 object xbar_env_cfg.min_host_valid_len: not copied
+opentitan/hw/ip/tlul/generic_dv/env/xbar_env_cfg.sv:21: G1 object xbar_env_cfg.max_host_valid_len: not copied
+opentitan/hw/ip/tlul/generic_dv/env/xbar_env_cfg.sv:22: G1 object xbar_env_cfg.min_device_valid_len: not copied
+opentitan/hw/ip/tlul/generic_dv/env/xbar_env_cfg.sv:23: G1 object xbar_env_cfg.max_device_valid_len: not copied
+opentitan/hw/ip/tlul/generic_dv/env/xbar_env_cfg.sv:25: G1 object xbar_env_cfg.min_host_req_delay: not copied
+opentitan/hw/ip/tlul/generic_dv/env/xbar_env_cfg.sv:26: G1 object xbar_env_cfg.max_host_req_delay: not copied
+opentitan/hw/ip/tlul/generic_dv/env/xbar_env_cfg.sv:27: G1 object xbar_env_cfg.min_host_rsp_delay: not copied
+opentitan/hw/ip/tlul/generic_dv/env/xbar_env_cfg.sv:28: G1 object xbar_env_cfg.max_host_rsp_delay: not copied
+opentitan/hw/ip/tlul/generic_dv/env/xbar_env_cfg.sv:29: G1 object xbar_env_cfg.min_device_req_delay: not copied
+opentitan/hw/ip/tlul/generic_dv/env/xbar_env_cfg.sv:30: G1 object xbar_env_cfg.max_device_req_delay: not copied
+opentitan/hw/ip/tlul/generic_dv/env/xbar_env_cfg.sv:31: G1 object xbar_env_cfg.min_device_rsp_delay: not copied
+opentitan/hw/ip/tlul/generic_dv/env/xbar_env_cfg.sv:32: G1 object xbar_env_cfg.max_device_rsp_delay: not copied
+opentitan/hw/ip/tlul/generic_dv/env/xbar_env_cfg.sv:35: G1 object xbar_env_cfg.short_xbar_test: not copied
+opentitan/hw/ip/uart/dv/env/uart_env_cfg.sv:11: G1 object uart_env_cfg.disable_scb_rx_parity_check: not copied
+opentitan/hw/ip/uart/dv/env/uart_env_cfg.sv:12: G1 object uart_env_cfg.disable_scb_rx_frame_check: not copied
+opentitan/hw/ip/usbdev/dv/env/timed_reg.sv:22: G5 object timed_reg_field: 8 data members, no field macros or do_* methods
+opentitan/hw/ip/usbdev/dv/env/timed_reg.sv:176: G5 object timed_reg: 2 data members, no field macros or do_* methods
+opentitan/hw/ip/usbdev/dv/env/usbdev_env_cfg.sv:17: G1 object usbdev_env_cfg.reset_kinds: not copied
+opentitan/hw/ip/usbdev/dv/env/usbdev_env_cfg.sv:44: G1 object usbdev_env_cfg.host_clk_freq_khz: not copied
+opentitan/hw/ip/usbdev/dv/env/usbdev_env_cfg.sv:54: G1 object usbdev_env_cfg.en_scb_rdchk_configin: not copied
+opentitan/hw/ip/usbdev/dv/env/usbdev_env_cfg.sv:56: G1 object usbdev_env_cfg.en_scb_rdchk_linkstate: not copied
+opentitan/hw/ip/usbdev/dv/env/usbdev_env_cfg.sv:58: G1 object usbdev_env_cfg.en_scb_rdchk_link_in_err: not copied
+opentitan/hw/ip/usbdev/dv/env/usbdev_env_cfg.sv:60: G1 object usbdev_env_cfg.en_scb_rdchk_link_resume: not copied
+opentitan/hw/ip/usbdev/dv/env/usbdev_env_cfg.sv:62: G1 object usbdev_env_cfg.en_scb_rdchk_rx_pid_err: not copied
+opentitan/hw/ip/usbdev/dv/env/usbdev_env_cfg.sv:64: G1 object usbdev_env_cfg.en_scb_rdchk_rx_crc_err: not copied
+opentitan/hw/ip/usbdev/dv/env/usbdev_env_cfg.sv:66: G1 object usbdev_env_cfg.en_scb_rdchk_rx_bitstuff_err: not copied
+opentitan/hw/ip/usbdev/dv/env/usbdev_timed_regs.sv:7: G5 object usbdev_timed_regs: 3 data members, no field macros or do_* methods
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:10: G1 object chip_env_cfg.uart_baud_rate: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:13: G1 object chip_env_cfg.write_sw_logs_to_file: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:16: G1 object chip_env_cfg.use_spi_load_bootstrap: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:19: G1 object chip_env_cfg.skip_rom_bkdr_load: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:25: G1 object chip_env_cfg.chip_clock_source: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:28: G1 object chip_env_cfg.mem_bkdr_util_h: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:40: G1 object chip_env_cfg.creator_sw_cfg_ast_cfg_data: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:56: G1 object chip_env_cfg.sw_images: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:57: G1 object chip_env_cfg.sw_image_flags: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:60: G1 object chip_env_cfg.use_otp_image: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:61: G1 object chip_env_cfg.otp_images: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:63: G1 object chip_env_cfg.sw_test_timeout_ns: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:65: G1 object chip_env_cfg.pad_pull_delay: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:66: G1 object chip_env_cfg.pad_in_dis_val: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:67: G1 object chip_env_cfg.sw_logger_vif: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:68: G1 object chip_env_cfg.sw_test_status_vif: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:69: G1 object chip_env_cfg.ast_supply_vif: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:70: G1 object chip_env_cfg.ast_ext_clk_vif: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:71: G1 object chip_env_cfg.usb20_vif: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:76: G1 object chip_env_cfg.i3c0_num_targets: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:77: G1 object chip_env_cfg.i3c1_num_targets: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:80: G1 object chip_env_cfg.num_ram_main_tiles: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:81: G1 object chip_env_cfg.num_ram_ret_tiles: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:82: G1 object chip_env_cfg.num_otbn_dmem_tiles: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:85: G1 object chip_env_cfg.m_uart_agent_cfgs: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:86: G1 object chip_env_cfg.m_spi_device_agent_cfgs: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:88: G1 object chip_env_cfg.m_jtag_agent_cfg: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:89: G1 object chip_env_cfg.m_jtag_dtm_ral: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:91: G1 object chip_env_cfg.m_i2c_agent_cfgs: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:96: G1 object chip_env_cfg.rv_dm_mem_ral_name: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:105: G1 object chip_env_cfg.en_small_rma: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:108: G1 object chip_env_cfg.otp_test_status: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:114: G1 object chip_env_cfg.flash_write_latency_in_us: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:122: G1 object chip_env_cfg.early_cpu_init: not copied
+opentitan/hw/top_earlgrey/dv/env/chip_env_cfg.sv:125: G1 object chip_env_cfg.m_rom_ctrl_env_cfg: not copied
+opentitan/hw/top_earlgrey/ip_autogen/alert_handler/dv/env/alert_handler_env_cfg.sv:8: G1 object alert_handler_env_cfg.esc_en_vif: not copied
+opentitan/hw/top_earlgrey/ip_autogen/alert_handler/dv/env/alert_handler_env_cfg.sv:9: G1 object alert_handler_env_cfg.crashdump_vif: not copied
+opentitan/hw/top_earlgrey/ip_autogen/alert_handler/dv/env/alert_handler_env_cfg.sv:13: G1 object alert_handler_env_cfg.alert_handler_vif: not copied
+opentitan/hw/top_earlgrey/ip_autogen/clkmgr/dv/env/clkmgr_env_cfg.sv:5: G5 object clkmgr_env_cfg: 1 data members, no field macros or do_* methods
+opentitan/hw/top_earlgrey/ip_autogen/gpio/dv/env/gpio_env_cfg.sv:5: G5 object gpio_env_cfg: 4 data members, no field macros or do_* methods
+opentitan/hw/top_earlgrey/ip_autogen/otp_ctrl/dv/env/otp_ctrl_ast_inputs_cfg.sv:20: G5 object otp_ctrl_ast_inputs_cfg: 5 data members, no field macros or do_* methods
+opentitan/hw/top_earlgrey/ip_autogen/otp_ctrl/dv/env/otp_ctrl_env_cfg.sv:17: G5 object otp_ctrl_env_cfg: 11 data members, no field macros or do_* methods
+opentitan/hw/top_earlgrey/ip_autogen/pwrmgr/dv/env/pwrmgr_env_cfg.sv:5: G5 object pwrmgr_env_cfg: 4 data members, no field macros or do_* methods
+opentitan/hw/top_earlgrey/ip_autogen/rstmgr/dv/env/rstmgr_env_cfg.sv:5: G5 object rstmgr_env_cfg: 1 data members, no field macros or do_* methods
+classes checked {'item': 47, 'object': 113}; findings {'item': {'G1': 89, 'G2': 96, 'G3': 59, 'G5': 3}, 'object': {'G1': 613, 'G2': 1, 'G4': 3, 'G5': 50}}

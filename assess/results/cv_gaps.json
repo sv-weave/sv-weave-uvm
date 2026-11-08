@@ -1,0 +1,947 @@
+{
+ "roots": [
+  "packages/core-v-verif/lib/uvm_agents",
+  "packages/core-v-verif/lib/uvm_libs",
+  "packages/core-v-verif/lib/uvm_components",
+  "packages/core-v-verif/lib/cv_dv_utils/uvm",
+  "packages/core-v-verif/cv32e40p/env",
+  "packages/core-v-verif/cv32e40s/env",
+  "packages/core-v-verif/cv32e40x/env"
+ ],
+ "classes_checked": {
+  "item": 40,
+  "object": 63
+ },
+ "counts": {
+  "item": {
+   "G1": 25,
+   "G2": 1,
+   "G4": 8,
+   "G5": 2
+  },
+  "object": {
+   "G1": 62,
+   "G5": 4
+  }
+ },
+ "findings": [
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_axi/src/obj/uvma_axi_cfg.sv",
+   "line": 18,
+   "class": "uvma_axi_cfg_c",
+   "member": "trn_log_enabled",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_axi/src/obj/uvma_axi_cntxt.sv",
+   "line": 24,
+   "class": "uvma_axi_cntxt_c",
+   "member": "mem",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_axi/src/seq/uvma_axi_base_seq_item.sv",
+   "line": 48,
+   "class": "uvma_axi_base_seq_item_c",
+   "member": "cfg",
+   "kind": "item",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_axi5/src/obj/pure_agent_cfg.sv",
+   "line": 57,
+   "class": "uvma_axi_cfg_c",
+   "member": "m_part_st",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_axi5/src/obj/uvma_axi_cfg.sv",
+   "line": 54,
+   "class": "uvma_axi_cfg_c",
+   "member": "axi_lite",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_axi5/src/obj/uvma_axi_cfg.sv",
+   "line": 55,
+   "class": "uvma_axi_cfg_c",
+   "member": "interface_name",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_axi5/src/obj/uvma_axi_cfg.sv",
+   "line": 56,
+   "class": "uvma_axi_cfg_c",
+   "member": "is_reactive",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_axi5/src/obj/uvma_axi_cfg.sv",
+   "line": 57,
+   "class": "uvma_axi_cfg_c",
+   "member": "id_management_enable",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_axi5/src/obj/uvma_axi_cfg.sv",
+   "line": 58,
+   "class": "uvma_axi_cfg_c",
+   "member": "covergroup_enable",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_axi5/src/obj/uvma_axi_cfg.sv",
+   "line": 68,
+   "class": "uvma_axi_cfg_c",
+   "member": "m_part_st",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_axi5/src/seq/uvma_axi_transaction.sv",
+   "line": 138,
+   "class": "uvma_axi_transaction_c",
+   "member": "name",
+   "kind": "item",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_axi5/src/seq/uvma_axi_transaction.sv",
+   "line": 147,
+   "class": "uvma_axi_transaction_c",
+   "member": "m_err",
+   "kind": "item",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_axi5/src/seq/uvma_axi_transaction.sv",
+   "line": 203,
+   "class": "uvma_axi_transaction_c",
+   "member": "m_atop_type",
+   "kind": "item",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_axi5/src/seq/uvma_axi_transaction.sv",
+   "line": 204,
+   "class": "uvma_axi_transaction_c",
+   "member": "m_atop_endianness",
+   "kind": "item",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_axi5/src/seq/uvma_axi_transaction.sv",
+   "line": 205,
+   "class": "uvma_axi_transaction_c",
+   "member": "m_atop_op",
+   "kind": "item",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_axi5/src/seq/uvma_axi_transaction_cfg.sv",
+   "line": 42,
+   "class": "uvma_axi_transaction_cfg_c",
+   "member": "name",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_clknrst/uvma_clknrst_cfg.sv",
+   "line": 38,
+   "class": "uvma_clknrst_cfg_c",
+   "member": "mon_clk_lock_edge_count",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_clknrst/uvma_clknrst_cfg.sv",
+   "line": 39,
+   "class": "uvma_clknrst_cfg_c",
+   "member": "mon_clk_lock_loss_period_percent",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_core_cntrl/uvma_core_cntrl_cfg.sv",
+   "line": 30,
+   "class": "uvma_core_cntrl_cfg_c",
+   "member": "core_name",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_core_cntrl/uvma_core_cntrl_cfg.sv",
+   "line": 41,
+   "class": "uvma_core_cntrl_cfg_c",
+   "member": "use_iss",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_core_cntrl/uvma_core_cntrl_cfg.sv",
+   "line": 42,
+   "class": "uvma_core_cntrl_cfg_c",
+   "member": "iss_control_file",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_core_cntrl/uvma_core_cntrl_cfg.sv",
+   "line": 94,
+   "class": "uvma_core_cntrl_cfg_c",
+   "member": "unsupported_csr_mask",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_core_cntrl/uvma_core_cntrl_cfg.sv",
+   "line": 115,
+   "class": "uvma_core_cntrl_cfg_c",
+   "member": "mhartid_plusarg_valid",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_core_cntrl/uvma_core_cntrl_cfg.sv",
+   "line": 118,
+   "class": "uvma_core_cntrl_cfg_c",
+   "member": "marchid_plusarg_valid",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_core_cntrl/uvma_core_cntrl_cfg.sv",
+   "line": 121,
+   "class": "uvma_core_cntrl_cfg_c",
+   "member": "mvendorid_plusarg_valid",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_core_cntrl/uvma_core_cntrl_cfg.sv",
+   "line": 124,
+   "class": "uvma_core_cntrl_cfg_c",
+   "member": "mimpid_plusarg_valid",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_cvxif/src/obj/uvma_cvxif_cfg.sv",
+   "line": 21,
+   "class": "uvma_cvxif_cfg_c",
+   "member": "cvxif_plusarg_valid",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G5",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_cvxif/src/seq/uvma_cvxif_req_item.sv",
+   "line": 18,
+   "class": "uvma_cvxif_req_item_c",
+   "member": null,
+   "kind": "item",
+   "msg": "9 data members, no field macros or do_* methods"
+  },
+  {
+   "rule": "G5",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_cvxif/src/seq/uvma_cvxif_resp_item.sv",
+   "line": 19,
+   "class": "uvma_cvxif_resp_item_c",
+   "member": null,
+   "kind": "item",
+   "msg": "10 data members, no field macros or do_* methods"
+  },
+  {
+   "rule": "G4",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_fencei/seq/uvma_fencei_seq_item.sv",
+   "line": 60,
+   "class": "uvma_fencei_seq_item_c",
+   "member": null,
+   "kind": "item",
+   "msg": "convert2string does not call super.convert2string (base uvml_trn_seq_item_c)"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_interrupt/uvma_interrupt_cfg.sv",
+   "line": 38,
+   "class": "uvma_interrupt_cfg_c",
+   "member": "valid_irq_mask",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_isacov/uvma_isacov_cfg.sv",
+   "line": 37,
+   "class": "uvma_isacov_cfg_c",
+   "member": "core_cfg",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_isacov/uvma_isacov_instr.sv",
+   "line": 75,
+   "class": "uvma_isacov_instr_c",
+   "member": "rvfi",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_isacov/uvma_isacov_mon_trn.sv",
+   "line": 24,
+   "class": "uvma_isacov_mon_trn_c",
+   "member": "instr",
+   "kind": "item",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G4",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_isacov/uvma_isacov_mon_trn.sv",
+   "line": 38,
+   "class": "uvma_isacov_mon_trn_c",
+   "member": null,
+   "kind": "item",
+   "msg": "convert2string does not call super.convert2string (base uvml_trn_mon_trn_c)"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_obi_memory/src/obj/uvma_obi_memory_cfg.sv",
+   "line": 40,
+   "class": "uvma_obi_memory_cfg_c",
+   "member": "mon_logger_name",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_obi_memory/src/obj/uvma_obi_memory_cfg.sv",
+   "line": 44,
+   "class": "uvma_obi_memory_cfg_c",
+   "member": "ignore_rready",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_obi_memory/src/obj/uvma_obi_memory_cntxt.sv",
+   "line": 38,
+   "class": "uvma_obi_memory_cntxt_c",
+   "member": "mem",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_obi_memory/src/obj/uvma_obi_memory_cntxt.sv",
+   "line": 43,
+   "class": "uvma_obi_memory_cntxt_c",
+   "member": "mon_gnt_latency",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_obi_memory/src/obj/uvma_obi_memory_cntxt.sv",
+   "line": 44,
+   "class": "uvma_obi_memory_cntxt_c",
+   "member": "mon_rvalid_latency",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_obi_memory/src/obj/uvma_obi_memory_cntxt.sv",
+   "line": 45,
+   "class": "uvma_obi_memory_cntxt_c",
+   "member": "mon_rready_latency",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_obi_memory/src/obj/uvma_obi_memory_cntxt.sv",
+   "line": 46,
+   "class": "uvma_obi_memory_cntxt_c",
+   "member": "mon_rp_hold",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_obi_memory/src/obj/uvma_obi_memory_mon_trn.sv",
+   "line": 41,
+   "class": "uvma_obi_memory_mon_trn_c",
+   "member": "exokay",
+   "kind": "item",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_obi_memory/src/obj/uvma_obi_memory_mon_trn.sv",
+   "line": 49,
+   "class": "uvma_obi_memory_mon_trn_c",
+   "member": "cfg",
+   "kind": "item",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_obi_memory/src/seq/uvma_obi_memory_base_seq_item.sv",
+   "line": 33,
+   "class": "uvma_obi_memory_base_seq_item_c",
+   "member": "cfg",
+   "kind": "item",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_pma/src/obj/uvma_pma_mon_trn.sv",
+   "line": 23,
+   "class": "uvma_pma_mon_trn_c",
+   "member": "cfg",
+   "kind": "item",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_rvfi/seq/uvma_rvfi_csr_seq_item.sv",
+   "line": 28,
+   "class": "uvma_rvfi_csr_seq_item_c",
+   "member": "csr",
+   "kind": "item",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_rvfi/seq/uvma_rvfi_csr_seq_item.sv",
+   "line": 29,
+   "class": "uvma_rvfi_csr_seq_item_c",
+   "member": "addr",
+   "kind": "item",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G4",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_rvfi/seq/uvma_rvfi_csr_seq_item.sv",
+   "line": 80,
+   "class": "uvma_rvfi_csr_seq_item_c",
+   "member": null,
+   "kind": "item",
+   "msg": "convert2string does not call super.convert2string (base uvml_trn_seq_item_c)"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_rvfi/seq/uvma_rvfi_instr_seq_item.sv",
+   "line": 27,
+   "class": "uvma_rvfi_instr_seq_item_c",
+   "member": "nret_id",
+   "kind": "item",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G4",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_rvfi/seq/uvma_rvfi_instr_seq_item.sv",
+   "line": 179,
+   "class": "uvma_rvfi_instr_seq_item_c",
+   "member": null,
+   "kind": "item",
+   "msg": "convert2string does not call super.convert2string (base uvml_trn_seq_item_c)"
+  },
+  {
+   "rule": "G4",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_rvfi/seq/uvma_rvfi_instr_table_seq_item.sv",
+   "line": 69,
+   "class": "uvma_rvfi_instr_table_seq_item_c",
+   "member": null,
+   "kind": "item",
+   "msg": "convert2string does not call super.convert2string (base uvml_trn_seq_item_c)"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_rvfi/uvma_rvfi_cfg.sv",
+   "line": 32,
+   "class": "uvma_rvfi_cfg_c",
+   "member": "core_cfg",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_rvfi/uvma_rvfi_cfg.sv",
+   "line": 58,
+   "class": "uvma_rvfi_cfg_c",
+   "member": "instr_name",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G4",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_rvvi/seq/uvma_rvvi_control_seq_item.sv",
+   "line": 58,
+   "class": "uvma_rvvi_control_seq_item_c",
+   "member": null,
+   "kind": "item",
+   "msg": "convert2string does not call super.convert2string (base uvml_trn_seq_item_c)"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_rvvi/seq/uvma_rvvi_state_seq_item.sv",
+   "line": 28,
+   "class": "uvma_rvvi_state_seq_item_c",
+   "member": "valid",
+   "kind": "item",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G4",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_rvvi/seq/uvma_rvvi_state_seq_item.sv",
+   "line": 86,
+   "class": "uvma_rvvi_state_seq_item_c",
+   "member": null,
+   "kind": "item",
+   "msg": "convert2string does not call super.convert2string (base uvml_trn_seq_item_c)"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_rvvi/uvma_rvvi_cfg.sv",
+   "line": 37,
+   "class": "uvma_rvvi_cfg_c",
+   "member": "core_cfg",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_rvvi/uvma_rvvi_cfg.sv",
+   "line": 46,
+   "class": "uvma_rvvi_cfg_c",
+   "member": "volatile_mem_range_q",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G4",
+   "file": "packages/core-v-verif/lib/uvm_agents/uvma_rvvi_ovpsim/seq/uvma_rvvi_ovpsim_control_seq_item.sv",
+   "line": 105,
+   "class": "uvma_rvvi_ovpsim_control_seq_item_c",
+   "member": null,
+   "kind": "item",
+   "msg": "convert2string does not call super.convert2string (base uvma_rvvi_control_seq_item_c)"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_libs/uvml_mem/uvml_mem.sv",
+   "line": 34,
+   "class": "uvml_mem_c",
+   "member": "_mem",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_libs/uvml_sb/uvml_sb_cntxt.sv",
+   "line": 31,
+   "class": "uvml_sb_cntxt_c",
+   "member": "act_q",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_libs/uvml_sb/uvml_sb_cntxt.sv",
+   "line": 32,
+   "class": "uvml_sb_cntxt_c",
+   "member": "exp_q",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_libs/uvml_sb/uvml_sb_cntxt.sv",
+   "line": 33,
+   "class": "uvml_sb_cntxt_c",
+   "member": "exp_time_q",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_libs/uvml_trn/uvml_trn_mon_trn.sv",
+   "line": 28,
+   "class": "uvml_trn_mon_trn_c",
+   "member": "__uid",
+   "kind": "item",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/uvm_libs/uvml_trn/uvml_trn_seq_item.sv",
+   "line": 28,
+   "class": "uvml_trn_seq_item_c",
+   "member": "__uid",
+   "kind": "item",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/axi_superset_agent/axi_superset_config_c.svh",
+   "line": 35,
+   "class": "axi_superset_config_c",
+   "member": "name",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/axi_superset_agent/axi_superset_txn_c.svh",
+   "line": 133,
+   "class": "axi_superset_txn_c",
+   "member": "name",
+   "kind": "item",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/axi_superset_agent/axi_superset_txn_c.svh",
+   "line": 142,
+   "class": "axi_superset_txn_c",
+   "member": "m_err",
+   "kind": "item",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/axi_superset_agent/axi_superset_txn_c.svh",
+   "line": 188,
+   "class": "axi_superset_txn_c",
+   "member": "m_atop_type",
+   "kind": "item",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/axi_superset_agent/axi_superset_txn_c.svh",
+   "line": 189,
+   "class": "axi_superset_txn_c",
+   "member": "m_atop_endianness",
+   "kind": "item",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/axi_superset_agent/axi_superset_txn_c.svh",
+   "line": 190,
+   "class": "axi_superset_txn_c",
+   "member": "m_atop_op",
+   "kind": "item",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/axi_superset_agent/axi_superset_txn_cfg_c.svh",
+   "line": 39,
+   "class": "axi_superset_txn_cfg_c",
+   "member": "name",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/generic_agent/generic_txn.svh",
+   "line": 30,
+   "class": "generic_txn",
+   "member": "m_req",
+   "kind": "item",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/generic_agent/generic_txn.svh",
+   "line": 31,
+   "class": "generic_txn",
+   "member": "m_rsp",
+   "kind": "item",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/generic_agent/generic_txn.svh",
+   "line": 33,
+   "class": "generic_txn",
+   "member": "m_txn_idle_cycles",
+   "kind": "item",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model.svh",
+   "line": 32,
+   "class": "memory_txn",
+   "member": "id",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model.svh",
+   "line": 33,
+   "class": "memory_txn",
+   "member": "addr",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model.svh",
+   "line": 34,
+   "class": "memory_txn",
+   "member": "data",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model.svh",
+   "line": 35,
+   "class": "memory_txn",
+   "member": "strb",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model.svh",
+   "line": 36,
+   "class": "memory_txn",
+   "member": "err",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model.svh",
+   "line": 37,
+   "class": "memory_txn",
+   "member": "ex_fail",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model.svh",
+   "line": 39,
+   "class": "memory_txn",
+   "member": "cmd",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model.svh",
+   "line": 40,
+   "class": "memory_txn",
+   "member": "atop",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model.svh",
+   "line": 48,
+   "class": "memory_txn",
+   "member": "req_ts",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model.svh",
+   "line": 48,
+   "class": "memory_txn",
+   "member": "resp_ts",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G5",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model.svh",
+   "line": 85,
+   "class": "memory_c",
+   "member": null,
+   "kind": "object",
+   "msg": "3 data members, no field macros or do_* methods"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model.svh",
+   "line": 127,
+   "class": "mem_txn_rsp_delay",
+   "member": "m_rsp_cfg",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model_cfg.svh",
+   "line": 68,
+   "class": "memory_rsp_cfg",
+   "member": "unsolicited_rsp",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model_cfg.svh",
+   "line": 77,
+   "class": "memory_rsp_cfg",
+   "member": "num_amo_wr_errors",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model_cfg.svh",
+   "line": 78,
+   "class": "memory_rsp_cfg",
+   "member": "num_rd_exclusive_fails",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model_cfg.svh",
+   "line": 79,
+   "class": "memory_rsp_cfg",
+   "member": "num_wr_exclusive_fails",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/memory_rsp_model/memory_response_model_cfg.svh",
+   "line": 88,
+   "class": "memory_rsp_cfg",
+   "member": "m_bp",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G5",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/memory_shadow/memory_shadow_c.svh",
+   "line": 62,
+   "class": "memory_shadow_object",
+   "member": null,
+   "kind": "object",
+   "msg": "5 data members, no field macros or do_* methods"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/lib/cv_dv_utils/uvm/perf_mon/perf_record_c.svh",
+   "line": 31,
+   "class": "perf_record_c",
+   "member": "m_num_trans",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/cv32e40p/env/uvme/uvme_cv32e40p_cfg.sv",
+   "line": 38,
+   "class": "uvme_cv32e40p_cfg_c",
+   "member": "zero_stall_sim",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/cv32e40p/env/uvme/uvme_cv32e40p_cfg.sv",
+   "line": 39,
+   "class": "uvme_cv32e40p_cfg_c",
+   "member": "max_data_zero_instr_stall",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G2",
+   "file": "packages/core-v-verif/cv32e40p/env/uvme/uvme_rv32isa_covg_trn.sv",
+   "line": 29,
+   "class": "uvme_rv32isa_covg_trn_c",
+   "member": "ins",
+   "kind": "item",
+   "msg": "copied (do_copy) but not compared"
+  },
+  {
+   "rule": "G5",
+   "file": "packages/core-v-verif/cv32e40s/env/corev-dv/cv32e40s_pma_cfg.sv",
+   "line": 19,
+   "class": "cv32e40s_pma_cfg",
+   "member": null,
+   "kind": "object",
+   "msg": "2 data members, no field macros or do_* methods"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/cv32e40s/env/uvme/uvme_cv32e40s_cntxt.sv",
+   "line": 43,
+   "class": "uvme_cv32e40s_cntxt_c",
+   "member": "fencei_cntxt",
+   "kind": "object",
+   "msg": "not copied"
+  },
+  {
+   "rule": "G5",
+   "file": "packages/core-v-verif/cv32e40x/env/corev-dv/cv32e40x_pma_cfg.sv",
+   "line": 19,
+   "class": "cv32e40x_pma_cfg",
+   "member": null,
+   "kind": "object",
+   "msg": "2 data members, no field macros or do_* methods"
+  },
+  {
+   "rule": "G1",
+   "file": "packages/core-v-verif/cv32e40x/env/uvme/uvme_cv32e40x_cntxt.sv",
+   "line": 43,
+   "class": "uvme_cv32e40x_cntxt_c",
+   "member": "fencei_cntxt",
+   "kind": "object",
+   "msg": "not copied"
+  }
+ ]
+}
