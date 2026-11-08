@@ -1,5 +1,5 @@
 # sv-weave-uvm status
-Milestone: U2 | Next action: 8d uvm_component + 3-level hierarchy, or 8a do_print weaver | Blocked on: none (U4 needs core L1/L2) | Last updated: 2026-11-08
+Milestone: U2 | Next action: 8a do_print weaver | Blocked on: none (U4 needs core L1/L2) | Last updated: 2026-11-08
 
 ## U0 Bootstrap
 - [x] Package scaffold: `sv_weave_uvm.binding.UvmBinding`, `share/sv/sv_weave_uvm_pkg.sv`
@@ -28,6 +28,13 @@ Milestone: U2 | Next action: 8d uvm_component + 3-level hierarchy, or 8a do_prin
 - Pitfall seen: a `uvm_factory f = uvm_factory::get();` initializer in an `initial` block
   runs before `sv_weave_init_m` installs the woven factory, so overrides set through `f`
   go to the old factory. Documented in docs/user/factory.rst.
+
+## U2 Complete features
+- [x] 8d `tests/sim/test_component.py`: run_test -> test -> env -> agent -> driver
+      (`uvm_driver #(tx)`), each woven, names/parents intact; `p_tx#(16)` woven on
+      Verilator. Adapter fix: `find_override_by_name` returns the woven class when UVM
+      finds no override (run_test used to create the unwoven test).
+- [ ] 8a do_print weaver; 8b do_pack/do_unpack. 8c do_record out (Q4).
 
 ## U3 Override + debug story
 - [x] Type names (Q2): woven classes use `uvm_object_param_utils` /

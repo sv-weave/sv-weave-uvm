@@ -1,0 +1,6 @@
+sv-weave:
+  binding: uvm
+  packages: {include: [comp_pkg]}
+  weavers:
+  - {name: copy}
+  - {name: compare}

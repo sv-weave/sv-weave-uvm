@@ -72,7 +72,15 @@ package sv_weave_uvm_pkg;
 
     virtual function uvm_object_wrapper find_override_by_name(
         string requested_type_name, string full_inst_path);
-      return woven_of(super.find_override_by_name(requested_type_name, full_inst_path));
+      uvm_object_wrapper t, w;
+      t = super.find_override_by_name(requested_type_name, full_inst_path);
+      if (t != null) return woven_of(t);
+      // No override: UVM returns null here and the caller (e.g. create_*_by_name, used
+      // by run_test) falls back to the registered type, unwoven. Report its woven
+      // class as the override instead; keep null when there is none.
+      t = m_resolve_type_name(requested_type_name);  // find_wrapper_by_name warns if unknown
+      w = woven_of(t);
+      return (w != t) ? w : null;
     endfunction
   endclass
 

@@ -14,6 +14,9 @@ How it works
   (or the ``sv_weave_init_m`` module) runs these registrations.
 - ``find_override_by_type`` and ``find_override_by_name`` call the UVM
   implementation first, then substitute the woven class of the type it returned.
+  When UVM finds no override by name, it returns null and ``create_*_by_name``
+  falls back to the registered type; the adapter returns the woven class instead,
+  so ``run_test("my_test")`` creates the woven test.
 
 Override order
 --------------
@@ -57,3 +60,17 @@ Get the factory after time 0 starts, not in a variable initializer::
 An initializer of a static variable runs before ``sv_weave_init_m`` installs the woven
 factory, so overrides set through ``f`` go to UVM's default factory and are lost.
 Assign ``f = uvm_factory::get();`` as a statement instead.
+
+Components and parameterized classes
+------------------------------------
+
+``uvm_component`` classes are woven like objects and registered with
+``uvm_component_param_utils``. ``type_id::create(name, this)`` and ``run_test()`` create
+the woven class with the given name and parent, so the hierarchy and full names are
+the user's (``uvm_test_top.env.agent.drv``). The copy and compare weavers treat a
+child-component handle like any other class handle: copied and compared by reference.
+
+A parameterized class registered with ``uvm_object_param_utils(p_tx#(W))`` is woven
+per specialization that the code uses (``p_tx#(16)``). UVM 2020 gives such a class no
+``type_name()``; ``get_type_name()`` of it and of its woven class is whatever the
+base class reports.
