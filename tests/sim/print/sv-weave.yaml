@@ -1,0 +1,6 @@
+sv-weave:
+  binding: uvm
+  packages: {include: [pr_pkg]}
+  weavers:
+  - {name: print}
+  - {name: do_print}

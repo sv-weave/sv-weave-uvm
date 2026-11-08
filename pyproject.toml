@@ -47,6 +47,9 @@ docs = [
 [project.entry-points."sv_weave.bindings"]
 uvm = "sv_weave_uvm.binding:UvmBinding"
 
+[project.entry-points."sv_weave.weavers"]
+do_print = "sv_weave_uvm.weavers:DoPrintWeaver"
+
 [tool.setuptools.dynamic]
 version = {attr = "sv_weave_uvm.__version__.__version__"}
 

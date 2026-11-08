@@ -20,10 +20,18 @@ def test_api_gate():
     plugin.check_api("binding", UvmBinding)
 
 
+def test_do_print_weaver_discovered():
+    from sv_weave_uvm.weavers import DoPrintWeaver
+    assert plugin.find(plugin.WEAVER_GROUP, "do_print") is DoPrintWeaver
+    plugin.check_api("weaver", DoPrintWeaver)
+
+
 def test_features_map_to_uvm_hooks():
     f = UvmBinding().features()
     assert {k: v.method for k, v in f.items()} == {
-        "copy": "do_copy", "compare": "do_compare", "print": "convert2string"}
+        "copy": "do_copy", "compare": "do_compare", "print": "convert2string",
+        "do_print": "do_print"}
+    assert f["do_print"].arg_names == ("printer",)
     assert f["compare"].ret == "bit"
     assert f["compare"].arg_names == ("rhs", "comparer")
     assert f["copy"].rhs == "rhs"

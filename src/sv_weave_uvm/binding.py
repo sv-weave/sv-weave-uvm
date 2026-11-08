@@ -1,8 +1,9 @@
 """The UVM binding for sv-weave (``binding: uvm``). It works *with* the library:
 
 - **Features are uvm_object's own virtual hooks:** ``copy`` -> ``do_copy``,
-  ``compare`` -> ``do_compare``, ``print`` -> ``convert2string``. UVM's
-  ``copy()``, ``compare()`` and ``sprint``-style calls reach them as usual.
+  ``compare`` -> ``do_compare``, ``print`` -> ``convert2string``, ``do_print`` ->
+  ``do_print`` (the ``do_print`` weaver, :mod:`sv_weave_uvm.weavers`). UVM's
+  ``copy()``, ``compare()``, ``print()`` and ``sprint()`` reach them as usual.
 - **The library's factory decides what gets created.** Each woven class carries
   `` `uvm_object_utils `` and is registered with ``sv_weave_uvm_factory``
   (``share/sv/sv_weave_uvm_pkg.sv``), a ``uvm_default_factory`` subclass installed in
@@ -46,6 +47,8 @@ class UvmBinding(Binding):
                                    args=("uvm_object rhs", "uvm_comparer comparer"),
                                    arg_names=("rhs", "comparer"), ret="bit", rhs="rhs"),
             "print": FeatureSpec("print", "convert2string", ret="string"),
+            "do_print": FeatureSpec("do_print", "do_print", args=("uvm_printer printer",),
+                                    arg_names=("printer",)),
         }
 
     def sv_runtime_files(self):
