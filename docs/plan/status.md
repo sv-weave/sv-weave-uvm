@@ -1,5 +1,5 @@
 # sv-weave-uvm status
-Milestone: U0 | Next action: CI workflows (sims on Verilator), Sphinx docs skeleton | Blocked on: none (U4 needs core L1/L2) | Last updated: 2026-11-08
+Milestone: U0 | Next action: Sphinx docs skeleton | Blocked on: none (U4 needs core L1/L2) | Last updated: 2026-11-08
 
 ## U0 Bootstrap
 - [x] Package scaffold: `sv_weave_uvm.binding.UvmBinding`, `share/sv/sv_weave_uvm_pkg.sv`
@@ -9,6 +9,8 @@ Milestone: U0 | Next action: CI workflows (sims on Verilator), Sphinx docs skele
 - [x] `tests/unit/test_binding.py` (9 tests).
 - [x] `tests/sim/test_uvm_basic.py`: `binding: uvm`, no plugin-path; adapter via
       `svweave.Runtime`. Passes on Verilator's bundled UVM.
-- [ ] CI (.github + .forgejo) that runs `-m sim`.
+- [x] CI (.github + .forgejo, copied from core): build+wheel test (`-m "not sim and not docs"`),
+      `sim` job (ivpm fetches edapack Verilator + dv-flow; unit + `-m sim`), publish needs sim;
+      Forgejo docs.yml. Not yet run on a runner (repo not pushed).
 - [ ] Docs skeleton.
 - [ ] Core issues filed (drafts: `core-issues.md`).
