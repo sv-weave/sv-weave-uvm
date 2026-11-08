@@ -97,6 +97,38 @@ src`` is an upper bound: hand ``do_*`` methods that do more than per-field work 
 stay. ``sv-weave lines`` counts one attribute per field whose macro carries ``UVM_NO*`` or
 radix flags.
 
+Savings as a share of the testbench
+-----------------------------------
+
+``python assess/report.py`` puts the saving next to the code around it, counting code
+lines only (no blank or comment lines) on both sides; hand ``do_*`` bodies counted that
+way, the saving is 1376 lines (OpenTitan) and 1130 (core-v-verif). Full report with all
+charts: ``assess/results/report/report.md``.
+
+======================================================  =========  ============
+lines sv-weave removes, as a share of                   OpenTitan  core-v-verif
+======================================================  =========  ============
+all DV code (151,045 / 49,819 lines)                    0.9%       2.3%
+code inside UVM classes                                 1.3%       4.9%
+data-class code (items, transactions, configs)          17.4%      22.6%
+field-automation code (field macros + hand ``do_*``)    91.6%      77.5%
+======================================================  =========  ============
+
+As a share of the whole testbench the saving is small: most DV code is components,
+sequences, scoreboards, interfaces and assertions, which sv-weave does not touch. It is
+concentrated where it applies: 80-90% of the copy/compare/print code and about a fifth of
+each transaction class. The larger effects are the gaps closed (21 of 47 and 20 of 40 item
+classes have one) and the compiled size.
+
+.. image:: img/pct_removed.png
+   :alt: Lines removed as a share of DV code, UVM class code, data classes and field automation
+
+.. image:: img/dv_breakdown.png
+   :alt: Where the DV code is: removed lines, rest of data classes, other classes, non-class code
+
+.. image:: img/compiled.png
+   :alt: Testbench lines after macro expansion versus after weaving
+
 Limits
 ------
 
