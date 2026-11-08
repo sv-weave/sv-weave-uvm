@@ -99,12 +99,16 @@ def uvm_weave_task(dvflow, case_dir: str, config: str = "sv-weave.yaml",
     rt = dvflow.mkTask("svweave.Runtime", name="rt", binding=["uvm"], needs=[uvm])
     chk = dvflow.mkTask("std.FileSet", name="check_sv", type="systemVerilogSource",
                         base=CHECK_SV_DIR, include="check_pkg.sv")
+    # Packages, then tb.sv in a FileSet of its own: a glob's order is the directory's,
+    # which differs between filesystems (tb.sv first fails on the GitHub runner).
     src = dvflow.mkTask("std.FileSet", name="src", type="systemVerilogSource",
-                        base=case_dir, include="*.sv")
+                        base=case_dir, include="*.sv", exclude="tb.sv")
+    tb = dvflow.mkTask("std.FileSet", name="tb_sv", type="systemVerilogSource",
+                       base=case_dir, include="tb.sv")
     cfg = os.path.join(case_dir, config)
     if os.path.isfile(cfg):
         params["config"] = cfg
-    return dvflow.mkTask("svweave.Weave", name=name, needs=[rt, chk, src], **params)
+    return dvflow.mkTask("svweave.Weave", name=name, needs=[rt, chk, src, tb], **params)
 
 
 def uvm_weave_sim(dvflow, case_dir: str, top="tb", plusargs: Sequence[str] = (),
