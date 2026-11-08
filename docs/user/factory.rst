@@ -24,7 +24,7 @@ For ``T::type_id::create(name)`` the factory:
 2. takes the resolved type -- ``T`` itself if nothing overrides it -- and, if a woven
    class is registered for it in the selected profile, creates that instead.
 
-So an override from ``tx`` to ``my_tx`` yields ``Woven_my_tx__<profile>``, and it
+So an override from ``tx`` to ``my_tx`` yields the woven ``my_tx``, and it
 does so whether the override was set before or after the woven classes were
 registered. This is why the adapter is a factory subclass and not a set of
 ``set_type_override`` calls, whose result would depend on registration order.
@@ -42,6 +42,18 @@ lookup.
 Type names
 ----------
 
-``get_type_name()`` of a woven object currently returns the woven class name
-(``Woven_my_tx__release``). How this should appear in ``factory.print()`` and logs is
-an open item.
+A woven object reports the user's type name: ``get_type_name()`` and ``type_name()``
+of a woven ``my_tx`` return ``"my_tx"``, and ``factory.print()`` and UVM messages show
+only the user's names. The woven class is registered with the factory by type only
+(`` `uvm_object_param_utils ``), so it has no factory name of its own; overrides by
+name keep using the user's names. ``get_object_type()`` does return the woven class's
+wrapper, which is how a test can tell that an object was woven.
+
+Get the factory after time 0 starts, not in a variable initializer::
+
+    initial begin
+      uvm_factory f = uvm_factory::get();   // too early: the woven factory is not yet installed
+
+An initializer of a static variable runs before ``sv_weave_init_m`` installs the woven
+factory, so overrides set through ``f`` go to UVM's default factory and are lost.
+Assign ``f = uvm_factory::get();`` as a statement instead.

@@ -17,8 +17,8 @@ Notes
 - ``print`` currently produces ``convert2string()``. A ``do_print`` weaver that goes
   through ``uvm_printer`` (so ``print()`` and ``sprint()`` use the table, tree and line
   printers) is planned.
-- The binding adds `` `uvm_object_utils `` (or `` `uvm_component_utils `` for a
-  component) to each woven class, and registers the woven class with the factory
+- The binding adds `` `uvm_object_param_utils `` (or `` `uvm_component_param_utils ``
+  for a component) to each woven class, so it keeps the user's type name, and registers the woven class with the factory
   adapter (see :doc:`factory`).
 - A class that is not registered with the factory (no `` `uvm_object_utils ``) is
   still woven, but its woven class is never created; sv-weave warns.

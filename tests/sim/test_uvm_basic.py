@@ -18,3 +18,4 @@ def test_uvm_basic(dvflow):
     text = r.text.split("STRING ", 1)[1].split("SV_WEAVE_TEST", 1)[0]
     assert text.splitlines()[:3] == ["addr: 'h12", "data: 'hcafe", "payload: '{'h1, 'h2, 'h3}"]
     assert "begin_event" not in text      # UVM's own fields are not woven
+    assert "Woven_" not in r.text         # woven classes show the user's type names

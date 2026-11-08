@@ -19,15 +19,15 @@ module tb;
     f.set_inst_override_by_type(tx::get_type(), tx1::get_type(), "i");
     f.set_inst_override_by_type(tx1::get_type(), tx2::get_type(), "i");
     a = tx::type_id::create("i");
-    `CHECK_EQ(a.get_type_name(), "Woven_tx2__release", "instance chain by type, then woven")
+    `CHECK_WOVEN(a, tx2, "instance chain by type, then woven")
     a = tx::type_id::create("j");
-    `CHECK_EQ(a.get_type_name(), "Woven_tx__release", "other instances unaffected")
+    `CHECK_WOVEN(a, tx, "other instances unaffected")
 
     // Type chain by type.
     f.set_type_override_by_type(tx::get_type(), tx1::get_type());
     f.set_type_override_by_type(tx1::get_type(), tx2::get_type());
     a = tx::type_id::create("a");
-    `CHECK_EQ(a.get_type_name(), "Woven_tx2__release", "type chain by type, then woven")
+    `CHECK_WOVEN(a, tx2, "type chain by type, then woven")
     b = tx::type_id::create("b");
     a.addr = 8'h5a;
     b.copy(a);
@@ -35,7 +35,7 @@ module tb;
 
     // Creating by name walks the same chain.
     o = f.create_object_by_name("tx", "", "o");
-    `CHECK_EQ(o.get_type_name(), "Woven_tx2__release", "create by name follows the chain")
+    `CHECK_WOVEN(o, tx2, "create by name follows the chain")
     check_pkg::pass();
     $finish;
   end

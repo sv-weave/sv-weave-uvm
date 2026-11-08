@@ -12,7 +12,7 @@ module tb;
     tx a, b, c, d;
     alt_pkg::alt_tx alt;
     a = tx::type_id::create("a");
-    `CHECK_EQ(a.get_type_name(), "Woven_tx__release", "factory returns the woven class")
+    `CHECK_WOVEN(a, tx, "factory returns the woven class")
     a.addr = 8'h12; a.data = 32'hcafe; a.payload = '{1, 2, 3};
     b = tx::type_id::create("b");
     b.copy(a);
@@ -30,13 +30,14 @@ module tb;
     // An instance override, set after the woven classes were registered.
     uvm_factory::get().set_inst_override_by_type(tx::get_type(), my_tx::get_type(), "d");
     d = tx::type_id::create("d");
-    `CHECK_EQ(d.get_type_name(), "Woven_my_tx__release", "instance override, then woven")
+    `CHECK_WOVEN(d, my_tx, "instance override, then woven")
     c = tx::type_id::create("c");
-    `CHECK_EQ(c.get_type_name(), "Woven_tx__release", "other instances unaffected")
+    `CHECK_WOVEN(c, tx, "other instances unaffected")
 
     uvm_factory::get().set_type_override_by_type(tx::get_type(), my_tx::get_type());
     c = tx::type_id::create("c");
-    `CHECK_EQ(c.get_type_name(), "Woven_my_tx__release", "type override, then woven")
+    `CHECK_WOVEN(c, my_tx, "type override, then woven")
+    uvm_factory::get().print();   // the test checks that no woven name appears
     check_pkg::pass();
     $finish;
   end

@@ -70,8 +70,11 @@ class UvmBinding(Binding):
         if not _registered(w.cls):
             w.warning("%s is not registered with the UVM factory (no `uvm_object_utils); "
                       "its woven class will not be used" % w.cls.qname, w.cls.loc)
-        macro = "uvm_component_utils" if w.cls.is_a("uvm_pkg::uvm_component") else \
-            "uvm_object_utils"
+        # The *_param_utils form registers the woven class by type only: it gets no
+        # factory name of its own and inherits get_type_name()/type_name() from the
+        # user's class, so logs and factory.print() show the original name.
+        macro = "uvm_component_param_utils" if w.cls.is_a("uvm_pkg::uvm_component") else \
+            "uvm_object_param_utils"
         w.add_item("`%s(%s)" % (macro, w.woven.name))
 
     def package_items(self, wpkg, cfg):

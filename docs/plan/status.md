@@ -1,5 +1,5 @@
 # sv-weave-uvm status
-Milestone: U1 | Next action: 2-link override-chain sim case on UVM 2020.3.2; then U2 | Blocked on: none (U4 needs core L1/L2) | Last updated: 2026-11-08
+Milestone: U2 | Next action: 8d uvm_component + 3-level hierarchy, or 8a do_print weaver | Blocked on: none (U4 needs core L1/L2) | Last updated: 2026-11-08
 
 ## U0 Bootstrap
 - [x] Package scaffold: `sv_weave_uvm.binding.UvmBinding`, `share/sv/sv_weave_uvm_pkg.sv`
@@ -27,7 +27,14 @@ Milestone: U1 | Next action: 2-link override-chain sim case on UVM 2020.3.2; the
       by name) give the woven last link. The adapter runs on every link; harmless.
 - Pitfall seen: a `uvm_factory f = uvm_factory::get();` initializer in an `initial` block
   runs before `sv_weave_init_m` installs the woven factory, so overrides set through `f`
-  go to the old factory. Document in the user docs (U3).
+  go to the old factory. Documented in docs/user/factory.rst.
+
+## U3 Override + debug story
+- [x] Type names (Q2): woven classes use `uvm_object_param_utils` /
+      `uvm_component_param_utils` (registered by type only), inherit the user's
+      `get_type_name()`; `factory.print()` shows no `Woven_*` (checked in uvm_basic).
+      Tests use `CHECK_WOVEN(obj, T, msg)` from tests/sim/sv/check_pkg.sv.
+- [ ] Seed stability release vs debug profile.
 
 ## Decisions (hand-off §9, 2026-11-08)
 - Q1 UVM versions: focus on the UVM bundled with Verilator (2020.3.2). Other versions,
