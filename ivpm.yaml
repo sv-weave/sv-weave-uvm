@@ -1,0 +1,39 @@
+
+package:
+  name: sv-weave-uvm
+  default-dep-set: dev
+
+  dep-sets:
+  - name: use
+    deps:
+    # Core sv-weave, tracked from source while the two are co-developed.
+    # Released wheels pin sv-weave>=0.1,<0.2 (pyproject.toml).
+    - name: sv-weave
+      url: https://github.com/sv-weave/sv-weave.git
+      branch: main
+  - name: default-dev
+    uses: dev
+  - name: dev
+    uses: use
+    deps:
+    - name: pytest
+      src: pypi
+    # dv-flow from source: the sim tests need hdlsim.vlt.SimLibUVM and svweave.* tasks.
+    - name: dv-flow-mgr
+      url: https://github.com/dv-flow/dv-flow-mgr.git
+      dep-set: default
+    - name: dv-flow-libhdlsim
+      url: https://github.com/dv-flow/dv-flow-libhdlsim.git
+      dep-set: default
+    - name: pytest-dfm
+      url: https://github.com/dv-flow/pytest-dfm.git
+      dep-set: default-dev
+    - name: sphinx
+      src: pypi
+    - name: sphinx-rtd-theme
+      src: pypi
+    - name: sim-rtl-tools
+      src: ivpm.yaml
+      url: https://edapack.github.io/ivpm.yaml
+      dep-set: sim.rtl
+

@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sv-weave-uvm"
+dynamic = ["version"]
+description = "UVM library for sv-weave: binding, factory adapter, UVM weavers and audits"
+readme = "README.md"
+requires-python = ">=3.11"   # follows sv-weave (pyslang 12 requires 3.11)
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [
+    {name = "Matthew Ballance", email = "matt.ballance@gmail.com"},
+]
+keywords = ["systemverilog", "uvm", "code-generation", "verification", "slang"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)",
+    "Topic :: Software Development :: Code Generators",
+]
+# The plugin API gate: core API_VERSION (0, 1). Raise both together.
+dependencies = [
+    "sv-weave>=0.1,<0.2",
+]
+
+[project.urls]
+Documentation = "https://dvkit.org/sv-weave/sv-weave-uvm/"
+Source = "https://github.com/sv-weave/sv-weave-uvm"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-dfm",
+    "dv-flow-mgr",
+    "dv-flow-libhdlsim",
+]
+docs = [
+    "sphinx",
+    "sphinx-rtd-theme",
+]
+
+[project.entry-points."sv_weave.bindings"]
+uvm = "sv_weave_uvm.binding:UvmBinding"
+
+[tool.setuptools.dynamic]
+version = {attr = "sv_weave_uvm.__version__.__version__"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"sv_weave_uvm" = ["**/*.sv", "**/*.svh"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "sim: end-to-end weave + Verilator simulation (pytest-dfm)",
+    "docs: Sphinx documentation build",
+    "xezim: needs the xezim simulator; skipped when it is not on PATH",
+]
+asyncio_default_fixture_loop_scope = "function"
