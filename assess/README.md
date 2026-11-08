@@ -13,6 +13,14 @@ estimate the code it would remove. The trees come from the ivpm dep-set
   `category` (object, sequence, component, reg, unknown, non_uvm) from its
   `extends` chain, resolved by name within the scanned roots: scan a whole tree
   at once, or base classes outside it show as `unknown`.
+- `gaps.py <root>... | --scan out.json [-o gaps.json] [--text]`: per data
+  member of each data class (root `uvm_object` -> kind `object`,
+  `uvm_sequence_item`/`uvm_transaction` -> kind `item`), the copy/compare/
+  print/pack paths no field macro or hand method covers. Rules G1-G6 are listed
+  in the module docstring. Flags use UVM 1.2 semantics (an operation is on
+  unless its `UVM_NO*` flag is set). Static/const members and handles that are
+  not data (`virtual` interfaces, events, mailboxes, TLM ports) are skipped;
+  typedef'd interface handles are not recognised.
 
 Parsing is syntax-only (pyslang, no include/macro preprocessing); UVM macros are
 found lexically in the class text. Tests: `pytest -q tests/unit/assess`.

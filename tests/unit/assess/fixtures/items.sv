@@ -48,3 +48,22 @@ endclass
 class my_drv extends uvm_driver #(hand_item);
   `uvm_component_utils(my_drv)
 endclass
+
+class pack_item extends uvm_sequence_item;
+  int a;
+  int b;
+  `uvm_object_utils(pack_item)
+  function void do_pack(uvm_packer packer);
+    packer.pack_field_int(a, 32);
+    packer.pack_field_int(b, 32);
+  endfunction
+  function void do_unpack(uvm_packer packer);
+    a = packer.unpack_field_int(32);
+  endfunction
+endclass
+
+class bare_cfg extends uvm_object;
+  int unsigned timeout;
+  virtual foo_if vif;
+  `uvm_object_utils(bare_cfg)
+endclass

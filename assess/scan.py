@@ -77,7 +77,8 @@ def scan_field_macros(text, line0):
         if not args or len(args) < 2:
             continue
         flags = [f.strip() for f in re.split(r"[|+]", args[-1]) if f.strip()]
-        out.append({"kind": m.group(1), "member": args[-2], "flags": flags,
+        member = re.sub(r"^this\s*\.\s*", "", args[-2])
+        out.append({"kind": m.group(1), "member": member, "flags": flags,
                     "line": line0 + text.count("\n", 0, m.start())})
     return out
 
@@ -171,7 +172,7 @@ class FileScanner:
             return []
         quals = [q.valueText for q in item.qualifiers]
         quals += [q.valueText for q in decl.modifiers]
-        typ = str(decl.type).strip()
+        typ = " ".join(strip_comments(str(decl.type)).split())
         span = self._span(item)
         out = []
         for d in decl.declarators:
