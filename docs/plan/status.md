@@ -1,5 +1,5 @@
 # sv-weave-uvm status
-Milestone: U3 done | Next action: 11 benchmark (U5) | Blocked on: U4 audits need core L1/L2 | Last updated: 2026-11-08
+Milestone: U5 done | Next action: 12 quickstart + release (U6) | Blocked on: U4 audits need core L1/L2 | Last updated: 2026-11-08
 
 ## U0 Bootstrap
 - [x] Package scaffold: `sv_weave_uvm.binding.UvmBinding`, `share/sv/sv_weave_uvm_pkg.sv`
@@ -52,6 +52,12 @@ Milestone: U3 done | Next action: 11 benchmark (U5) | Blocked on: U4 audits need
       `+weave_profile=release` and `=debug` (debug adds xcheck in post_randomize);
       the same seed gives the same randomize() values and `$urandom` stream.
       Documented in docs/user/factory.rst (Profiles).
+
+## U5 Benchmark
+- [x] `bench/` (not run by `pytest tests`): one 8-field sequence item as `uvm_field_*`
+      macros, hand-written `do_*` and woven. `bench/linecount.py`: source 23/66/14 lines,
+      expanded 1447/92/154. `bench/test_runtime.py` on Verilator: 29.5/27.2/20.2 us per
+      iteration. Erickson's exact class is not reproduced. docs/user/benchmark.rst.
 
 ## Decisions (hand-off §9, 2026-11-08)
 - Q1 UVM versions: focus on the UVM bundled with Verilator (2020.3.2). Other versions,
